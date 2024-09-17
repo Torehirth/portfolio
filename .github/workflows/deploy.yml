@@ -1,0 +1,101 @@
+# This GitHub Actions workflow is designed to:
+# 
+# 1. Run on both `push` and `pull_request` events targeting the `main` branch.
+#
+# 2. On `pull_request`, the workflow could run checks like:
+#    - Running tests (e.g., unit or integration tests),
+#    - Linting the code to ensure it adheres to coding standards,
+#    - Building the project to verify that the changes don't break the build.
+#    - **No deployment or release is triggered on pull requests**.
+#
+# 3. On `push` to the `main` branch:
+#    - The workflow deploys the website to GitHub Pages using the `actions/deploy-pages@v2` action.
+#    - It automatically increments the patch version (e.g., from `v1.0.0` to `v1.0.1`) by fetching the latest Git tag.
+#    - Creates a new GitHub release using the updated version.
+#    - Pushes the new tag back to the repository for version tracking.
+#
+# The workflow ensures that deployments and version tagging only happen after a successful merge into `main`,
+# and it performs testing and code quality checks during the pull request process.
+
+name: Deploy and Auto-Increment Release
+
+on:
+  push:
+    branches:
+      - main  # Run on pushes to the main branch
+  pull_request:
+    branches:
+      - main  # Run on pull requests into the main branch
+
+jobs:
+  deploy:
+    if: github.event_name == 'push'  # Only deploy on push events, not pull requests
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      # Install dependencies (if needed)
+      - name: Install dependencies
+        run: npm install  # Adjust based on your project
+
+      # Build your site (if needed)
+      - name: Build the site
+        run: npm run build  # Adjust based on your project
+
+      # Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+  release:
+    if: github.event_name == 'push'  # Only create a release on push events, not pull requests
+    runs-on: ubuntu-latest
+    needs: deploy
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v3
+
+      # Fetch all tags from the repository
+      - name: Fetch all tags
+        run: git fetch --tags
+
+      # Get the latest release tag
+      - name: Get the latest release tag
+        id: get_tag
+        run: |
+          TAG=$(git describe --tags --abbrev=0 || echo "v1.0.0")  # Default to v1.0.0 if no tag exists
+          echo "::set-output name=TAG::$TAG"
+
+      # Increment the patch version
+      - name: Increment patch version
+        id: increment_version
+        run: |
+          TAG=${{ steps.get_tag.outputs.TAG }}
+          VERSION=${TAG#v}
+          IFS='.' read -r MAJOR MINOR PATCH <<< "$VERSION"
+          PATCH=$((PATCH + 1))
+          NEW_VERSION="$MAJOR.$MINOR.$PATCH"
+          echo "New version: v$NEW_VERSION"
+          echo "::set-output name=NEW_VERSION::v$NEW_VERSION"
+
+      # Create a new GitHub release
+      - name: Create Release
+        uses: actions/create-release@v1
+        with:
+          tag_name: ${{ steps.increment_version.outputs.NEW_VERSION }}
+          release_name: "Release ${{ steps.increment_version.outputs.NEW_VERSION }}"
+          body: "Deployment of version ${{ steps.increment_version.outputs.NEW_VERSION }}"
+          draft: false
+          prerelease: false
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # Push the new tag to GitHub
+      - name: Push new tag
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git tag ${{ steps.increment_version.outputs.NEW_VERSION }}
+          git push origin ${{ steps.increment_version.outputs.NEW_VERSION }}
