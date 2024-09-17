@@ -1,5 +1,5 @@
 # This GitHub Actions workflow is designed to:
-# 
+#
 # 1. Run on both `push` and `pull_request` events targeting the `main` branch.
 #
 # 2. On `pull_request`, the workflow could run checks like:
@@ -22,26 +22,18 @@ name: Deploy and Auto-Increment Release
 on:
   push:
     branches:
-      - main  # Run on pushes to the main branch
+      - main # Run on pushes to the main branch
   pull_request:
     branches:
-      - main  # Run on pull requests into the main branch
+      - main # Run on pull requests into the main branch
 
 jobs:
   deploy:
-    if: github.event_name == 'push'  # Only deploy on push events, not pull requests
+    if: github.event_name == 'push' # Only deploy on push events, not pull requests
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the code
         uses: actions/checkout@v3
-
-      # Install dependencies (if needed)
-      - name: Install dependencies
-        run: npm install  # Adjust based on your project
-
-      # Build your site (if needed)
-      - name: Build the site
-        run: npm run build  # Adjust based on your project
 
       # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
@@ -50,7 +42,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
 
   release:
-    if: github.event_name == 'push'  # Only create a release on push events, not pull requests
+    if: github.event_name == 'push' # Only create a release on push events, not pull requests
     runs-on: ubuntu-latest
     needs: deploy
     steps:
