@@ -19,6 +19,13 @@
 
 name: Deploy and Auto-Increment Release
 
+# Add necessary permissions for GitHub Pages deployment and creating releases
+permissions:
+  id-token: write # Required for GitHub Pages deployment
+  contents: write # Required for pushing new tags and creating releases
+  pages: write # Required for deploying to GitHub Pages
+  actions: read # To read GitHub Actions workflow information
+
 on:
   push:
     branches:
