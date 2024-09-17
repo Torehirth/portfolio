@@ -1,21 +1,56 @@
-name: Lint Code Base
+# name: Lint Code Base
+
+# on: # yamllint disable-line rule:truthy
+#   push:
+#     branches:
+#       - main
+#   pull_request:
+#     branches:
+#       - main
+
+# jobs:
+#   build:
+#     name: Lint Code Base
+#     runs-on: ubuntu-latest
+
+#     steps:
+#       - name: Checkout code
+#         uses: actions/checkout@v4.1.1
+#         with:
+#           # super-linter needs the full git history to get the
+#           # list of files that changed across commits
+#           fetch-depth: 0
+
+#       - name: Super-linter
+#         uses: super-linter/super-linter@v7.1.0 # x-release-please-version
+#         env:
+#           DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+#           # To report GitHub Actions status checks
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+---
+name: Lint
 
 on: # yamllint disable-line rule:truthy
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+  push: null
+  pull_request: null
+
+permissions: {}
 
 jobs:
   build:
-    name: Lint Code Base
+    name: Lint
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: read
+      # To report GitHub Actions status checks
+      statuses: write
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4.1.1
+        uses: actions/checkout@v4
         with:
           # super-linter needs the full git history to get the
           # list of files that changed across commits
@@ -24,6 +59,5 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@v7.1.0 # x-release-please-version
         env:
-          DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
           # To report GitHub Actions status checks
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
