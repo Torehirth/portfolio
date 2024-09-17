@@ -9,7 +9,7 @@
 #    - **No deployment or release is triggered on pull requests**.
 #
 # 3. On `push` to the `main` branch:
-#    - The workflow deploys the website to GitHub Pages using the `actions/deploy-pages@v2` action.
+#    - The workflow builds and deploys the website to GitHub Pages using the `actions/deploy-pages@v2` action.
 #    - It automatically increments the patch version (e.g., from `v1.0.0` to `v1.0.1`) by fetching the latest Git tag.
 #    - Creates a new GitHub release using the updated version.
 #    - Pushes the new tag back to the repository for version tracking.
@@ -41,16 +41,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Setup Pages
-        id: pages
-        uses: actions/configure-pages@v3
+
+      # Upload the build output as an artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: ./ # Path to build output directory
 
   # Deployment job
   deploy:
     if: github.event_name == 'push' # Only deploy on push events, not pull requests
     environment:
       name: github-pages
-      url: ${{steps.deployment.outputs.page_url}}
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     needs: build
     steps:
