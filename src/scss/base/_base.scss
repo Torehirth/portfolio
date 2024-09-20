@@ -1,0 +1,13 @@
+html {
+  height: 100%; /* to get footer on the bottom */
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex; /* to get footer on the bottom */
+  flex-direction: column; /* to get footer on the bottom */
+  min-height: 100%; /* to get footer on the bottom */
+  font-family: "Karla", sans-serif;
+  background: $main-bg-colour;
+  color: $main-text-colour;
+}

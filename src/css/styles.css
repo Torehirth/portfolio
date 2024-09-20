@@ -1,12 +1,25 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", sans-serif;
+}
+
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
+}
+
+ol,
+ul {
+  list-style: none;
 }
 
 html {
   height: 100%; /* to get footer on the bottom */
-  box-sizing: border-box;
   scroll-behavior: smooth;
 }
 
@@ -14,8 +27,57 @@ body {
   display: flex; /* to get footer on the bottom */
   flex-direction: column; /* to get footer on the bottom */
   min-height: 100%; /* to get footer on the bottom */
+  font-family: "Karla", sans-serif;
 }
 
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Unbounded";
+    src: url(../../assets/fonts/Unbounded/static/Unbounded-Regular.ttf) format("truetype");
+    font-weight: 400; /* Regular weight */
+    font-display: swap; /* Ensure font swap is applied */
+  }
+  @font-face {
+    font-family: "Unbounded";
+    src: url(../../assets/fonts/Unbounded/static/Unbounded-Bold.ttf) format("truetype");
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Karla";
+    src: url(../../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    font-weight: 400; /* Regular weight */
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Karla";
+    src: url(../../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+  }
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url(../../assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../../assets/fonts/Karla/Karla-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../../assets/fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-style: italic; /* Italic style */
+  font-display: swap;
+}
 footer {
   margin-top: auto; /* to get footer on the bottom */
-} /*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=styles.css.map */

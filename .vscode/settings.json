@@ -1,9 +1,10 @@
 {
+  // Live Sass Compiler settings (extension)
   "liveSassCompile.settings.formats": [
     {
       "format": "expanded",
       "extensionName": ".css",
-      "savePath": "/src/css",
+      "savePath": "/src/css", // Save to the css folder
       "savePathReplacementPairs": null
     }
   ]

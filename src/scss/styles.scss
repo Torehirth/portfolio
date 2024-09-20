@@ -1,3 +1,8 @@
+// Import base
+@import "base/typography";
+@import "base/reset";
+@import "base/base";
+
 // Import abstracts
 @import "abstracts/variables";
 @import "abstracts/fonts";
@@ -9,24 +14,3 @@
 @import "layout/header";
 @import "layout/footer";
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  height: 100%; /* to get footer on the bottom */
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
-body {
-  display: flex; /* to get footer on the bottom */
-  flex-direction: column; /* to get footer on the bottom */
-  min-height: 100%; /* to get footer on the bottom */
-}
-
-footer {
-  margin-top: auto; /* to get footer on the bottom */
-}
