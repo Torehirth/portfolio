@@ -1,0 +1,12 @@
+@use "../abstracts/variables";
+@use "../layout/header";
+@use "../components/primary-button";
+@use "../base/reset";
+
+
+.intro-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}

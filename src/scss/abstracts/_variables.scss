@@ -21,4 +21,7 @@ $main-shadow-colour: $primary-colour;
 $sub-shadow-colour: $secondary-colour;
 
 // general styles
+$main-border: 1px solid $main-border-colour;
 $border-radius: 5px;
+$max-width: 1200px;
+$transition: 0.3s ease-in-out;

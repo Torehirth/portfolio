@@ -18,6 +18,7 @@ ul,
 a,
 p {
   color: #f0e9f2;
+  letter-spacing: 1px;
 }
 
 * {
@@ -103,6 +104,59 @@ body {
   font-style: italic; /* Italic style */
   font-display: swap;
 }
+.primary-btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #f22c50;
+  padding: 12px 24px;
+  font-size: 1.125rem;
+}
+.primary-btn img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  box-shadow: 1px 2px 7px #f22c50;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  z-index: -1;
+  opacity: 0;
+}
+
+.primary-btn:hover::before {
+  height: 100%;
+  opacity: 1;
+}
+
+.primary-btn:active {
+  border: 1px solid #f0e9f2;
+}
+
+.primary-btn:active::before {
+  width: 100%;
+  opacity: 0;
+}
+
+header {
+  height: 100vh;
+}
+
 footer {
   margin-top: auto; /* to get footer on the bottom */
+}
+
+.intro-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }/*# sourceMappingURL=styles.css.map */
