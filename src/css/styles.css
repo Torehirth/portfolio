@@ -7,6 +7,19 @@ h6 {
   font-family: "Unbounded", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a,
+p {
+  color: #f0e9f2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,6 +29,17 @@ h6 {
 ol,
 ul {
   list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 html {
@@ -29,7 +53,6 @@ body {
   min-height: 100%; /* to get footer on the bottom */
   font-family: "Karla", sans-serif;
   background: #22252c;
-  color: #f0e9f2;
 }
 
 @supports not (font-variation-settings: normal) {
