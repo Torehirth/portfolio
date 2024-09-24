@@ -1,3 +1,5 @@
+@use "../abstracts/variables";
+
 html {
   height: 100%; /* to get footer on the bottom */
   scroll-behavior: smooth;
@@ -8,6 +10,6 @@ body {
   flex-direction: column; /* to get footer on the bottom */
   min-height: 100%; /* to get footer on the bottom */
   font-family: "Karla", sans-serif;
-  background: $main-bg-colour;
-  color: $main-text-colour;
+  background: variables.$main-bg-colour;
+  color: variables.$main-text-colour;
 }

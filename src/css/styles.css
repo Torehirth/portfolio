@@ -28,6 +28,8 @@ body {
   flex-direction: column; /* to get footer on the bottom */
   min-height: 100%; /* to get footer on the bottom */
   font-family: "Karla", sans-serif;
+  background: #22252c;
+  color: #f0e9f2;
 }
 
 @supports not (font-variation-settings: normal) {

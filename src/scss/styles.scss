@@ -1,16 +1,18 @@
-// Import base
-@import "base/typography";
-@import "base/reset";
-@import "base/base";
+// use base
+@use "./base/typography";
+@use "./base/reset";
+@use "./base/base";
 
-// Import abstracts
-@import "abstracts/variables";
-@import "abstracts/fonts";
+// use abstracts
+@use "./abstracts/variables";
+@use "./abstracts/fonts";
 
-// Import components
-@import "components/navbar";
+// use components
+@use "./components/navbar";
 
-// Import layouts
-@import "layout/header";
-@import "layout/footer";
+// use layouts
+@use "./layout/header";
+@use "./layout/footer";
 
+// use pages
+@use "./pages/index";
