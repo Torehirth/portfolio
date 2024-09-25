@@ -3,6 +3,69 @@
 @use "../components/primary-button";
 @use "../base/reset";
 
+header {
+  // background image
+  background: no-repeat url("../assets/images/profile1.webp") 100% center / contain;
+  background-color: variables.$main-bg-colour;
+  background-blend-mode: luminosity;
+}
+
+// ----------------------------------
+// header / nav bar
+// ----------------------------------
+.outer-header-container {
+  height: 100vh;
+  width: 100%;
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.page-link-wrapper a {
+  font-size: 1.25rem;
+}
+
+.some-links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.colour-mode-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  p {
+    font-size: 0.75rem;
+  }
+}
+
+// ----------------------------------
+// Content / landing page
+// ----------------------------------
+
+
 
 .intro-btn-container {
   display: flex;
@@ -10,3 +73,4 @@
   align-items: center;
   gap: 2rem;
 }
+

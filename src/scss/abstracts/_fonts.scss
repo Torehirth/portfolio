@@ -2,28 +2,28 @@
 @supports not (font-variation-settings: normal) {
   @font-face {
     font-family: "Unbounded";
-    src: url(../../assets/fonts/Unbounded/static/Unbounded-Regular.ttf) format("truetype");
+    src: url(../assets/fonts/Unbounded/static/Unbounded-Regular.ttf) format("truetype");
     font-weight: 400; /* Regular weight */
     font-display: swap; /* Ensure font swap is applied */
   }
 
   @font-face {
     font-family: "Unbounded";
-    src: url(../../assets/fonts/Unbounded/static/Unbounded-Bold.ttf) format("truetype");
+    src: url(../assets/fonts/Unbounded/static/Unbounded-Bold.ttf) format("truetype");
     font-weight: 700; /* Bold weight */
     font-display: swap;
   }
 
   @font-face {
     font-family: "Karla";
-    src: url(../../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    src: url(../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
     font-weight: 400; /* Regular weight */
     font-display: swap;
   }
 
   @font-face {
     font-family: "Karla";
-    src: url(../../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    src: url(../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
     font-weight: 700; /* Bold weight */
     font-display: swap;
   }
@@ -32,7 +32,7 @@
 // Variable fonts for browsers that support it
 @font-face {
   font-family: "Unbounded";
-  src: url(../../assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf) format("truetype");
+  src: url(../assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 1000; /* Weight range for variable font */
   font-stretch: 25% 151%; /* Stretch range if applicable */
   font-display: swap;
@@ -40,17 +40,16 @@
 
 @font-face {
   font-family: "Karla";
-  src: url(../../assets/fonts/Karla/Karla-VariableFont_wght.ttf) format("truetype");
+  src: url(../assets/fonts/Karla/Karla-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 1000; /* Weight range for variable font */
   font-stretch: 25% 151%; /* Stretch range if applicable */
   font-display: swap;
 }
 @font-face {
   font-family: "Karla";
-  src: url(../../assets/fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format("truetype");
+  src: url(../assets/fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format("truetype");
   font-weight: 100 1000; /* Weight range for variable font */
   font-stretch: 25% 151%; /* Stretch range if applicable */
   font-style: italic; /* Italic style */
   font-display: swap;
 }
-
