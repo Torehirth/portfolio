@@ -23,42 +23,65 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./src/css/styles.css" />
     <!-- Script -->
-    <script type="module" src="/src/js/scipt.mjs"></script>
     <title>Tore M. Hirth | Front-end Development Portfolio</title>
   </head>
   <body>
-    <header>
-      <div class="header-inner-container">
-        <div>
-          <img src="./src/assets/images/logo/logo-red.svg" alt="logo" style="color: red" />
+    <header aria-label="landing page">
+      <div class="outer-header-container">
+        <div class="header-bar-container">
+          <div>
+            <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo" aria-label="Brand logo" />
+          </div>
+          <nav>
+            <ul class="page-link-wrapper">
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+          <nav>
+            <ul class="some-links-wrapper">
+              <li>
+                <a href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
+                  ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
+                  ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
+                  ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
+                  ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon"
+                /></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="colour-mode-wrapper">
+            <button aria-label="Toggle dark-mode"><img src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" /></button>
+            <p>Light mode</p>
+          </div>
         </div>
-        <nav>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/torehirth"><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" /></a
-              ><a href="https://github.com/torehirth"><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" /></a
-              ><a href="https://www.instagram.com/torehirth"><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon" /></a
-              ><a href="https://www.facebook.com/torehirth"><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon" /></a>
-            </li>
-          </ul>
-        </nav>
-        <div>
-          <button><img src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" /></button>
-          <p>Light mode</p>
-        </div>
-      </div>
-      <section>
-        <article>
-          <h1></h1>
-          <h2></h2>
-          <p></p>
+        <article class="intro-container">
+          <h1>Hello!</h1>
+          <h2>My name is</h2>
+          <div>
+            <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo" />
+            <h2>ore M. Hirth</h2>
+          </div>
+
+          <p>
+            Aspiring Front-End Developer that strives to create intuitive and engaging user experiences. I love designing clean and accessible
+            interfaces that brings simplicity and functionality together
+          </p>
           <div class="intro-btn-container">
             <a href="https://github.com/torehirth" class="primary-btn">
               <p>My GitHub</p>
@@ -70,19 +93,23 @@
             </a>
           </div>
         </article>
-      </section>
+        <div class="btn-down-container">
+          <p>Take a look at my projects</p>
+          <img src="./src/assets/icons/icons/button-down.svg" alt="bottom down to next section" />
+        </div>
+      </div>
     </header>
     <main>
       <!-- Projects section -->
-      <section id="projects"></section>
+      <section id="projects" aria-label="projects section"></section>
       <!-- Skills section -->
-      <section id="skills"></section>
+      <section id="skills" aria-label="skills section"></section>
       <!-- About section -->
-      <section id="about"></section>
+      <section id="about" aria-label="about section"></section>
       <!-- Experience section -->
-      <section id="experience"></section>
+      <section id="experience" aria-label="experience section"></section>
       <!-- Contact section -->
-      <section id="contact"></section>
+      <section id="contact" aria-label="contact section"></section>
     </main>
     <!-- Footer -->
     <footer>
@@ -99,19 +126,33 @@
         <div>
           <p>Follow me</p>
           <nav>
-            <ul>
+            <ul class="some-links-wrapper">
               <li>
-                <a href="https://www.linkedin.com/in/torehirth"><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" /></a
-                ><a href="https://github.com/torehirth"><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" /></a
-                ><a href="https://www.instagram.com/torehirth"><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon" /></a
-                ><a href="https://www.facebook.com/torehirth"><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon" /></a>
+                <a href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
+                  ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
+                  ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
+                  ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
+                  ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon"
+                /></a>
               </li>
             </ul>
           </nav>
         </div>
         <div>
-          <img src="./src/assets/images/logo/logo-red.svg" alt="logo" />
-          <p>Intuitive. Innovative. Timeless</p>
+          <img src="./src/assets/images/logo/logo-red.svg" alt="logo" aria-label="Brand logo" />
+          <p class="slogan" aria-label="brand slogan">Intuitive. Innovative. Timeless</p>
         </div>
       </div>
       <p>&copy; 2024, Tore M. Hirth. All rights reserved!</p>
