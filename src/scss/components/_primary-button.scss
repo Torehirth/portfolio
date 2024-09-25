@@ -17,33 +17,38 @@
   }
 }
 
-// Button hover effect
-.primary-btn::before {
-  // creates a shadow effect from top to bottom
-  content: "";
-  position: absolute;
-  box-shadow: 1px 2px 7px variables.$secondary-colour;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  transition: height variables.$transition, opacity variables.$transition;
-  z-index: -1;
-  opacity: 0;
-}
+// Button hover effect that creates a shadow effect from top to bottom
+// .primary-btn::before {
+//   content: "";
+//   position: absolute;
+//   box-shadow: 1px 2px 7px variables.$secondary-colour;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 0%;
+//   transition: height variables.$transition, opacity variables.$transition;
+//   z-index: -1;
+//   opacity: 0;
+// }
 
-.primary-btn:hover::before {
-  height: 100%;
-  opacity: 1;
-}
+// .primary-btn:hover::before {
+//   height: 100%;
+//   opacity: 1;
+// }
 
-// button active effect
+// // button active effect
+// .primary-btn:active {
+//   border: 1px solid variables.$white-colour;
+// }
+
+// .primary-btn:active::before {
+//   // removes the shadow effect
+//   width: 100%;
+//   opacity: 0;
+// }
+
+.primary-btn:hover,
 .primary-btn:active {
-  border: 1px solid variables.$white-colour;
-}
-
-.primary-btn:active::before {
-  // removes the shadow effect
-  width: 100%;
-  opacity: 0;
+  transition: all variables.$transition;
+  opacity: variables.$opacity;
 }

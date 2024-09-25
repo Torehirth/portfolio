@@ -29,56 +29,59 @@
     <header aria-label="landing page">
       <div class="outer-header-container">
         <div class="header-bar-container">
-          <div>
-            <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo" aria-label="Brand logo" />
+          <div class="logo-container">
+            <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
           </div>
           <nav>
             <ul class="page-link-wrapper">
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#contact">Contact</a></li>
+              <li><a href="#projects" class="main-link">Projects</a></li>
+              <li><a href="#skills" class="main-link">Skills</a></li>
+              <li><a href="#about" class="main-link">About</a></li>
+              <li><a href="#experience" class="main-link">Experience</a></li>
+              <li><a href="#contact" class="main-link">Contact</a></li>
             </ul>
           </nav>
           <nav>
             <ul class="some-links-wrapper">
               <li>
-                <a href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
+                <a class="some-link" href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
                   ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon"
                 /></a>
               </li>
               <li>
-                <a href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
+                <a class="some-link" href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
                   ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon"
                 /></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
+                <a class="some-link" href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
                   ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon"
                 /></a>
               </li>
               <li>
-                <a href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
+                <a class="some-link" href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
                   ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon"
                 /></a>
               </li>
             </ul>
           </nav>
           <div class="colour-mode-wrapper">
-            <button aria-label="Toggle dark-mode"><img src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" /></button>
+            <button>
+              <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" aria-label="Toggle light-mode" />
+            </button>
             <p>Light mode</p>
           </div>
         </div>
         <article class="intro-container">
-          <h1>Hello!</h1>
-          <h2>My name is</h2>
           <div>
-            <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo" />
-            <h2>ore M. Hirth</h2>
+            <h1>Hello!</h1>
+            <div class="name-container">
+              <h2>My name is</h2>
+              <img src="./src/assets/images/logo/logo-big.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
+              <p class="name-text">ore M. Hirth</p>
+            </div>
           </div>
-
-          <p>
+          <p class="intro-text">
             Aspiring Front-End Developer that strives to create intuitive and engaging user experiences. I love designing clean and accessible
             interfaces that brings simplicity and functionality together
           </p>
@@ -95,7 +98,9 @@
         </article>
         <div class="btn-down-container">
           <p>Take a look at my projects</p>
-          <img src="./src/assets/icons/icons/button-down.svg" alt="bottom down to next section" />
+          <a href="#projects" aria-label="button down to projects section"
+            ><img class="btn-down" src="./src/assets/icons/icons/button-down.svg" alt="bottom down to next section"
+          /></a>
         </div>
       </div>
     </header>
@@ -150,8 +155,8 @@
             </ul>
           </nav>
         </div>
-        <div>
-          <img src="./src/assets/images/logo/logo-red.svg" alt="logo" aria-label="Brand logo" />
+        <div class="logo-container">
+          <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
           <p class="slogan" aria-label="brand slogan">Intuitive. Innovative. Timeless</p>
         </div>
       </div>

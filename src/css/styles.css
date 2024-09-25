@@ -51,8 +51,15 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-  font-family: "Unbounded", sans-serif;
+h6,
+ol,
+ul,
+a,
+p,
+button,
+span {
+  color: #f0e9f2;
+  line-height: 125%;
 }
 
 h1,
@@ -60,11 +67,31 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
 ol,
 ul,
 a,
-p {
+p,
+button,
+span {
+  font: 400 1.125rem "Karla", sans-serif;
   color: #f0e9f2;
   letter-spacing: 1px;
 }
@@ -96,7 +123,6 @@ html {
 }
 
 body {
-  font-family: "Karla", sans-serif;
   background: #22252c;
 }
 
@@ -115,41 +141,14 @@ body {
   width: 1.25rem;
 }
 
-.primary-btn::before {
-  content: "";
-  position: absolute;
-  box-shadow: 1px 2px 7px #f22c50;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
-  z-index: -1;
-  opacity: 0;
-}
-
-.primary-btn:hover::before {
-  height: 100%;
-  opacity: 1;
-}
-
+.primary-btn:hover,
 .primary-btn:active {
-  border: 1px solid #f0e9f2;
-}
-
-.primary-btn:active::before {
-  width: 100%;
-  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
 }
 
 footer {
   margin-top: auto; /* to get footer on the bottom */
-}
-
-header {
-  background: no-repeat url("../assets/images/profile1.webp") 100% center/contain;
-  background-color: #22252c;
-  background-blend-mode: luminosity;
 }
 
 .outer-header-container {
@@ -158,6 +157,12 @@ header {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
+  background: no-repeat url("../assets/images/profile1.webp") 160% center/contain;
+  background-color: #22252c;
+  background-blend-mode: luminosity;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
 
 .header-bar-container {
@@ -165,6 +170,10 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+}
+
+.logo-container {
+  color: white;
 }
 
 .links-container {
@@ -179,6 +188,30 @@ header {
   gap: 2rem;
 }
 
+.main-link {
+  position: relative;
+  padding: 5px 0.5rem;
+}
+
+.main-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #f22c50;
+  transition: width 0.3s ease-in-out;
+}
+
+.main-link:hover::before {
+  width: 100%;
+}
+
+.main-link:active::before {
+  background-color: #f0e9f2;
+}
+
 .page-link-wrapper a {
   font-size: 1.25rem;
 }
@@ -187,6 +220,16 @@ header {
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+.some-links-wrapper img {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.some-link:hover,
+.some-link:active {
+  filter: opacity(0.7);
 }
 
 .colour-mode-wrapper {
@@ -199,9 +242,66 @@ header {
   font-size: 0.75rem;
 }
 
+.light-mode-btn:hover,
+.light-mode-btn:hover {
+  filter: opacity(0.7);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2rem;
+  max-width: 90ch;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -70%);
+}
+.intro-container .name-container {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  position: relative;
+  color: white;
+}
+.intro-container .name-container .name-text {
+  font: 400 3rem "Unbounded", sans-serif;
+  letter-spacing: 2px;
+  line-height: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+}
+.intro-container .intro-text {
+  font-size: 1.5rem;
+}
+
 .intro-btn-container {
   display: flex;
-  justify-content: center;
+  justify-content: left;
   align-items: center;
   gap: 2rem;
+}
+
+.btn-down-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-down-container p {
+  font-weight: 600;
+}
+
+.btn-down:hover,
+.btn-down:active {
+  filter: opacity(0.7);
+  transition: all 0.3s ease-in-out;
 }/*# sourceMappingURL=styles.css.map */
