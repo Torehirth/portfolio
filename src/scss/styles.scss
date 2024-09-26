@@ -1,0 +1,19 @@
+// use base
+@use "./base/typography";
+@use "./base/reset";
+@use "./base/base";
+
+// use abstracts
+@use "./abstracts/variables";
+@use "./abstracts/fonts";
+
+// use components
+@use "./components/navbar";
+@use "./components/primary-button";
+
+// use layouts
+@use "./layout/header";
+@use "./layout/footer";
+
+// use pages
+@use "./pages/index";

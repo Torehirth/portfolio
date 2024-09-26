@@ -1,0 +1,28 @@
+// Default colour scheme (dark mode)
+$primary-colour: #22252c;
+$accent-colour: #363d48;
+$secondary-colour: #f22c50;
+$white-colour: #f0e9f2;
+$success-colour: #55d6c2;
+$warning-colour: #eb5e55;
+$error-colour: #d30a2e;
+$info-colour: #4d8cff;
+$light-grey-colour: #c7c3c8;
+$full-white-colour: #f9f9f9;
+
+// Elements colours
+$main-bg-colour: $primary-colour;
+$sub-bg-colour: $accent-colour;
+$main-text-colour: $white-colour;
+$sub-text-colour: $secondary-colour;
+$main-border-colour: $secondary-colour;
+$sub-border-colour: $white-colour;
+$main-shadow-colour: $primary-colour;
+$sub-shadow-colour: $secondary-colour;
+
+// general styles
+$main-border: 1px solid $main-border-colour;
+$border-radius: 5px;
+$max-width: 1200px;
+$transition: 0.3s ease-in-out;
+$opacity: 0.7;

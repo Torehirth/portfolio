@@ -1,0 +1,74 @@
+@use "../abstracts/fonts";
+@use "../abstracts/variables";
+
+// Default font colour
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a,
+p,
+button,
+span {
+  color: variables.$main-text-colour;
+  line-height: 125%;
+}
+
+// Default font styling for headlines
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+
+// Default font styling for lists, links, paragraphs, buttons and spans
+ol,
+ul,
+a,
+p,
+button,
+span {
+  font: 400 1.125rem "Karla", sans-serif;
+  color: variables.$main-text-colour;
+  letter-spacing: 1px;
+}
+
+// change styles on media queries for smaller screens
+// ol,
+// ul,
+// a,
+// p,
+// button,
+// span {
+//   font-size: 1rem;
+
+// }
+
+// h1 {
+//   font-size: 1.5rem;
+// }
+// h2 {
+//   font-size: 1.125rem;
+// }
+// h3 {
+//   font-size: 1rem;
+// }

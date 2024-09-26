@@ -1,21 +1,20 @@
 # This GitHub Actions workflow is designed to:
 #
-# 1. Run on both `push` and `pull_request` events targeting the `main` branch.
+# 1. Trigger on both `push` and `pull_request` events targeting the `main` branch.
 #
-# 2. On `pull_request`, the workflow could run checks like:
-#    - Running tests (e.g., unit or integration tests),
-#    - Linting the code to ensure it adheres to coding standards,
-#    - Building the project to verify that the changes don't break the build.
-#    - **No deployment or release is triggered on pull requests**.
+# 2. On `push` to `main`:
+#    - The workflow uploads the project files as an artifact.
+#    - The deployment job runs, deploying the files to GitHub Pages.
+#    - The release job increments the patch version, creates a new Git tag, and pushes a release to GitHub.
 #
-# 3. On `push` to the `main` branch:
-#    - The workflow builds and deploys the website to GitHub Pages using the `actions/deploy-pages@v2` action.
-#    - It automatically increments the patch version (e.g., from `v1.0.0` to `v1.0.1`) by fetching the latest Git tag.
-#    - Creates a new GitHub release using the updated version.
-#    - Pushes the new tag back to the repository for version tracking.
+# 3. On `pull_request`:
+#    - The workflow runs the same checks but does not perform deployment or release creation.
 #
+# 4. Permissions:
+#    - The necessary permissions (`id-token`, `contents`, `pages`) are granted for deploying to GitHub Pages, pushing tags, and creating releases.
+
 # The workflow ensures that deployments and version tagging only happen after a successful merge into `main`,
-# and it performs testing and code quality checks during the pull request process.
+# and it can perform testing and code quality checks during the pull request process.
 
 name: Deploy and Auto-Increment Release
 
@@ -36,7 +35,8 @@ on:
 
 jobs:
   build:
-    if: github.event_name == 'push' # Only deploy on push events, not pull requests
+    # Only deploy on push events, not pull requests
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -50,7 +50,8 @@ jobs:
 
   # Deployment job
   deploy:
-    if: github.event_name == 'push' # Only deploy on push events, not pull requests
+    # Only deploy on push events, not pull requests
+    if: github.event_name == 'push'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -62,7 +63,8 @@ jobs:
         uses: actions/deploy-pages@v2
 
   release:
-    if: github.event_name == 'push' # Only create a release on push events, not pull requests
+    # Only create a release on push events, not pull requests
+    if: github.event_name == 'push'
     runs-on: ubuntu-latest
     needs: deploy
     steps:

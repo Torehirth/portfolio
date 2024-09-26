@@ -1,0 +1,9 @@
+@use "../abstracts/variables";
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: variables.$main-bg-colour;
+}

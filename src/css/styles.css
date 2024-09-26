@@ -1,19 +1,307 @@
+@supports not (font-variation-settings: normal) {
+  @font-face {
+    font-family: "Unbounded";
+    src: url(../assets/fonts/Unbounded/static/Unbounded-Regular.ttf) format("truetype");
+    font-weight: 400; /* Regular weight */
+    font-display: swap; /* Ensure font swap is applied */
+  }
+  @font-face {
+    font-family: "Unbounded";
+    src: url(../assets/fonts/Unbounded/static/Unbounded-Bold.ttf) format("truetype");
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Karla";
+    src: url(../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    font-weight: 400; /* Regular weight */
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "Karla";
+    src: url(../assets/fonts/Karla/static/Karla-Regular.ttf) format("truetype");
+    font-weight: 700; /* Bold weight */
+    font-display: swap;
+  }
+}
+@font-face {
+  font-family: "Unbounded";
+  src: url(../assets/fonts/Unbounded/Unbounded-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../assets/fonts/Karla/Karla-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-display: swap;
+}
+@font-face {
+  font-family: "Karla";
+  src: url(../assets/fonts/Karla/Karla-Italic-VariableFont_wght.ttf) format("truetype");
+  font-weight: 100 1000; /* Weight range for variable font */
+  font-stretch: 25% 151%; /* Stretch range if applicable */
+  font-style: italic; /* Italic style */
+  font-display: swap;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+a,
+p,
+button,
+span {
+  color: #f0e9f2;
+  line-height: 125%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Unbounded", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+ol,
+ul,
+a,
+p,
+button,
+span {
+  font: 400 1.125rem "Karla", sans-serif;
+  color: #f0e9f2;
+  letter-spacing: 1px;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+ol,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 html {
-  height: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
+  background: #22252c;
+}
+
+.primary-btn {
   display: flex;
-  flex-direction: column;
-  min-height: 100%;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #f22c50;
+  padding: 12px 24px;
+  font-size: 1.125rem;
+}
+.primary-btn img {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.primary-btn:hover,
+.primary-btn:active {
+  transition: all 0.3s ease-in-out;
+  opacity: 0.7;
 }
 
 footer {
-  margin-top: auto;
+  margin-top: auto; /* to get footer on the bottom */
 }
+
+.outer-header-container {
+  height: 100vh;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  background: no-repeat url("../assets/images/profile1.webp") 160% center/contain;
+  background-color: #22252c;
+  background-blend-mode: luminosity;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+
+.header-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo-container {
+  color: white;
+}
+
+.links-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.page-link-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main-link {
+  position: relative;
+  padding: 5px 0.5rem;
+}
+
+.main-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 1px;
+  background-color: #f22c50;
+  transition: width 0.3s ease-in-out;
+}
+
+.main-link:hover::before {
+  width: 100%;
+}
+
+.main-link:active::before {
+  background-color: #f0e9f2;
+}
+
+.page-link-wrapper a {
+  font-size: 1.25rem;
+}
+
+.some-links-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.some-links-wrapper img {
+  display: block;
+  height: 20px;
+  width: 20px;
+}
+
+.some-link:hover,
+.some-link:active {
+  filter: opacity(0.7);
+}
+
+.colour-mode-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.colour-mode-wrapper p {
+  font-size: 0.75rem;
+}
+
+.light-mode-btn:hover,
+.light-mode-btn:hover {
+  filter: opacity(0.7);
+}
+
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2rem;
+  max-width: 90ch;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -70%);
+}
+.intro-container .name-container {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  position: relative;
+  color: white;
+}
+.intro-container .name-container .name-text {
+  font: 400 3rem "Unbounded", sans-serif;
+  letter-spacing: 2px;
+  line-height: 100%;
+  text-transform: uppercase;
+  position: absolute;
+  left: 35%;
+  bottom: 0;
+}
+.intro-container .intro-text {
+  font-size: 1.5rem;
+}
+
+.intro-btn-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-down-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-down-container p {
+  font-weight: 600;
+}
+
+.btn-down:hover,
+.btn-down:active {
+  filter: opacity(0.7);
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=styles.css.map */
