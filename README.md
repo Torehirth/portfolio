@@ -1,6 +1,6 @@
 # Tore M. Hirth's Portfolio Website
 
-<p align="center"><img url="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
+<img url="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" />
 
 A responsive, accessible portfolio showcasing my front-end development projects and experience.
 
