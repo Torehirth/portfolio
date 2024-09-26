@@ -14,7 +14,12 @@
 // use layouts
 @use "./layout/header";
 @use "./layout/footer";
-@use "./layout/landing-section";
+@use "./layout/landing";
+@use "./layout/projects";
+@use "./layout/skills";
+@use "./layout/about";
+@use "./layout/experience";
+@use "./layout/contact";
 
 // use pages
 @use "./pages/index";

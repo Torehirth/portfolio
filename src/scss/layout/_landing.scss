@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 
 // ----------------------------------
-// Content / landing page
+// Content on landing section
 // ----------------------------------
 .intro-container {
   display: flex;
@@ -68,6 +68,9 @@
   transition: all variables.$transition;
 }
 
+// ----------------------------------
+// Media query on landing section
+// ----------------------------------
 @media (width <= 1120px) {
   .intro-container {
     .name-container {

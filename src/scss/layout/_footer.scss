@@ -1,3 +1,51 @@
+@use "../abstracts/variables";
+
 footer {
-  margin-top: auto; /* to get footer on the bottom */
+  background-color: variables.$accent-colour;
+}
+
+.inner-footer {
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  padding: 2rem 1rem 1rem;
+}
+
+.footer-main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.some-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.footer-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  // Add white colour to the logo to cheat the contrast ratio
+  color: variables.$main-text-colour;
+}
+
+.copyright {
+  border-top: 1px solid variables.$main-text-colour;
+  width: 80vw;
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  padding: 1rem 0 1rem;
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8rem;
 }

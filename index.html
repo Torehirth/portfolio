@@ -106,7 +106,23 @@
     </header>
     <main>
       <!-- Projects section -->
-      <section id="projects" aria-label="projects section"></section>
+      <section id="projects" aria-label="projects section">
+        <h1>My projects</h1>
+        <article>
+          <h2>Out 'n About</h2>
+          <div>
+            <h3>Type:</h3>
+            <p>Blog website</p>
+          </div>
+          <div>
+            <h3>Description:</h3>
+            <p>
+              Out 'n About is a blog website developed for Project Exam 1 in my Front-End Development course. The website showcases a clean,
+              accessible design and dynamic functionality powered by JavaScript and WordPress, a headless CMS.
+            </p>
+          </div>
+        </article>
+      </section>
       <!-- Skills section -->
       <section id="skills" aria-label="skills section"></section>
       <!-- About section -->
@@ -118,49 +134,49 @@
     </main>
     <!-- Footer -->
     <footer>
-      <div>
+      <div class="inner-footer">
         <nav>
-          <ul>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <ul class="footer-main-nav">
+            <li><a class="main-link" href="#projects">Projects</a></li>
+            <li><a class="main-link" href="#skills">Skills</a></li>
+            <li><a class="main-link" href="#about">About</a></li>
+            <li><a class="main-link" href="#experience">Experience</a></li>
+            <li><a class="main-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
-        <div>
+        <div class="some-container">
           <p>Follow me</p>
           <nav>
             <ul class="some-links-wrapper">
               <li>
-                <a href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
+                <a class="some-link" href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="Follow me on LinkedIn"
                   ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon"
                 /></a>
               </li>
               <li>
-                <a href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
+                <a class="some-link" href="https://github.com/torehirth" target="_blank" aria-label="Follow me on GitHub"
                   ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon"
                 /></a>
               </li>
               <li>
-                <a href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
+                <a class="some-link" href="https://www.instagram.com/torehirth" target="_blank" aria-label="Follow me on Instagram"
                   ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon"
                 /></a>
               </li>
               <li>
-                <a href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
+                <a class="some-link" href="https://www.facebook.com/torehirth" target="_blank" aria-label="Follow me on Facebook"
                   ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon"
                 /></a>
               </li>
             </ul>
           </nav>
         </div>
-        <div class="logo-container">
+        <div class="footer-logo-container">
           <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
           <p class="slogan" aria-label="brand slogan">Intuitive. Innovative. Timeless</p>
         </div>
       </div>
-      <p>&copy; 2024, Tore M. Hirth. All rights reserved!</p>
+      <p class="copyright">&copy; 2024, Tore M. Hirth. All rights reserved!</p>
     </footer>
   </body>
 </html>
