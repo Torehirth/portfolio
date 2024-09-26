@@ -4,6 +4,8 @@
 
 A responsive, accessible portfolio showcasing my front-end development projects and experience.
 
+Take a look at the website [here](https://torehirth.no/)
+
 ## Description
 
 This portfolio website highlights my journey as a front-end developer, showcasing key projects, skills, and experience. The site features light and dark mode options, follows WCAG guidelines, and is responsive across all devices. It includes sections such as:
