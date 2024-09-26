@@ -1,35 +1,42 @@
-# Your project title
+# Tore M. Hirth's Portfolio Website
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![logo](https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe)
 
-A simple overview of the use/purpose of the project.
+A responsive, accessible portfolio showcasing my front-end development projects and experience.
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
+This portfolio website highlights my journey as a front-end developer, showcasing key projects, skills, and experience. The site features light and dark mode options, follows WCAG guidelines, and is responsive across all devices. It includes sections such as:
 
-You can add some bullet points if you'd like to:
+- Landing Area with a large image, intro, and links to my GitHub, LinkedIn, and other profiles.
+- Projects Section showcasing three key projects:
+    - Out 'n About – A blog website.
+    - Rainy Days – An online store for jackets.
+    - Community Science Museum – A museum website for kids and families.
+- Skills Section detailing my front-end development skills.
+- Experience Section formatted as a CV with card-style layouts.
+- Contact Section with a form and contact details.
 
-- List item 1
-- List item 2
-- List item 3
+The site is deployed using GitHub Actions, which handles both deployment via GitHub Pages and automatic version creation for each pull request and push to the main branch.
 
 ## Built With
 
-You can list a the tech stack that you've used over here
+- Figma (prototype)
+- HTML
+- CSS
+- SASS/SCSS
+- JavaScript
 
-- tech stack
+<p align="left" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=900&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B%2C40F8FF%3Bsass%2CSASS%2C40F8FF%3B" alt="My Tech Stack" /> </p>
 
 ## Getting Started
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repository and then to install the dependencies e.g.
-
 1. Clone the repository:
 
 ```bash
-git clone 
+git clone  https://github.com/torehirth/portfolio.git
 ```
 
 2. Install the dependencies:
@@ -40,30 +47,17 @@ npm install
 
 ### Running
 
-Here is where you detail how to run the app. It typically involves the commands you'd need to run to start the project e.g.
-
-To run the app, run the following commands:
+To run the app locally, run the following commands:
 
 ```bash
 npm run start
 ```
 
-## Contributing
-
-Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
 
 ## Contact
 
 This is where you can leave your social links for people to contact you, such as a LinkedIn profile or Twitter link e.g.
 
-[My Twitter page](www.twitter.com)
-
-[My LinkedIn page](www.linkedin.com)
-
-## License
-
-You can link to your license file here if you're using one, or mention what license the codebase falls under. If you're unsure then you can simply delete this section.
-
-## Acknowledgments
-
-This is where you can add any acknowledgements if you'd like, such as to people who have helped you or any code snippets you'd like to mention. You can delete this section if you don't have any acknowledgements to make.
+GitHub Profile
+[My LinkedIn profile](https://www.linkedin.com/in/torehirth)
+[My GitHub profile](https://github.com/Torehirth)
