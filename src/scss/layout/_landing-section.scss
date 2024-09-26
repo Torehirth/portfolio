@@ -1,0 +1,87 @@
+@use "../abstracts/variables";
+
+// ----------------------------------
+// Content / landing page
+// ----------------------------------
+.intro-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 2rem;
+  max-width: 90ch;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -70%);
+
+  .name-container {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    position: relative;
+    // to cheat the contrast checker for the logo div
+    color: white;
+
+    .name-text {
+      font: 400 3rem "Unbounded", sans-serif;
+      letter-spacing: 2px;
+      line-height: 100%;
+      text-transform: uppercase;
+      position: absolute;
+      left: 35%;
+      bottom: 0;
+    }
+  }
+
+  .intro-text {
+    font-size: 1.5rem;
+  }
+}
+
+.intro-btn-container {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn-down-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  p {
+    font-weight: 600;
+  }
+}
+
+// Button hover effect
+.btn-down:hover,
+.btn-down:active {
+  filter: opacity(variables.$opacity);
+  transition: all variables.$transition;
+}
+
+@media (width <= 1120px) {
+  .intro-container {
+    .name-container {
+      padding: 1rem 0 0 0;
+      flex-direction: column;
+
+      .name-text {
+        transform: translate(-48%, 10%);
+      }
+    }
+
+    .intro-text {
+      font-size: 1.175rem;
+      max-width: 50ch;
+    }
+  }
+}
