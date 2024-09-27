@@ -26,8 +26,8 @@
 }
 
 .logo-container {
-  // to cheat the contrast checker for the logo div
-  color: white;
+  // Add white colour to the logo to cheat the contrast ratio
+  color: variables.$main-text-colour;
 }
 
 .links-container {

@@ -7,5 +7,7 @@
       "savePath": "/src/css", // Save to the css folder
       "savePathReplacementPairs": null
     }
-  ]
+  ],
+  "liveServer.settings.port": 5501,
+  "cSpell.language": "en,en-GB"
 }
