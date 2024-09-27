@@ -74,7 +74,10 @@
         </div>
         <article class="intro-container">
           <div>
-            <h1>Hello!</h1>
+            <div class="section-heading">
+              <h1>Hello!</h1>
+              <span class="heading-underline" aria-label="red underline on half of section headings length"></span>
+            </div>
             <div class="name-container">
               <h2>My name is</h2>
               <img src="./src/assets/images/logo/logo-big.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
@@ -86,11 +89,11 @@
             interfaces that brings simplicity and functionality together
           </p>
           <div class="intro-btn-container">
-            <a href="https://github.com/torehirth" class="primary-btn">
+            <a href="https://github.com/torehirth" class="primary-btn" aria-label="Visit my profile on GitHub">
               <p>My GitHub</p>
               <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
             </a>
-            <a href="https://www.linkedin.com/in/torehirth" class="primary-btn">
+            <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn">
               <p>My LinkedIn</p>
               <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
             </a>
@@ -106,20 +109,121 @@
     </header>
     <main>
       <!-- Projects section -->
-      <section id="projects" aria-label="projects section">
-        <h1>My projects</h1>
-        <article>
-          <h2>Out 'n About</h2>
-          <div>
-            <h3>Type:</h3>
-            <p>Blog website</p>
+      <section class="section" id="projects" aria-label="projects section">
+        <div class="section-heading">
+          <h1>My projects</h1>
+          <span class="heading-underline" aria-label="red underline on half of section headings length"></span>
+        </div>
+        <article class="project-wrapper">
+          <div class="outer-container">
+            <div class="text-outer-wrapper">
+              <h2>Out 'n About</h2>
+              <div class="text-inner-wrapper">
+                <h3>Type:</h3>
+                <p>Blog website</p>
+              </div>
+              <div class="text-inner-wrapper">
+                <h3>Description:</h3>
+                <p>
+                  Out 'n About is a blog website developed for Project Exam 1 in my Front-End Development course. The website showcases a clean,
+                  accessible design and dynamic functionality powered by JavaScript and WordPress, a headless CMS.
+                </p>
+                <button aria-label="Open modal to read more">Read more..</button>
+              </div>
+              <div class="project-btn-container">
+                <a href="https://github.com/Torehirth/out-n-about" class="primary-btn" aria-label="View project repository on GitHub" target="_blank">
+                  <p>View repository</p>
+                  <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
+                  <p>My LinkedIn</p>
+                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                </a>
+              </div>
+            </div>
+            <div class="project-gif">
+              <video autoplay loop muted area-label="short video displaying the Out 'n About website">
+                <source src="./src/assets/images/outnabout.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
-          <div>
-            <h3>Description:</h3>
-            <p>
-              Out 'n About is a blog website developed for Project Exam 1 in my Front-End Development course. The website showcases a clean,
-              accessible design and dynamic functionality powered by JavaScript and WordPress, a headless CMS.
-            </p>
+          <span class="project-underline" aria-label="underline that divides the projects"></span>
+        </article>
+        <article class="project-wrapper">
+          <div class="outer-container">
+            <div class="text-outer-wrapper">
+              <h2>Rainy Days</h2>
+              <div class="text-inner-wrapper">
+                <h3>Type:</h3>
+                <p>Online store for jackets</p>
+              </div>
+              <div class="text-inner-wrapper">
+                <h3>Description:</h3>
+                <p>
+                  This project is part of my front-end development coursework, where I developed an online store called Rainy Days for jackets. The
+                  goal was to create a dynamic website that uses the WordPress REST API to manage and display products from WooCommerce.
+                </p>
+                <button aria-label="Open modal to read more">Read more..</button>
+              </div>
+              <div class="project-btn-container">
+                <a href="https://github.com/Torehirth/Rainy-Days" class="primary-btn" aria-label="View project repository on GitHub" target="_blank">
+                  <p>View repository</p>
+                  <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
+                  <p>My LinkedIn</p>
+                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                </a>
+              </div>
+            </div>
+            <div class="project-gif">
+              <video autoplay loop muted area-label="short video displaying the Rainy Days website">
+                <source src="./src/assets/images/rainy-days.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+          <span class="project-underline" aria-label="underline that divides the projects"></span>
+        </article>
+        <article class="project-wrapper">
+          <div class="outer-container">
+            <div class="text-outer-wrapper">
+              <h2>Community Science Museum</h2>
+              <div class="text-inner-wrapper">
+                <h3>Type:</h3>
+                <p>Museum website for children/young adults</p>
+              </div>
+              <div class="text-inner-wrapper">
+                <h3>Description:</h3>
+                <p>
+                  This is my semester project for the first semester of Front-End Development. The website is responsive and engaging. It was designed
+                  for a children's museum, targeting kids aged 7-15 and families. It features a playful yet simple design, and emphasizes clean code,
+                  and a mobile-first approach.
+                </p>
+                <button aria-label="Open modal to read more">Read more..</button>
+              </div>
+              <div class="project-btn-container">
+                <a
+                  href="https://github.com/Torehirth/Semester-Project-1"
+                  class="primary-btn"
+                  aria-label="View project repository on GitHub"
+                  target="_blank">
+                  <p>View repository</p>
+                  <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
+                </a>
+                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
+                  <p>My LinkedIn</p>
+                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                </a>
+              </div>
+            </div>
+            <div class="project-gif">
+              <video autoplay loop muted area-label="short video displaying the Community Science Museum website">
+                <source src="./src/assets/images//community-science-museum.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
           </div>
         </article>
       </section>

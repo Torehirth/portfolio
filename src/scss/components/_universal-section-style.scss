@@ -1,0 +1,22 @@
+@use "../abstracts/variables";
+
+// ----------------------------------
+// Universal section style
+// ----------------------------------
+.section {
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.section-heading {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading-underline {
+  display: inline-block;
+  border-bottom: variables.$main-border;
+  width: 10%;
+  margin-top: 0.5rem;
+}
