@@ -33,7 +33,7 @@ The site is deployed using GitHub Actions, which handles both deployments via Gi
 - SASS/SCSS
 - JavaScript
 
-- </br>
+</br>
 
 ## Getting Started
 
