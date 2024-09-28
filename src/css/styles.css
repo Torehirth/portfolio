@@ -57,7 +57,8 @@ ul,
 a,
 p,
 button,
-span {
+span,
+figcaption {
   color: #f0e9f2;
   line-height: 125%;
 }
@@ -90,7 +91,8 @@ ul,
 a,
 p,
 button,
-span {
+span,
+figcaption {
   font: 400 1.125rem "Karla", sans-serif;
   color: #f0e9f2;
   letter-spacing: 1px;
@@ -163,6 +165,10 @@ body {
   border-bottom: 1px solid #f22c50;
   width: 10%;
   margin-top: 0.5rem;
+}
+
+.spacing-4 {
+  margin: 4rem 0 0 0;
 }
 
 .outer-header-container {
@@ -394,7 +400,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: left;
 }
 
 .text-outer-wrapper {
@@ -406,11 +412,11 @@ footer {
   max-width: 500px;
 }
 
-.project-gif {
+.video-wrapper {
   grid-column: 2/2;
   color: #f0e9f2;
 }
-.project-gif video {
+.video-wrapper video {
   width: 100%;
   height: auto;
   min-width: 450px;
@@ -440,4 +446,73 @@ footer {
   border-bottom: #363d48 1px solid;
   width: 100%;
   margin-top: 4rem;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.skills-container {
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+}
+
+.skills-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgb(34, 37, 44), rgba(34, 37, 44, 0));
+}
+
+.skills-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(to left, rgb(34, 37, 44), rgba(34, 37, 44, 0));
+}
+
+.skill-slider {
+  animation: slide 15s infinite linear;
+  display: inline-flex;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 127px;
+  min-height: 127px;
+  background: #363d48;
+  border-radius: 5px;
+  margin: 0 4rem;
+}
+.skill-wrapper img {
+  height: 50px;
+  width: 50px;
+}
+.skill-wrapper figcaption {
+  text-transform: uppercase;
+  font-size: 20px;
+  text-align: center;
+}
+
+.skills-container:hover .skill-slider {
+  animation-play-state: paused;
 }/*# sourceMappingURL=styles.css.map */

@@ -17,7 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
-  justify-items: center;
+  justify-items: left;
 }
 
 .text-outer-wrapper {
@@ -29,7 +29,7 @@
   max-width: 500px;
 }
 
-.project-gif {
+.video-wrapper {
   grid-column: 2 / 2;
   color: variables.$main-text-colour; // Adding white colour to the image div to cheat the contrast checker
   video {

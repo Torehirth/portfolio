@@ -1,0 +1,81 @@
+@use "../abstracts/variables";
+
+// ----------------------------------
+// Skills section style
+// ----------------------------------
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.skills-container {
+  overflow: hidden;
+  white-space: nowrap; // Prevents the slider from wrapping
+  position: relative;
+}
+
+// Creates a fade in/out style on the left and right side of the slider
+.skills-container::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(34, 37, 44, 1), rgba(34, 37, 44, 0));
+}
+// Creates a fade in/out style on the left and right side of the slider
+.skills-container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  background: linear-gradient(to left, rgba(34, 37, 44, 1), rgba(34, 37, 44, 0));
+}
+
+.skill-slider {
+  animation: slide 15s infinite linear;
+  display: inline-flex;
+}
+
+.skill-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  min-width: 127px;
+  min-height: 127px;
+  background: variables.$sub-bg-colour;
+  border-radius: variables.$border-radius;
+  margin: 0 4rem;
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+
+  figcaption {
+    text-transform: uppercase;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.skills-container:hover {
+  .skill-slider {
+    animation-play-state: paused;
+  }
+}
