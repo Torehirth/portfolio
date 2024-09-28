@@ -13,7 +13,8 @@ ul,
 a,
 p,
 button,
-span {
+span,
+figcaption {
   color: variables.$main-text-colour;
   line-height: 125%;
 }
@@ -46,7 +47,8 @@ ul,
 a,
 p,
 button,
-span {
+span,
+figcaption {
   font: 400 1.125rem "Karla", sans-serif;
   color: variables.$main-text-colour;
   letter-spacing: 1px;

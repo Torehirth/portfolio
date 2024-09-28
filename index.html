@@ -76,7 +76,7 @@
           <div>
             <div class="section-heading">
               <h1>Hello!</h1>
-              <span class="heading-underline" aria-label="red underline on half of section headings length"></span>
+              <span class="heading-underline"></span>
             </div>
             <div class="name-container">
               <h2>My name is</h2>
@@ -135,20 +135,20 @@
                   <p>View repository</p>
                   <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
-                  <p>My LinkedIn</p>
-                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                <a href="https://tmh-outnabout.netlify.app/" class="primary-btn" aria-label="Visit the Out 'n About website" target="_blank">
+                  <p>Go to website</p>
+                  <img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" />
                 </a>
               </div>
             </div>
-            <div class="project-gif">
-              <video autoplay loop muted area-label="short video displaying the Out 'n About website">
+            <div class="video-wrapper">
+              <video autoplay loop muted aria-label="short video displaying the Out 'n About website">
                 <source src="./src/assets/images/outnabout.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
-          <span class="project-underline" aria-label="underline that divides the projects"></span>
+          <span class="project-underline"></span>
         </article>
         <article class="project-wrapper">
           <div class="outer-container">
@@ -171,20 +171,20 @@
                   <p>View repository</p>
                   <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
-                  <p>My LinkedIn</p>
-                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                <a href="https://tmh-rainydays-cms.netlify.app/" class="primary-btn" aria-label="Visit the Rainy Days website" target="_blank">
+                  <p>Go to website</p>
+                  <img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" />
                 </a>
               </div>
             </div>
-            <div class="project-gif">
-              <video autoplay loop muted area-label="short video displaying the Rainy Days website">
+            <div class="video-wrapper">
+              <video autoplay loop muted aria-label="short video displaying the Rainy Days website">
                 <source src="./src/assets/images/rainy-days.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
             </div>
           </div>
-          <span class="project-underline" aria-label="underline that divides the projects"></span>
+          <span class="project-underline"></span>
         </article>
         <article class="project-wrapper">
           <div class="outer-container">
@@ -212,14 +212,18 @@
                   <p>View repository</p>
                   <img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/torehirth" class="primary-btn" aria-label="Visit my profile on LinkedIn" target="_blank">
-                  <p>My LinkedIn</p>
-                  <img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" />
+                <a
+                  href="https://tmh-semester-project-1.netlify.app/"
+                  class="primary-btn"
+                  aria-label="Visit the Community Science Museum website"
+                  target="_blank">
+                  <p>Go to website</p>
+                  <img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" />
                 </a>
               </div>
             </div>
-            <div class="project-gif">
-              <video autoplay loop muted area-label="short video displaying the Community Science Museum website">
+            <div class="video-wrapper">
+              <video autoplay loop muted aria-label="short video displaying the Community Science Museum website">
                 <source src="./src/assets/images//community-science-museum.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
               </video>
@@ -228,7 +232,94 @@
         </article>
       </section>
       <!-- Skills section -->
-      <section id="skills" aria-label="skills section"></section>
+      <section id="skills" class="section" aria-label="skills section">
+        <div class="section-heading">
+          <h1>My skills</h1>
+          <span class="heading-underline" aria-label="red underline on half of section headings length"></span>
+        </div>
+        <div class="spacing-4"></div>
+        <div class="skills-container">
+          <div class="skill-slider">
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/html-5-svgrepo-com.webp" alt="HTML5 icon" />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/css-3-svgrepo-com.webp" alt="CSS icon" />
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/javascript-svgrepo-com.webp" alt="JavaScript icon" />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/sass-svgrepo-com.svg" alt="SASS icon" />
+              <figcaption>SASS</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/figma-svgrepo-com.webp" alt="Figma icon" />
+              <figcaption>Figma</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/vs-code-svgrepo-com.webp" alt="Visual Studio Code icon" />
+              <figcaption>VS Code</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/github-svgrepo-com.webp" alt="GitHub icon" />
+              <figcaption>GitHub</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/git-svgrepo-com.webp" alt="Git icon" />
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp" alt="WordPress icon" />
+              <figcaption>WordPress</figcaption>
+            </figure>
+          </div>
+          <!--  -->
+          <!-- duplicating the HTML to get the infinite slide motion -->
+          <!--  -->
+          <div class="skill-slider">
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/html-5-svgrepo-com.webp" alt="HTML5 icon" />
+              <figcaption>HTML</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/css-3-svgrepo-com.webp" alt="CSS icon" />
+              <figcaption>CSS</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/javascript-svgrepo-com.webp" alt="JavaScript icon" />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/sass-svgrepo-com.svg" alt="SASS icon" />
+              <figcaption>SASS</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/figma-svgrepo-com.webp" alt="Figma icon" />
+              <figcaption>Figma</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/vs-code-svgrepo-com.webp" alt="Visual Studio Code icon" />
+              <figcaption>VS Code</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/github-svgrepo-com.webp" alt="GitHub icon" />
+              <figcaption>GitHub</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/git-svgrepo-com.webp" alt="Git icon" />
+              <figcaption>Git</figcaption>
+            </figure>
+            <figure class="skill-wrapper">
+              <img src="./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp" alt="WordPress icon" />
+              <figcaption>WordPress</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
       <!-- About section -->
       <section id="about" aria-label="about section"></section>
       <!-- Experience section -->
