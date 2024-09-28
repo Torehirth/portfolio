@@ -487,7 +487,7 @@ footer {
 }
 
 .skill-slider {
-  animation: slide 15s infinite linear;
+  animation: slide 20s infinite linear;
   display: inline-flex;
 }
 
@@ -497,20 +497,15 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  min-width: 127px;
-  min-height: 127px;
+  width: 135px;
+  height: 135px;
   background: #363d48;
   border-radius: 5px;
-  margin: 0 4rem;
+  margin: 0 2rem;
 }
 .skill-wrapper img {
   height: 50px;
   width: 50px;
-}
-.skill-wrapper figcaption {
-  text-transform: uppercase;
-  font-size: 20px;
-  text-align: center;
 }
 
 .skills-container:hover .skill-slider {

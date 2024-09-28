@@ -4,11 +4,11 @@
 // Skills section style
 // ----------------------------------
 
+// animation for the skill slider
 @keyframes slide {
   from {
     transform: translateX(0);
   }
-
   to {
     transform: translateX(-100%);
   }
@@ -46,7 +46,7 @@
 }
 
 .skill-slider {
-  animation: slide 15s infinite linear;
+  animation: slide 20s infinite linear;
   display: inline-flex;
 }
 
@@ -56,24 +56,19 @@
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  min-width: 127px;
-  min-height: 127px;
+  width: 135px;
+  height: 135px;
   background: variables.$sub-bg-colour;
   border-radius: variables.$border-radius;
-  margin: 0 4rem;
+  margin: 0 2rem;
 
   img {
     height: 50px;
     width: 50px;
   }
-
-  figcaption {
-    text-transform: uppercase;
-    font-size: 20px;
-    text-align: center;
-  }
 }
 
+// Pauses the animation when the user hovers over the skills container
 .skills-container:hover {
   .skill-slider {
     animation-play-state: paused;
