@@ -6,14 +6,13 @@
 .about-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 2rem;
-  justify-items: center;
+  width: 100%;
 }
 
 .full-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -21,13 +20,8 @@
 .main-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   gap: 2rem;
   max-width: 70ch;
-
-  h2 {
-    text-transform: uppercase;
-  }
 }
 
 .secondary-wrapper {
@@ -35,6 +29,7 @@
   flex-direction: column;
   max-width: 20vw;
   min-width: 250px;
+  color: variables.$main-text-colour; // added to override the default colour to pass the contrast ratio test
 
   figcaption {
     font-size: 1rem;
