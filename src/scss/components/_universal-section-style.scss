@@ -17,12 +17,13 @@
 .section-heading {
   display: flex;
   flex-direction: column;
+  max-width: fit-content;
 }
 
 .heading-underline {
   display: inline-block;
   border-bottom: variables.$main-border;
-  width: 10%;
+  width: 50%;
   margin-top: 0.5rem;
 }
 

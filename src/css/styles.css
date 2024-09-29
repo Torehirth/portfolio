@@ -124,10 +124,6 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  background-color: #22252c;
-}
-
 footer {
   background-color: #363d48;
 }
@@ -167,12 +163,14 @@ footer {
 .section-heading {
   display: flex;
   flex-direction: column;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .heading-underline {
   display: inline-block;
   border-bottom: 1px solid #f22c50;
-  width: 10%;
+  width: 50%;
   margin-top: 0.5rem;
 }
 
@@ -182,6 +180,10 @@ footer {
 
 .spacing-4 {
   margin: 4rem 0 0 0;
+}
+
+.landing-section {
+  background-color: #22252c;
 }
 
 .outer-header-container {
@@ -475,7 +477,7 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100%;
   top: 0;
   left: 0;
@@ -487,7 +489,7 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100%;
   top: 0;
   right: 0;
@@ -520,4 +522,41 @@ footer {
 
 .skills-container:hover .skill-slider {
   animation-play-state: paused;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.full-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 70ch;
+}
+.main-wrapper h2 {
+  text-transform: uppercase;
+}
+
+.secondary-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  min-width: 250px;
+}
+.secondary-wrapper figcaption {
+  font-size: 1rem;
+  color: #c7c3c8;
 }/*# sourceMappingURL=styles.css.map */

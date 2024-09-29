@@ -1,1 +1,43 @@
 @use "../abstracts/variables";
+
+// ----------------------------------
+// About section styling
+// ----------------------------------
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.full-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 70ch;
+
+  h2 {
+    text-transform: uppercase;
+  }
+}
+
+.secondary-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  min-width: 250px;
+
+  figcaption {
+    font-size: 1rem;
+    color: variables.$light-grey-colour;
+  }
+}

@@ -3,6 +3,10 @@
 // ----------------------------------
 // header / nav bar
 // ----------------------------------
+.landing-section {
+  background-color: variables.$main-bg-colour;
+}
+
 .outer-header-container {
   height: 100vh;
   width: 100%;
