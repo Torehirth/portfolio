@@ -1,9 +1,16 @@
 @use "../abstracts/variables";
 
+// ----------------------------------
+// Base element styling
+// ----------------------------------
 html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: variables.$main-bg-colour;
+header {
+  background-color: variables.$main-bg-colour;
+}
+
+footer {
+  background-color: variables.$accent-colour;
 }

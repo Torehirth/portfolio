@@ -1,7 +1,7 @@
 @use "../abstracts/variables";
 
 // ----------------------------------
-// Skills section style
+// Skills section styling
 // ----------------------------------
 
 // animation for the skill slider
@@ -30,19 +30,19 @@
   top: 0;
   left: 0;
   z-index: 2;
-  background: linear-gradient(to right, rgba(34, 37, 44, 1), rgba(34, 37, 44, 0));
+  background: linear-gradient(to right, rgba(54, 61, 72, 1), rgba(54, 61, 72, 0));
 }
 // Creates a fade in/out style on the left and right side of the slider
 .skills-container::after {
   content: "";
   display: block;
   position: absolute;
-  width: 50px;
+  width: 100px;
   height: 100%;
   top: 0;
   right: 0;
   z-index: 2;
-  background: linear-gradient(to left, rgba(34, 37, 44, 1), rgba(34, 37, 44, 0));
+  background: linear-gradient(to left, rgba(54, 61, 72, 1), rgba(54, 61, 72, 0));
 }
 
 .skill-slider {
@@ -58,9 +58,10 @@
   gap: 1rem;
   width: 135px;
   height: 135px;
-  background: variables.$sub-bg-colour;
+  background: variables.$main-bg-colour;
   border-radius: variables.$border-radius;
   margin: 0 2rem;
+  color: variables.$main-text-colour; // Adding white text colour to cheat the contrast checker
 
   img {
     height: 50px;

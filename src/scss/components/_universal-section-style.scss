@@ -1,8 +1,13 @@
 @use "../abstracts/variables";
+// ----------------------------------
+// Universal section styling
+// ----------------------------------
+.section-wrapper {
+  // padding: 4rem 1rem;
+  width: 100%;
+  background-color: variables.$main-bg-colour;
+}
 
-// ----------------------------------
-// Universal section style
-// ----------------------------------
 .section {
   max-width: variables.$max-width;
   margin: 0 auto;
@@ -19,6 +24,11 @@
   border-bottom: variables.$main-border;
   width: 10%;
   margin-top: 0.5rem;
+}
+
+// Used inside .section-wrapper for changing the background colour of the sections.
+.asset-colour {
+  background-color: variables.$sub-bg-colour;
 }
 
 // Spacing used in the sections
