@@ -124,8 +124,8 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  background: #22252c;
+footer {
+  background-color: #363d48;
 }
 
 .primary-btn {
@@ -149,6 +149,11 @@ body {
   opacity: 0.7;
 }
 
+.section-wrapper {
+  width: 100%;
+  background-color: #22252c;
+}
+
 .section {
   max-width: 1400px;
   margin: 0 auto;
@@ -158,17 +163,27 @@ body {
 .section-heading {
   display: flex;
   flex-direction: column;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
 
 .heading-underline {
   display: inline-block;
   border-bottom: 1px solid #f22c50;
-  width: 10%;
+  width: 50%;
   margin-top: 0.5rem;
+}
+
+.asset-colour {
+  background-color: #363d48;
 }
 
 .spacing-4 {
   margin: 4rem 0 0 0;
+}
+
+.landing-section {
+  background-color: #22252c;
 }
 
 .outer-header-container {
@@ -265,10 +280,6 @@ body {
 .light-mode-btn:hover,
 .light-mode-btn:hover {
   filter: opacity(0.7);
-}
-
-footer {
-  background-color: #363d48;
 }
 
 .inner-footer {
@@ -466,12 +477,12 @@ footer {
   content: "";
   display: block;
   position: absolute;
-  width: 100px;
+  width: 50px;
   height: 100%;
   top: 0;
   left: 0;
   z-index: 2;
-  background: linear-gradient(to right, rgb(34, 37, 44), rgba(34, 37, 44, 0));
+  background: linear-gradient(to right, rgb(54, 61, 72), rgba(54, 61, 72, 0));
 }
 
 .skills-container::after {
@@ -483,7 +494,7 @@ footer {
   top: 0;
   right: 0;
   z-index: 2;
-  background: linear-gradient(to left, rgb(34, 37, 44), rgba(34, 37, 44, 0));
+  background: linear-gradient(to left, rgb(54, 61, 72), rgba(54, 61, 72, 0));
 }
 
 .skill-slider {
@@ -499,9 +510,10 @@ footer {
   gap: 1rem;
   width: 135px;
   height: 135px;
-  background: #363d48;
+  background: #22252c;
   border-radius: 5px;
   margin: 0 2rem;
+  color: #f0e9f2;
 }
 .skill-wrapper img {
   height: 50px;
@@ -510,4 +522,41 @@ footer {
 
 .skills-container:hover .skill-slider {
   animation-play-state: paused;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 2rem;
+  justify-items: center;
+}
+
+.full-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 70ch;
+}
+.main-wrapper h2 {
+  text-transform: uppercase;
+}
+
+.secondary-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  min-width: 250px;
+}
+.secondary-wrapper figcaption {
+  font-size: 1rem;
+  color: #c7c3c8;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,9 +1,8 @@
 @use "../abstracts/variables";
 
-footer {
-  background-color: variables.$accent-colour;
-}
-
+// ----------------------------------
+// Footer styling
+// ----------------------------------
 .inner-footer {
   max-width: variables.$max-width;
   margin: 0 auto;
