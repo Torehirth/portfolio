@@ -57,9 +57,11 @@ ul,
 a,
 p,
 b,
+small,
 button,
 span,
-figcaption {
+figcaption,
+time {
   color: #f0e9f2;
   line-height: 125%;
 }
@@ -94,7 +96,8 @@ p,
 b,
 button,
 span,
-figcaption {
+figcaption,
+time {
   font: 400 1.125rem/125% "Karla", sans-serif;
   color: #f0e9f2;
   letter-spacing: 1px;
@@ -104,6 +107,14 @@ p,
 b,
 figcaption {
   font-weight: 300;
+}
+
+small {
+  font-family: "Karla", sans-serif;
+}
+
+time {
+  font-size: 1rem;
 }
 
 * {
