@@ -2,16 +2,23 @@
 // ----------------------------------
 // Universal section styling
 // ----------------------------------
-.section-wrapper {
-  // padding: 4rem 1rem;
-  width: 100%;
-  background-color: variables.$main-bg-colour;
-}
-
 .section {
   max-width: variables.$max-width;
   margin: 0 auto;
   padding: 4rem 1rem;
+}
+
+// Used inside .section-wrapper for changing the background colour of the sections.
+.primary-colour {
+  background-color: variables.$main-bg-colour;
+}
+.asset-colour {
+  background-color: variables.$sub-bg-colour;
+}
+
+// Spacing used in the sections
+.spacing-4 {
+  margin: 4rem 0 0 0;
 }
 
 .section-heading {
@@ -25,14 +32,4 @@
   border-bottom: variables.$main-border;
   width: 50%;
   margin-top: 0.5rem;
-}
-
-// Used inside .section-wrapper for changing the background colour of the sections.
-.asset-colour {
-  background-color: variables.$sub-bg-colour;
-}
-
-// Spacing used in the sections
-.spacing-4 {
-  margin: 4rem 0 0 0;
 }
