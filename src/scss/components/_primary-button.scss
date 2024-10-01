@@ -17,7 +17,14 @@
   }
 }
 
+.primary-btn:hover,
+.primary-btn:active {
+  transition: all variables.$transition;
+  opacity: variables.$opacity;
+}
+
 // Button hover effect that creates a shadow effect from top to bottom
+// ---------------------------------------------------------------------
 // .primary-btn::before {
 //   content: "";
 //   position: absolute;
@@ -46,9 +53,3 @@
 //   width: 100%;
 //   opacity: 0;
 // }
-
-.primary-btn:hover,
-.primary-btn:active {
-  transition: all variables.$transition;
-  opacity: variables.$opacity;
-}

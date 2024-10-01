@@ -12,6 +12,7 @@ ol,
 ul,
 a,
 p,
+b,
 button,
 span,
 figcaption {
@@ -46,12 +47,19 @@ ol,
 ul,
 a,
 p,
+b,
 button,
 span,
 figcaption {
-  font: 400 1.125rem "Karla", sans-serif;
+  font: 400 1.125rem/125% "Karla", sans-serif;
   color: variables.$main-text-colour;
   letter-spacing: 1px;
+}
+
+p,
+b,
+figcaption {
+  font-weight: 300;
 }
 
 // change styles on media queries for smaller screens
