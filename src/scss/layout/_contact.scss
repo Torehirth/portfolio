@@ -1,5 +1,77 @@
 @use "../abstracts/variables";
 
 // ----------------------------------
-// Experience section styling
+// Contact section styling
 // ----------------------------------
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: variables.$max-characters-width;
+  margin: 0 auto 4rem;
+}
+
+.contact-card-container:first-of-type {
+  margin-top: 2rem;
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: inherit;
+  background-color: variables.$sub-bg-colour;
+}
+
+.contact-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  gap: 1rem;
+  padding: 2rem;
+
+  a {
+    font-weight: 300;
+
+    &:hover,
+    :active {
+      filter: opacity(variables.$opacity);
+    }
+  }
+}
+
+.contact-inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: variables.$main-text-colour; // add text colour to cheat the contrast checker
+  img {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.contact-some-container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.contact-some-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+
+  &:hover,
+  :active {
+    filter: opacity(variables.$opacity);
+  }
+}
