@@ -57,9 +57,11 @@ ul,
 a,
 p,
 b,
+small,
 button,
 span,
-figcaption {
+figcaption,
+time {
   color: #f0e9f2;
   line-height: 125%;
 }
@@ -94,7 +96,8 @@ p,
 b,
 button,
 span,
-figcaption {
+figcaption,
+time {
   font: 400 1.125rem/125% "Karla", sans-serif;
   color: #f0e9f2;
   letter-spacing: 1px;
@@ -104,6 +107,14 @@ p,
 b,
 figcaption {
   font-weight: 300;
+}
+
+small {
+  font-family: "Karla", sans-serif;
+}
+
+time {
+  font-size: 1rem;
 }
 
 * {
@@ -128,6 +139,10 @@ button {
   cursor: pointer;
 }
 
+address {
+  font-style: normal;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -150,11 +165,10 @@ footer {
   height: 1.25rem;
   width: 1.25rem;
 }
-
 .primary-btn:hover,
-.primary-btn:active {
+.primary-btn :active {
   transition: all 0.3s ease-in-out;
-  opacity: 0.7;
+  filter: opacity(0.7);
 }
 
 .section {
@@ -447,9 +461,8 @@ footer {
 }
 .text-inner-wrapper button {
   align-self: flex-start;
-  color: #f0e9f2;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -549,7 +562,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 70ch;
+  max-width: 65ch;
 }
 
 .secondary-wrapper {
@@ -627,7 +640,7 @@ footer {
   width: 1px;
   height: 90%;
   background-color: #f22c50;
-  opacity: 0.7;
+  filter: opacity(0.7);
 }
 
 .card-container {
@@ -683,4 +696,74 @@ footer {
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 2rem;
+  max-width: 65ch;
+  margin: 0 auto 4rem;
+}
+
+.contact-card-container:first-of-type {
+  margin-top: 2rem;
+}
+
+.contact-card-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: inherit;
+  background-color: #363d48;
+}
+
+.contact-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  gap: 1rem;
+  padding: 2rem;
+}
+.contact-card-wrapper a {
+  font-weight: 300;
+}
+.contact-card-wrapper a:hover,
+.contact-card-wrapper a :active {
+  filter: opacity(0.7);
+}
+
+.contact-inner-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f0e9f2;
+}
+.contact-inner-wrapper img {
+  width: 20px;
+  height: 20px;
+}
+
+.contact-some-container {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.contact-some-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+.contact-some-link:hover,
+.contact-some-link :active {
+  filter: opacity(0.7);
 }/*# sourceMappingURL=styles.css.map */

@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 70ch;
+  max-width: variables.$max-characters-width;
 }
 
 .secondary-wrapper {
