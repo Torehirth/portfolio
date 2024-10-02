@@ -15,12 +15,12 @@
     height: 1.25rem;
     width: 1.25rem;
   }
-}
 
-.primary-btn:hover,
-.primary-btn:active {
-  transition: all variables.$transition;
-  opacity: variables.$opacity;
+  &:hover,
+  :active {
+    transition: all variables.$transition;
+    filter: opacity(variables.$opacity);
+  }
 }
 
 // Button hover effect that creates a shadow effect from top to bottom

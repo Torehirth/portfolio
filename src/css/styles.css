@@ -165,11 +165,10 @@ footer {
   height: 1.25rem;
   width: 1.25rem;
 }
-
 .primary-btn:hover,
-.primary-btn:active {
+.primary-btn :active {
   transition: all 0.3s ease-in-out;
-  opacity: 0.7;
+  filter: opacity(0.7);
 }
 
 .section {
@@ -462,9 +461,8 @@ footer {
 }
 .text-inner-wrapper button {
   align-self: flex-start;
-  color: #f0e9f2;
   font-size: 1rem;
-  font-weight: 300;
+  font-weight: 500;
   font-style: italic;
 }
 
@@ -564,7 +562,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 70ch;
+  max-width: 65ch;
 }
 
 .secondary-wrapper {
@@ -642,7 +640,7 @@ footer {
   width: 1px;
   height: 90%;
   background-color: #f22c50;
-  opacity: 0.7;
+  filter: opacity(0.7);
 }
 
 .card-container {
