@@ -194,6 +194,7 @@ footer {
   flex-direction: column;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  position: relative;
 }
 
 .heading-underline {
@@ -203,6 +204,62 @@ footer {
   margin-top: 0.5rem;
 }
 
+/* --- hamburger menu --- */
+.hamburger,
+.mobile-nav {
+  display: none;
+}
+
+@media (width <= 800px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 1.625rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
+  .hamburger-bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 6px 0;
+    background-color: #f0e9f2;
+    transition: 0.3s ease-in-out;
+  }
+  .hamburger.is-active::after,
+  .hamburger.is-active::before {
+    background-color: #f0e9f2;
+  }
+  .hamburger.is-active .hamburger-bar {
+    opacity: 0;
+  }
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: #22252c;
+    padding-top: 137px;
+    z-index: 98;
+    transition: 0.3s ease-in-out;
+  }
+  .mobile-nav.is-active {
+    left: 0;
+  }
+}
 .landing-section {
   background-color: #22252c;
 }
@@ -226,6 +283,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  position: relative;
+  z-index: 100;
 }
 
 .logo-container {
@@ -288,11 +347,20 @@ footer {
   filter: opacity(0.7);
 }
 
+.utility-btn-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
 .colour-mode-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 5px;
+}
+.colour-mode-wrapper button {
+  line-height: 0;
 }
 .colour-mode-wrapper p {
   font-size: 0.75rem;
@@ -303,6 +371,27 @@ footer {
   filter: opacity(0.7);
 }
 
+@media (width <= 1000px) {
+  .header-bar-container nav:last-of-type {
+    display: none;
+  }
+  .page-link-wrapper .main-link {
+    font-size: 1rem;
+  }
+}
+@media (width <= 800px) {
+  .header-bar-container nav,
+  .colour-mode-wrapper p {
+    display: none;
+  }
+  .colour-mode-wrapper img {
+    width: 27px;
+    height: 27px;
+  }
+  .outer-header-container {
+    background-position: 150% 100%;
+  }
+}
 .inner-footer {
   max-width: 1400px;
   margin: 0 auto;
@@ -352,30 +441,36 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  text-align: left;
   gap: 2rem;
   max-width: 90ch;
   position: relative;
   top: 50%;
   transform: translate(0, -70%);
 }
-.intro-container .name-container {
+
+.name-container {
   display: flex;
+  align-items: center;
+  justify-self: center;
+  color: #f0e9f2;
+  margin: 0 0 0.5rem 0;
+}
+.name-container h1 {
+  font-size: 3rem;
+  display: inline-flex;
   align-items: baseline;
-  gap: 1rem;
+  line-height: 0;
+}
+.name-container img {
+  display: inline-block;
   position: relative;
-  color: white;
+  bottom: -10px;
+  width: 5rem;
+  height: auto;
+  margin-right: -22px;
 }
-.intro-container .name-container .name-text {
-  font: 400 3rem "Unbounded", sans-serif;
-  letter-spacing: 2px;
-  line-height: 100%;
-  text-transform: uppercase;
-  position: absolute;
-  left: 35%;
-  bottom: 0;
-}
-.intro-container .intro-text {
+.name-container .intro-text {
   font-size: 1.5rem;
 }
 
@@ -423,7 +518,7 @@ footer {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   justify-content: center;
   padding: 4rem 0 0;
 }
@@ -651,6 +746,15 @@ footer {
   background-color: #22252c;
   margin-top: 2rem;
 }
+.card-container .experience-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-container .experience-date p:first-of-type {
+  font-style: normal;
+  font-size: 1rem;
+}
 .card-container p:last-of-type {
   font-style: italic;
 }
@@ -725,7 +829,7 @@ footer {
 .contact-card-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   text-align: left;
   gap: 1rem;
   padding: 2rem;

@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- SEO Meta Tags -->
     <meta name="description" content="Tore M. Hirth's portfolio showcasing front-end development projects using HTML, CSS, SCSS, and JavaScript." />
-    <meta name="keywords" content="Front-end development, HTML, CSS, SCSS, JavaScript, Portfolio, Web Design, UI, UX, Tore M. Hirth" />
+    <meta
+      name="keywords"
+      content="Front-end development, HTML, CSS, SCSS, JavaScript, Portfolio, Web Design, UI, UX, Tore M. Hirth, Tore Hirth, Tore, Hirth" />
     <meta name="author" content="Tore M. Hirth" />
     <!-- Ensures search engines can index page -->
     <meta name="robots" content="index, follow" />
@@ -23,17 +25,70 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./src/css/styles.css" />
     <!-- Script -->
+    <script type="module" src="./src/js/views/index.mjs"></script>
     <title>Tore M. Hirth | Front-end Development Portfolio</title>
   </head>
   <body>
+    <!--------- Landing Section ---------->
     <header>
       <section class="landing-section" aria-label="Landing page">
         <div class="outer-header-container">
+          <!------ Desktop header bar / Nav ------>
           <div class="header-bar-container">
             <div class="logo-container">
               <img src="./src/assets/images/logo/logo-red.svg" alt="Tore M. Hirth logo" aria-hidden="true" loading="lazy" />
             </div>
-            <nav aria-label="Primary">
+            <nav aria-label="Primary links">
+              <ul class="page-link-wrapper">
+                <li><a href="#projects" class="main-link">Projects</a></li>
+                <li><a href="#skills" class="main-link">Skills</a></li>
+                <li><a href="#about" class="main-link">About</a></li>
+                <li><a href="#experience" class="main-link">Experience</a></li>
+                <li><a href="#contact" class="main-link">Contact</a></li>
+              </ul>
+            </nav>
+
+            <nav aria-label="Social Media">
+              <ul class="some-links-wrapper">
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="LinkedIn"
+                    ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://github.com/torehirth" target="_blank" aria-label="GitHub"
+                    ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.instagram.com/torehirth" target="_blank" aria-label="Instagram"
+                    ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.facebook.com/torehirth" target="_blank" aria-label="Facebook"
+                    ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon" loading="lazy"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="utility-btn-wrapper">
+              <!-- colour mode -->
+              <div class="colour-mode-wrapper">
+                <button aria-label="Toggle light mode">
+                  <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" loading="lazy" />
+                </button>
+                <p>Light mode</p>
+              </div>
+              <!-- Hamburger button -->
+              <div class="hamburger" title="hamburger menu">
+                <button class="hamburger-bar"></button>
+              </div>
+            </div>
+          </div>
+          <!--------- Mobile Navigation ---------->
+          <aside class="mobile-nav">
+            <nav class="mobile-nav-links" aria-label="Primary links">
               <ul class="page-link-wrapper">
                 <li><a href="#projects" class="main-link">Projects</a></li>
                 <li><a href="#skills" class="main-link">Skills</a></li>
@@ -66,23 +121,16 @@
                 </li>
               </ul>
             </nav>
-            <div class="colour-mode-wrapper">
-              <button aria-label="Toggle light mode">
-                <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" loading="lazy" />
-              </button>
-              <p>Light mode</p>
-            </div>
-          </div>
+          </aside>
           <!-- Intro Content -->
           <article class="intro-container">
-            <header class="section-heading">
-              <h1>Hello!</h1>
+            <div class="section-heading">
+              <div class="name-container">
+                <h1 aria-label="heading together with logo results in Tore M. Hirth">
+                  I'm<img src="./src/assets/images/logo/logo-big.svg" alt="logo shaped as a T" aria-hidden="false" />ore M. Hirth
+                </h1>
+              </div>
               <span class="heading-underline" aria-hidden="true"></span>
-            </header>
-            <div class="name-container">
-              <h2>My name is</h2>
-              <img src="./src/assets/images/logo/logo-big.svg" alt="T logo" aria-hidden="true" />
-              <p class="name-text">ore M. Hirth</p>
             </div>
             <p class="intro-text">
               Aspiring Front-End Developer that strives to create intuitive and engaging user experiences. I love designing clean and accessible
@@ -444,7 +492,10 @@
               <section class="left">
                 <h2>Work experience</h2>
                 <article class="card-container">
-                  <div><time datetime="2019-10">October 2019 - </time><time datetime="present">Present</time></div>
+                  <div class="experience-date">
+                    <time datetime="2019-10">October 2019</time>
+                    <p>- Present</p>
+                  </div>
                   <h3>Customer service representative</h3>
                   <p>Trucknor Hordaland AS</p>
                   <ul>
@@ -495,7 +546,10 @@
               <div class="right">
                 <h2>Education</h2>
                 <article class="card-container">
-                  <div><time datetime="2022-10">October 2022 - </time><time datetime="present">Present</time></div>
+                  <div class="experience-date">
+                    <time datetime="2022-10">October 2022</time>
+                    <p>- Present</p>
+                  </div>
                   <h3>Front-End Development</h3>
                   <p>Noroff Higher Vocational School</p>
                   <ul>
@@ -573,7 +627,7 @@
             <span class="heading-underline" aria-hidden="true"></span>
           </header>
           <div class="spacing-4" aria-hidden="true"></div>
-          <address class="contact-container">
+          <div class="contact-container">
             <h2>I would love to hear from you!</h2>
             <p>
               Send me a Email, or contact me through one of my other channels, with any questions or queries you may have. I’ll get back to you as
@@ -592,7 +646,7 @@
                   <img src="./src/assets/icons/icons/nav-arrow.svg" alt="Navigation arrow Icon" aria-hidden="true" loading="lazy" />
                   <h3>Address</h3>
                 </div>
-                <a href="https://www.google.com/maps/place/Bergen/" target="_blank" rel="noopener noreferrer">Bergen, Norway</a>
+                <address><a href="https://www.google.com/maps/place/Bergen/" target="_blank" rel="noopener noreferrer">Bergen, Norway</a></address>
               </div>
             </div>
             <div class="contact-card-container">
@@ -601,18 +655,18 @@
                   <img src="./src/assets/icons/icons/mail.svg" alt="Send an email" aria-hidden="true" loading="lazy" />
                   <h3>Email</h3>
                 </div>
-                <a href="mailto:torehirth@gmail.com">torehirth@gmail.com</a>
+                <address><a href="mailto:torehirth@gmail.com">torehirth@gmail.com</a></address>
               </div>
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
                   <img src="./src/assets/icons/icons/phone.svg" alt="Call or text me" aria-hidden="true" loading="lazy" />
                   <h3>Phone</h3>
                 </div>
-                <a href="tel:+4741553583">+47 415 53 583</a>
+                <address><a href="tel:+4741553583">+47 415 53 583</a></address>
               </div>
             </div>
             <div class="contact-card-container">
-              <nav class="contact-some-container">
+              <nav class="contact-some-container" aria-label="Social media links">
                 <ul class="some-links-wrapper">
                   <li class="some-link--wrapper">
                     <a
@@ -665,7 +719,7 @@
                 </ul>
               </nav>
             </div>
-          </address>
+          </div>
         </div>
       </section>
     </main>

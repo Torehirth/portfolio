@@ -84,6 +84,17 @@
   background-color: variables.$main-bg-colour;
   margin-top: 2rem; // space the headlines from the top
 
+  .experience-date {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+
+    p:first-of-type {
+      font-style: normal;
+      font-size: 1rem;
+    }
+  }
+
   p:last-of-type {
     font-style: italic;
   }
