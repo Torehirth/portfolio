@@ -1,39 +1,64 @@
 @use "../abstracts/variables";
 
 /* --- hamburger menu --- */
-.hamburger {
-  display: block;
-  position: relative;
-  width: 1.625rem;
-  cursor: pointer;
-  outline: none;
-  border: none;
+.hamburger,
+.mobile-nav {
+  display: none;
 }
 
-.hamburger-bar,
-.hamburger::after,
-.hamburger::before {
-  content: "";
-  display: block;
-  height: 1px;
-  width: 100%;
-  margin: 6px 0;
-  background-color: variables.$main-text-colour;
-  transition: variables.$transition;
-}
+@media (width <= 800px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    width: 1.625rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+  }
 
-.hamburger.is-active::after,
-.hamburger.is-active::before {
-  background-color: variables.$main-text-colour;
-}
+  .hamburger-bar,
+  .hamburger::after,
+  .hamburger::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    margin: 6px 0;
+    background-color: variables.$main-text-colour;
+    transition: variables.$transition;
+  }
 
-.hamburger.is-active .hamburger-bar {
-  opacity: 0;
-}
-.hamburger.is-active:before {
-  transform: rotate(-45deg) translate(-5px, 5px);
-}
+  .hamburger.is-active::after,
+  .hamburger.is-active::before {
+    background-color: variables.$main-text-colour;
+  }
 
-.hamburger.is-active:after {
-  transform: rotate(45deg) translate(-5px, -5px);
+  .hamburger.is-active .hamburger-bar {
+    opacity: 0;
+  }
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-5px, 5px);
+  }
+
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: variables.$main-bg-colour;
+    padding-top: 137px;
+    z-index: 98;
+    transition: variables.$transition;
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
 }
