@@ -7,7 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- SEO Meta Tags -->
     <meta name="description" content="Tore M. Hirth's portfolio showcasing front-end development projects using HTML, CSS, SCSS, and JavaScript." />
-    <meta name="keywords" content="Front-end development, HTML, CSS, SCSS, JavaScript, Portfolio, Web Design, UI, UX, Tore M. Hirth" />
+    <meta
+      name="keywords"
+      content="Front-end development, HTML, CSS, SCSS, JavaScript, Portfolio, Web Design, UI, UX, Tore M. Hirth, Tore Hirth, Tore, Hirth" />
     <meta name="author" content="Tore M. Hirth" />
     <!-- Ensures search engines can index page -->
     <meta name="robots" content="index, follow" />
@@ -75,10 +77,10 @@
           </div>
           <!-- Intro Content -->
           <article class="intro-container">
-            <header class="section-heading">
+            <div class="section-heading">
               <h1>Hello!</h1>
               <span class="heading-underline" aria-hidden="true"></span>
-            </header>
+            </div>
             <div class="name-container">
               <h2>My name is</h2>
               <img src="./src/assets/images/logo/logo-big.svg" alt="T logo" aria-hidden="true" />
@@ -444,7 +446,10 @@
               <section class="left">
                 <h2>Work experience</h2>
                 <article class="card-container">
-                  <div><time datetime="2019-10">October 2019 - </time><time datetime="present">Present</time></div>
+                  <div class="experience-date">
+                    <time datetime="2019-10">October 2019</time>
+                    <p>- Present</p>
+                  </div>
                   <h3>Customer service representative</h3>
                   <p>Trucknor Hordaland AS</p>
                   <ul>
@@ -495,7 +500,10 @@
               <div class="right">
                 <h2>Education</h2>
                 <article class="card-container">
-                  <div><time datetime="2022-10">October 2022 - </time><time datetime="present">Present</time></div>
+                  <div class="experience-date">
+                    <time datetime="2022-10">October 2022</time>
+                    <p>- Present</p>
+                  </div>
                   <h3>Front-End Development</h3>
                   <p>Noroff Higher Vocational School</p>
                   <ul>
@@ -573,7 +581,7 @@
             <span class="heading-underline" aria-hidden="true"></span>
           </header>
           <div class="spacing-4" aria-hidden="true"></div>
-          <address class="contact-container">
+          <div class="contact-container">
             <h2>I would love to hear from you!</h2>
             <p>
               Send me a Email, or contact me through one of my other channels, with any questions or queries you may have. I’ll get back to you as
@@ -592,7 +600,7 @@
                   <img src="./src/assets/icons/icons/nav-arrow.svg" alt="Navigation arrow Icon" aria-hidden="true" loading="lazy" />
                   <h3>Address</h3>
                 </div>
-                <a href="https://www.google.com/maps/place/Bergen/" target="_blank" rel="noopener noreferrer">Bergen, Norway</a>
+                <address><a href="https://www.google.com/maps/place/Bergen/" target="_blank" rel="noopener noreferrer">Bergen, Norway</a></address>
               </div>
             </div>
             <div class="contact-card-container">
@@ -601,18 +609,18 @@
                   <img src="./src/assets/icons/icons/mail.svg" alt="Send an email" aria-hidden="true" loading="lazy" />
                   <h3>Email</h3>
                 </div>
-                <a href="mailto:torehirth@gmail.com">torehirth@gmail.com</a>
+                <address><a href="mailto:torehirth@gmail.com">torehirth@gmail.com</a></address>
               </div>
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
                   <img src="./src/assets/icons/icons/phone.svg" alt="Call or text me" aria-hidden="true" loading="lazy" />
                   <h3>Phone</h3>
                 </div>
-                <a href="tel:+4741553583">+47 415 53 583</a>
+                <address><a href="tel:+4741553583">+47 415 53 583</a></address>
               </div>
             </div>
             <div class="contact-card-container">
-              <nav class="contact-some-container">
+              <nav class="contact-some-container" aria-label="Social media links">
                 <ul class="some-links-wrapper">
                   <li class="some-link--wrapper">
                     <a
@@ -665,7 +673,7 @@
                 </ul>
               </nav>
             </div>
-          </address>
+          </div>
         </div>
       </section>
     </main>

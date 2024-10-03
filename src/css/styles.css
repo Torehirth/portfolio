@@ -352,7 +352,7 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: left;
+  align-items: start;
   gap: 2rem;
   max-width: 90ch;
   position: relative;
@@ -423,7 +423,7 @@ footer {
 .project-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   justify-content: center;
   padding: 4rem 0 0;
 }
@@ -651,6 +651,15 @@ footer {
   background-color: #22252c;
   margin-top: 2rem;
 }
+.card-container .experience-date {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card-container .experience-date p:first-of-type {
+  font-style: normal;
+  font-size: 1rem;
+}
 .card-container p:last-of-type {
   font-style: italic;
 }
@@ -725,7 +734,7 @@ footer {
 .contact-card-wrapper {
   display: flex;
   flex-direction: column;
-  align-items: left;
+  align-items: start;
   text-align: left;
   gap: 1rem;
   padding: 2rem;
