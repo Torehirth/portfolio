@@ -194,6 +194,7 @@ footer {
   flex-direction: column;
   max-width: -moz-fit-content;
   max-width: fit-content;
+  position: relative;
 }
 
 .heading-underline {
@@ -352,30 +353,36 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  text-align: left;
   gap: 2rem;
   max-width: 90ch;
   position: relative;
   top: 50%;
   transform: translate(0, -70%);
 }
-.intro-container .name-container {
+
+.name-container {
   display: flex;
+  align-items: center;
+  justify-self: center;
+  color: #f0e9f2;
+  margin: 0 0 0.5rem 0;
+}
+.name-container h1 {
+  font-size: 3rem;
+  display: inline-flex;
   align-items: baseline;
-  gap: 1rem;
+  line-height: 0;
+}
+.name-container img {
+  display: inline-block;
   position: relative;
-  color: white;
+  bottom: -10px;
+  width: 5rem;
+  height: auto;
+  margin-right: -22px;
 }
-.intro-container .name-container .name-text {
-  font: 400 3rem "Unbounded", sans-serif;
-  letter-spacing: 2px;
-  line-height: 100%;
-  text-transform: uppercase;
-  position: absolute;
-  left: 35%;
-  bottom: 0;
-}
-.intro-container .intro-text {
+.name-container .intro-text {
   font-size: 1.5rem;
 }
 

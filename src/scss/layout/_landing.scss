@@ -7,31 +7,48 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  // align-items: baseline;
+  text-align: left;
   gap: 2rem;
   max-width: 90ch;
   position: relative;
   top: 50%;
   transform: translate(0, -70%);
+}
 
-  .name-container {
-    display: flex;
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  color: variables.$main-text-colour; // to cheat the contrast checker for the logo div
+  margin: 0 0 0.5rem 0;
+
+  h1 {
+    font-size: 3rem;
+    display: inline-flex;
     align-items: baseline;
-    gap: 1rem;
-    position: relative;
-    // to cheat the contrast checker for the logo div
-    color: white;
-
-    .name-text {
-      font: 400 3rem "Unbounded", sans-serif;
-      letter-spacing: 2px;
-      line-height: 100%;
-      text-transform: uppercase;
-      position: absolute;
-      left: 35%;
-      bottom: 0;
-    }
+    line-height: 0;
   }
+
+  img {
+    display: inline-block;
+    position: relative;
+    bottom: -10px;
+    width: 5rem;
+    height: auto;
+    margin-right: -22px;
+  }
+
+  //   .name-text {
+  //     font: 400 3rem "Unbounded", sans-serif;
+  //     letter-spacing: 2px;
+  //     line-height: 100%;
+  //     text-transform: uppercase;
+  //     position: absolute;
+  //     left: 35%;
+  //     bottom: 0;
+  //   }
+  // }
 
   .intro-text {
     font-size: 1.5rem;
