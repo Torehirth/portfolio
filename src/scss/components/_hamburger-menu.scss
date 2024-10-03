@@ -1,0 +1,39 @@
+@use "../abstracts/variables";
+
+/* --- hamburger menu --- */
+.hamburger {
+  display: block;
+  position: relative;
+  width: 1.625rem;
+  cursor: pointer;
+  outline: none;
+  border: none;
+}
+
+.hamburger-bar,
+.hamburger::after,
+.hamburger::before {
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  margin: 6px 0;
+  background-color: variables.$main-text-colour;
+  transition: variables.$transition;
+}
+
+.hamburger.is-active::after,
+.hamburger.is-active::before {
+  background-color: variables.$main-text-colour;
+}
+
+.hamburger.is-active .hamburger-bar {
+  opacity: 0;
+}
+.hamburger.is-active:before {
+  transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.hamburger.is-active:after {
+  transform: rotate(45deg) translate(-5px, -5px);
+}

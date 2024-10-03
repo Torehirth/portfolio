@@ -25,6 +25,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="./src/css/styles.css" />
     <!-- Script -->
+    <script type="module" src="./src/js/views/index.mjs"></script>
     <title>Tore M. Hirth | Front-end Development Portfolio</title>
   </head>
   <body>
@@ -35,7 +36,51 @@
             <div class="logo-container">
               <img src="./src/assets/images/logo/logo-red.svg" alt="Tore M. Hirth logo" aria-hidden="true" loading="lazy" />
             </div>
-            <nav aria-label="Primary">
+            <nav aria-label="Primary links">
+              <ul class="page-link-wrapper">
+                <li><a href="#projects" class="main-link">Projects</a></li>
+                <li><a href="#skills" class="main-link">Skills</a></li>
+                <li><a href="#about" class="main-link">About</a></li>
+                <li><a href="#experience" class="main-link">Experience</a></li>
+                <li><a href="#contact" class="main-link">Contact</a></li>
+              </ul>
+            </nav>
+            <div class="hamburger" title="hamburger menu">
+              <div class="hamburger-bar"></div>
+            </div>
+            <nav aria-label="Social Media">
+              <ul class="some-links-wrapper">
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="LinkedIn"
+                    ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://github.com/torehirth" target="_blank" aria-label="GitHub"
+                    ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.instagram.com/torehirth" target="_blank" aria-label="Instagram"
+                    ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon" loading="lazy"
+                  /></a>
+                </li>
+                <li>
+                  <a rel="noopener noreferrer" href="https://www.facebook.com/torehirth" target="_blank" aria-label="Facebook"
+                    ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon" loading="lazy"
+                  /></a>
+                </li>
+              </ul>
+            </nav>
+            <div class="colour-mode-wrapper">
+              <button aria-label="Toggle light mode">
+                <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" loading="lazy" />
+              </button>
+              <p>Light mode</p>
+            </div>
+          </div>
+          <aside class="mobile-nav">
+            <nav class="mobile-nav-links" aria-label="Primary links">
               <ul class="page-link-wrapper">
                 <li><a href="#projects" class="main-link">Projects</a></li>
                 <li><a href="#skills" class="main-link">Skills</a></li>
@@ -68,13 +113,21 @@
                 </li>
               </ul>
             </nav>
-            <div class="colour-mode-wrapper">
-              <button aria-label="Toggle light mode">
-                <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" loading="lazy" />
-              </button>
-              <p>Light mode</p>
-            </div>
-          </div>
+            <!-- <div class="some-icons-container">
+              <a href="https://www.facebook.com" target="_blank" class="mobile-some-link" title="facebook"
+                ><span>facebook</span><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://www.instagram.com" target="_blank" class="mobile-some-link" title="instagram"
+                ><span>instagram</span><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.twitter.com" target="_blank" class="mobile-some-link" title="twitter"
+                ><span>twitter</span><i class="fa-brands fa-x-twitter"></i
+              ></a>
+              <a href="https://www.github.com/torehirth" target="_blank" class="mobile-some-link" title="github"
+                ><span>github</span><i class="fa-brands fa-github"></i
+              ></a>
+            </div> -->
+          </aside>
           <!-- Intro Content -->
           <article class="intro-container">
             <div class="section-heading">

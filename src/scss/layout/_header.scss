@@ -27,6 +27,8 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 0;
+  position: relative; // to display header nav bar on top of the mobile nav.
+  z-index: 100; // to display header nav bar on top of the mobile nav.
 }
 
 .logo-container {
@@ -105,4 +107,37 @@
 .light-mode-btn:hover,
 .light-mode-btn:hover {
   filter: opacity(variables.$opacity);
+}
+
+// ----------------------------------
+// Media query < 900px
+// ----------------------------------
+@media (width <= 1000px) {
+  .header-bar-container nav:last-of-type {
+    display: none;
+  }
+}
+
+@media (width <= 850px) {
+  .header-bar-container nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100vh;
+    background-color: variables.$main-bg-colour;
+    padding-top: 137px;
+    z-index: 98;
+    transition: variables.$transition;
+  }
+
+  .mobile-nav.is-active {
+    left: 0;
+  }
 }
