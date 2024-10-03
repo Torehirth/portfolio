@@ -4,25 +4,6 @@
 // header / nav bar
 // ----------------------------------
 
-.landing-section {
-  background-color: variables.$main-bg-colour;
-}
-
-.outer-header-container {
-  height: 100vh;
-  width: 100%;
-  max-width: variables.$max-width;
-  margin: 0 auto;
-  padding: 0 1rem;
-  background: no-repeat url("../assets/images/profile1.webp") 100% center / 60% auto;
-  background-color: variables.$main-bg-colour;
-  background-blend-mode: luminosity;
-  overflow: hidden;
-  // Ensures the content is on top of the background image
-  position: relative;
-  z-index: 1;
-}
-
 .header-bar-container {
   display: flex;
   justify-content: space-between;
@@ -89,8 +70,8 @@
   }
 }
 
-.some-link:hover,
-.some-link:active {
+.some-links-wrapper a:hover,
+.some-links-wrapper a:active {
   filter: opacity(variables.$opacity);
 }
 
@@ -127,7 +108,9 @@
   .header-bar-container nav:last-of-type {
     display: none;
   }
+}
 
+@media (width <= 900px) {
   .page-link-wrapper .main-link {
     font-size: 1rem;
   }
@@ -142,9 +125,5 @@
   .colour-mode-wrapper img {
     width: 27px;
     height: 27px;
-  }
-
-  .outer-header-container {
-    background-position: 150% 100%;
   }
 }

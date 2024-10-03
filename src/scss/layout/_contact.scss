@@ -75,3 +75,30 @@
     filter: opacity(variables.$opacity);
   }
 }
+
+@media (width <= 500px) {
+  .contact-container {
+    margin: 0;
+  }
+  .contact-card-container {
+    flex-direction: column;
+  }
+  .contact-card-container:first-of-type {
+    margin-top: 0;
+  }
+
+  .contact-card-wrapper {
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (width <= 380px) {
+  .some-links-wrapper {
+    flex-wrap: wrap;
+    // flex-direction: column;
+    gap: 1rem;
+  }
+}

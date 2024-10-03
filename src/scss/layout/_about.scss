@@ -37,3 +37,33 @@
     color: variables.$light-grey-colour;
   }
 }
+
+@media (width <= 800px) {
+  .full-wrapper {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .secondary-wrapper {
+    align-items: center;
+    width: 100%;
+    max-width: variables.$max-characters-width;
+    img {
+      max-width: 200px;
+    }
+
+    figcaption {
+      max-width: variables.$max-characters-width;
+    }
+  }
+}
+
+@media (width <= 600px) {
+  .full-wrapper {
+    text-align: center;
+  }
+  .secondary-wrapper {
+    figcaption {
+      text-align: center;
+    }
+  }
+}

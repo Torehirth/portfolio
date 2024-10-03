@@ -97,13 +97,16 @@
 
   p:last-of-type {
     font-style: italic;
+    max-width: variables.$max-characters-width;
   }
   ul {
     list-style: disc;
     padding-left: 2rem;
     font-weight: 300;
+
     li {
       font-size: 1rem;
+      max-width: variables.$max-characters-width;
       a {
         font-size: 1rem;
       }
@@ -116,7 +119,7 @@
 }
 
 .optional-heading {
-  margin: 2rem 0 -1rem 0;
+  margin: 2rem 0 0;
 }
 
 #interests {
@@ -142,4 +145,59 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+@media (width <= 800px) {
+  .qualification-wrapper {
+    flex-direction: column;
+  }
+
+  .experience-outer-container {
+    flex-direction: column-reverse;
+  }
+
+  .left,
+  .right {
+    text-align: left;
+
+    h2 {
+      text-align: left;
+    }
+  }
+
+  .vertical-line {
+    display: none;
+  }
+
+  .card-container {
+    padding: 1rem;
+  }
+}
+
+@media (width <= 600px) {
+  .qualification-container {
+    text-align: center;
+
+    h2 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+
+  .experience-outer-container {
+    h2 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+    }
+  }
+
+  .card-container {
+    padding: 1rem;
+    text-align: center;
+    align-items: center;
+  }
 }
