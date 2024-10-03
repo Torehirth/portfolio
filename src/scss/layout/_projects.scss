@@ -25,7 +25,8 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  max-width: 500px;
+  // max-width: 500px;
+  max-width: variables.$max-characters-width;
 }
 
 .video-wrapper {
@@ -62,4 +63,40 @@
   border-bottom: variables.$accent-colour 1px solid;
   width: 100%;
   margin-top: 4rem;
+}
+
+@media (width <= 1000px) {
+  .project-wrapper {
+    // max-width: fit-content;
+    align-items: center;
+  }
+  .outer-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+  }
+
+  .text-outer-wrapper {
+    padding: 0;
+  }
+
+  .video-wrapper {
+    video {
+      max-width: variables.$max-characters-width;
+      min-width: auto;
+    }
+  }
+}
+
+@media (width <= 600px) {
+  .outer-container {
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .project-btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }
