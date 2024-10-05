@@ -10,6 +10,7 @@
   border: variables.$main-border;
   padding: 12px 24px;
   font-size: 1.125rem;
+  font-weight: 600;
 
   img {
     height: 1.25rem;
@@ -19,37 +20,51 @@
   &:hover,
   :active {
     transition: all variables.$transition;
-    filter: opacity(variables.$opacity);
+    // filter: opacity(variables.$opacity);
+    color: variables.$primary-colour;
+    img {
+      filter: invert(1);
+    }
+  }
+}
+
+@media (width <= 600px) {
+  .primary-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
   }
 }
 
 // Button hover effect that creates a shadow effect from top to bottom
 // ---------------------------------------------------------------------
-// .primary-btn::before {
-//   content: "";
-//   position: absolute;
-//   box-shadow: 1px 2px 7px variables.$secondary-colour;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 0%;
-//   transition: height variables.$transition, opacity variables.$transition;
-//   z-index: -1;
-//   opacity: 0;
-// }
+.primary-btn::before {
+  content: "";
+  position: absolute;
+  // box-shadow: 1px 2px 7px variables.$secondary-colour;
+  background-color: variables.$secondary-colour;
+  color: variables.$primary-colour;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  transition: height variables.$transition, opacity variables.$transition;
+  z-index: -1;
+  opacity: 0;
+}
 
-// .primary-btn:hover::before {
-//   height: 100%;
-//   opacity: 1;
-// }
+.primary-btn:hover::before {
+  height: 100%;
+  opacity: 1;
+  color: variables.$primary-colour;
+}
 
-// // button active effect
-// .primary-btn:active {
-//   border: 1px solid variables.$white-colour;
-// }
+// button active effect
+.primary-btn:active {
+  border: 1px solid variables.$white-colour;
+}
 
-// .primary-btn:active::before {
-//   // removes the shadow effect
-//   width: 100%;
-//   opacity: 0;
-// }
+.primary-btn:active::before {
+  // removes the shadow effect
+  width: 100%;
+  opacity: 0;
+}
