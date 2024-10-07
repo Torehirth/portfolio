@@ -36,8 +36,6 @@
   padding: 2rem;
 
   a {
-    font-weight: 300;
-
     &:hover,
     :active {
       filter: opacity(variables.$opacity);
@@ -68,8 +66,9 @@
   align-items: center;
   gap: 0.5rem;
   padding: 0.5rem;
-  font-size: 0.75rem;
-
+  p {
+    font-size: 0.75rem;
+  }
   &:hover,
   :active {
     filter: opacity(variables.$opacity);
@@ -95,10 +94,14 @@
   }
 }
 
-@media (width <= 380px) {
+@media (width <= 400px) {
   .some-links-wrapper {
     flex-wrap: wrap;
-    // flex-direction: column;
-    gap: 1rem;
+  }
+
+  .contact-some-link {
+    p {
+      display: none;
+    }
   }
 }

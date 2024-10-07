@@ -1,0 +1,49 @@
+@use "../abstracts/variables";
+
+.btn-down {
+  display: inline-block;
+  padding: 1rem;
+  background-color: transparent;
+  border: variables.$main-border;
+  border-radius: 50%;
+  line-height: 0;
+  position: relative;
+  &:hover,
+  :active {
+    img {
+      filter: brightness(0) invert(0); // change icon colour when hovered
+    }
+  }
+}
+
+.btn-down::before {
+  content: "";
+  position: absolute;
+  background-color: variables.$secondary-colour;
+  border-radius: inherit;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  transition: height variables.$transition, opacity variables.$transition;
+  z-index: -1;
+  opacity: 0;
+  color: variables.$primary-colour;
+}
+
+.btn-down:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+// button active effect
+.btn-down:active {
+  border: 1px solid variables.$white-colour;
+}
+
+.btn-down:active::before {
+  // removes the background colour
+  width: 100%;
+  opacity: 0;
+}

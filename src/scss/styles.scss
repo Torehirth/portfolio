@@ -8,10 +8,10 @@
 @use "./abstracts/fonts";
 
 // use components
-@use "./components/navbar";
 @use "./components/primary-button";
 @use "./components/universal-section-style";
-@use "./components/hamburger-menu";
+@use "./components/mobile-nav";
+@use "./components/btn-down";
 
 // use layouts
 @use "./layout/header";

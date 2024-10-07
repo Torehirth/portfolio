@@ -75,3 +75,16 @@
     animation-play-state: paused;
   }
 }
+
+@media (width <= 600px) {
+  .skill-wrapper {
+    gap: 0.5rem;
+    width: 100px;
+    height: 100px;
+
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+}

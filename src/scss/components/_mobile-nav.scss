@@ -48,12 +48,15 @@
     position: fixed;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 4rem;
     top: 0;
     left: 100%;
     width: 100%;
     height: 100vh;
-    background-color: variables.$main-bg-colour;
-    padding-top: 137px;
+    background-color: variables.$sub-bg-colour;
+    padding-top: 150px;
     z-index: 98;
     transition: variables.$transition;
   }
@@ -61,4 +64,13 @@
   .mobile-nav.is-active {
     left: 0;
   }
+
+  .page-link-wrapper {
+    flex-direction: column;
+  }
+}
+
+// to not being able to scroll while mobile nav is displaying
+.no-scroll {
+  overflow: hidden;
 }
