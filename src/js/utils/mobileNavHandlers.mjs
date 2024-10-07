@@ -4,12 +4,14 @@ export function toggleMobileNav() {
   // toggles the hamburger menu and mobile nav.
   hamburgerMenu.classList.toggle("is-active");
   mobileNav.classList.toggle("is-active");
+  disableScrollWhenMobileNavOpen();
 }
 
 // close the mobile nav by removing classes
 export function closeMobileNav() {
   hamburgerMenu.classList.remove("is-active");
   mobileNav.classList.remove("is-active");
+  disableScrollWhenMobileNavOpen();
 }
 
 // close the nav when clicked outside an "a" tag or outside the hamburger icon.
@@ -20,11 +22,12 @@ export function closeMobileNavByClickOutside(e) {
   }
 }
 
-// if mobile nav is open stop page from scrolling
 export const disableScrollWhenMobileNavOpen = () => {
-  if (hamburgerMenu.classList.contains("is-active")) {
-    HTMLbody.style.overflow = "hidden";
+  if (mobileNav.classList.contains("is-active")) {
+    console.log("Nav is active, disabling scroll");
+    HTMLbody.classList.add("no-scroll");
   } else {
-    HTMLbody.style.overflow = "visible";
+    console.log("Nav is not active, enabling scroll");
+    HTMLbody.classList.remove("no-scroll");
   }
 };

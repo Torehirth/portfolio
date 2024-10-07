@@ -315,7 +315,7 @@ footer {
     left: 100%;
     width: 100%;
     height: 100vh;
-    background-color: #22252c;
+    background-color: #363d48;
     padding-top: 150px;
     z-index: 98;
     transition: 0.3s ease-in-out;
@@ -327,6 +327,10 @@ footer {
     flex-direction: column;
   }
 }
+.no-scroll {
+  overflow: hidden;
+}
+
 .btn-down {
   display: inline-block;
   padding: 1rem;
@@ -643,7 +647,7 @@ footer {
     align-items: center;
     text-align: center;
     gap: 2rem;
-    transform: translate(0, -85%);
+    transform: translate(0, -90%);
   }
   .intro-container:last-child {
     padding-top: 1rem;
