@@ -79,57 +79,6 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, -50%);
-  p {
-    font-weight: 600;
-  }
-}
-
-.btn-down {
-  display: inline-block;
-  padding: 1rem;
-  background-color: transparent;
-  border: variables.$main-border;
-  border-radius: 50%;
-  line-height: 0;
-  position: relative;
-  &:hover,
-  :active {
-    img {
-      filter: brightness(0) invert(0); // change icon colour when hovered
-    }
-  }
-}
-
-.btn-down::before {
-  content: "";
-  position: absolute;
-  background-color: variables.$secondary-colour;
-  border-radius: inherit;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20%;
-  transition: height variables.$transition, opacity variables.$transition;
-  z-index: -1;
-  opacity: 0;
-  color: variables.$primary-colour;
-}
-
-.btn-down:hover::before {
-  width: 100%;
-  height: 100%;
-  opacity: 1;
-}
-
-// button active effect
-.btn-down:active {
-  border: 1px solid variables.$white-colour;
-}
-
-.btn-down:active::before {
-  // removes the background colour
-  width: 100%;
-  opacity: 0;
 }
 
 // ----------------------------------
@@ -177,17 +126,22 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
-    transform: translate(0, -80%);
-    padding-bottom: 2rem;
+    transform: translate(0, -85%);
   }
+
+  .intro-container:last-child {
+    padding-top: 1rem;
+  }
+
   .intro-btn-container {
     flex-direction: column;
     gap: 1rem;
-    margin-top: 1rem;
   }
+
   .btn-down-container {
     text-align: center;
-    transform: translate(-50%, -65%);
+    transform: translate(-50%, -75%);
+    gap: 0.5rem;
   }
 }
 
@@ -197,6 +151,22 @@
       h1 {
         font-size: 1.5rem;
       }
+    }
+  }
+}
+
+@media (width <= 320px) {
+  .intro-container {
+    .name-container {
+      h1 {
+        font-size: 1.25rem;
+      }
+    }
+  }
+
+  .btn-down-container {
+    p {
+      font-size: 0.875rem;
     }
   }
 }
