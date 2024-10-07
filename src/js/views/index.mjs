@@ -1,4 +1,8 @@
 import { mobileNavEventListeners } from "../utils/mobileNavEventListeners.mjs";
 
-// open/closes the mobile nav
+import { renderSkillElements } from "../utils/renderSkillElements.mjs";
+
+// Open/close the mobile nav
 mobileNavEventListeners();
+// Render Skill elements
+renderSkillElements();
