@@ -39,6 +39,7 @@
 .logo-container {
   // Add white colour to the logo to cheat the contrast ratio
   color: variables.$main-text-colour;
+  line-height: 0;
 }
 
 .links-container {
