@@ -13,8 +13,8 @@
   max-width: variables.$max-width;
   margin: 0 auto;
   padding: 0 1rem;
-  background: no-repeat url("../assets/images/profile1.webp") 100%
-    center / 60% auto;
+  background: no-repeat url("../assets/images/profile1.webp") 100% center /
+    60% auto;
   background-color: variables.$main-bg-colour;
   background-blend-mode: luminosity;
   overflow: hidden;
@@ -32,7 +32,7 @@
   max-width: 90ch;
   position: relative;
   top: 50%;
-  transform: translate(0, -70%);
+  transform: translate(0, -50%);
 }
 
 .name-container {
@@ -69,7 +69,7 @@
   align-items: center;
   gap: 2rem;
   position: relative; // To display hover state
-  z-index: 5; // To display hover state
+  z-index: 1; // To display hover state
 }
 
 .btn-down-container {
@@ -129,7 +129,7 @@
     align-items: center;
     text-align: center;
     gap: 2rem;
-    transform: translate(0, -90%);
+    transform: translate(0, -70%);
   }
 
   .intro-container:last-child {
@@ -143,7 +143,7 @@
 
   .btn-down-container {
     text-align: center;
-    transform: translate(-50%, -75%);
+    transform: translate(-50%, -80%);
     gap: 0.5rem;
   }
 }

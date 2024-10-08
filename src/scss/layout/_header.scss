@@ -2,13 +2,38 @@
 // ----------------------------------
 // header / nav bar
 // ----------------------------------
-.header-bar-container {
+.header-bar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
-  position: relative; // to display header nav bar on top of the mobile nav.
-  z-index: 100; // to display header nav bar on top of the mobile nav.
+  padding: 1rem 1rem;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  max-width: variables.$max-width;
+  margin: 0 auto;
+  transition: all variables.$transition;
+}
+
+.header-bar-container {
+  visibility: hidden; // hides the nav bar faster on page refresh
+  position: fixed;
+  width: 100%;
+  left: 0;
+  transition: all variables.$transition;
+  z-index: 9999;
+
+  // Classes thats get implemented when scrolling
+  &.scroll-up {
+    background-color: variables.$sub-bg-colour;
+    opacity: 0.9;
+    padding: 1.5rem;
+  }
+  &.scroll-down {
+    opacity: 0;
+  }
 }
 
 .logo-container {

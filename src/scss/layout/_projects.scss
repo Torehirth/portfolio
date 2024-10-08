@@ -55,8 +55,7 @@
   display: flex;
   align-items: flex-start;
   gap: 2rem;
-  position: relative; // To display hover state
-  z-index: 5; // To display hover state
+  z-index: 0; // To display hover state
 }
 
 .project-underline {

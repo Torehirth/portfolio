@@ -52,6 +52,11 @@
 // button active effect
 .primary-btn:active {
   border: 1px solid variables.$main-text-colour;
+  color: variables.$main-text-colour;
+
+  img {
+    filter: invert(0);
+  }
 }
 
 .primary-btn:active::before {

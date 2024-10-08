@@ -1,4 +1,8 @@
-import { hamburgerMenu, mobileNav, HTMLbody } from "../data/constants.mjs";
+import {
+  hamburgerMenu,
+  mobileNav,
+  HTMLbody,
+} from "../../data/constants.mjs";
 
 export function toggleMobileNav() {
   // toggles the hamburger menu and mobile nav.

@@ -1,5 +1,14 @@
-import { hamburgerMenu, mobileSoMeLinks, navLinks } from "../data/constants.mjs";
-import { toggleMobileNav, closeMobileNav, closeMobileNavByClickOutside, disableScrollWhenMobileNavOpen } from "./mobileNavHandlers.mjs";
+import {
+  hamburgerMenu,
+  mobileSoMeLinks,
+  navLinks,
+} from "../../data/constants.mjs";
+import {
+  toggleMobileNav,
+  closeMobileNav,
+  closeMobileNavByClickOutside,
+  disableScrollWhenMobileNavOpen,
+} from "./mobileNavHandlers.mjs";
 
 // handle all event listeners on the mobile nav
 export function mobileNavEventListeners() {
