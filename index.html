@@ -5,22 +5,30 @@
     <script>
       (function (w, d, s, l, i) {
         w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        w[l].push({
+          "gtm.start": new Date().getTime(),
+          event: "gtm.js",
+        });
         var f = d.getElementsByTagName(s)[0],
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src =
+          "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-PMGFC8B8");
     </script>
     <!-- End Google Tag Manager -->
     <!-- Basic Page Info -->
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Tore M. Hirth's portfolio showcasing front-end development projects using HTML, CSS, SCSS, and JavaScript." />
+    <meta
+      name="description"
+      content="Tore M. Hirth's portfolio showcasing front-end development projects using HTML, CSS, SCSS, and JavaScript." />
     <meta
       name="keywords"
       content="Front-end development, HTML, CSS, SCSS, JavaScript, Portfolio, Web Design, UI, UX, Tore M. Hirth, Tore Hirth, Tore, Hirth" />
@@ -28,14 +36,25 @@
     <!-- Ensures search engines can index page -->
     <meta name="robots" content="index, follow" />
     <!-- Open Graph / Social Media Meta Tags -->
-    <meta property="og:title" content="Tore M. Hirth | Front-end Development Portfolio" />
-    <meta property="og:site_name" content="Tore M. Hirth | Front-end Development Portfolio" />
-    <meta property="og:description" content="Explore my portfolio of front-end projects, designed with modern web technologies." />
-    <meta property="og:image" content="URL to an image representing your site" />
+    <meta
+      property="og:title"
+      content="Tore M. Hirth | Front-end Development Portfolio" />
+    <meta
+      property="og:site_name"
+      content="Tore M. Hirth | Front-end Development Portfolio" />
+    <meta
+      property="og:description"
+      content="Explore my portfolio of front-end projects, designed with modern web technologies." />
+    <meta
+      property="og:image"
+      content="URL to an image representing your site" />
     <meta property="og:url" content="https://torehirth.no/" />
     <meta property="og:type" content="website" />
     <!-- Favicon -->
-    <link rel="icon" href="./src/assets/icons/favicon/favicon.ico" type="image/x-icon" />
+    <link
+      rel="icon"
+      href="./src/assets/icons/favicon/favicon.ico"
+      type="image/x-icon" />
     <!-- External CSS -->
     <link rel="stylesheet" href="./src/css/styles.css" />
     <!-- Script -->
@@ -43,7 +62,9 @@
     <title>Tore M. Hirth | Front-end Development Portfolio</title>
   </head>
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NZPHQGRDE4"></script>
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-NZPHQGRDE4"></script>
   <!-- Google Analytics -->
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -57,7 +78,11 @@
   <body id="body">
     <!-- Google Tag Manager (noscript) -->
     <noscript
-      ><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PMGFC8B8" height="0" width="0" style="display: none; visibility: hidden"></iframe
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-PMGFC8B8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <!--------- Landing Section ---------->
@@ -67,38 +92,80 @@
           <!------ Desktop header bar / Nav ------>
           <div class="header-bar-container">
             <div class="logo-container">
-              <img src="./src/assets/images/logo/logo-red.svg" alt="Tore M. Hirth logo" aria-hidden="true" loading="lazy" />
+              <img
+                src="./src/assets/images/logo/logo-red.svg"
+                alt="Tore M. Hirth logo"
+                aria-hidden="true"
+                loading="lazy" />
             </div>
             <nav aria-label="Primary links">
               <ul class="page-link-wrapper">
-                <li><a href="#projects" class="main-link">Projects</a></li>
-                <li><a href="#skills" class="main-link">Skills</a></li>
+                <li>
+                  <a href="#projects" class="main-link">Projects</a>
+                </li>
+                <li>
+                  <a href="#skills" class="main-link">Skills</a>
+                </li>
                 <li><a href="#about" class="main-link">About</a></li>
-                <li><a href="#experience" class="main-link">Experience</a></li>
-                <li><a href="#contact" class="main-link">Contact</a></li>
+                <li>
+                  <a href="#experience" class="main-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="main-link">Contact</a>
+                </li>
               </ul>
             </nav>
 
             <nav aria-label="Social Media">
               <ul class="some-links-wrapper">
                 <li>
-                  <a rel="noopener noreferrer" href="https://www.linkedin.com/in/torehirth" target="_blank" aria-label="LinkedIn"
-                    ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" loading="lazy"
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/torehirth"
+                    target="_blank"
+                    aria-label="LinkedIn"
+                    ><img
+                      src="./src/assets/icons/icons/linkedin.svg"
+                      alt="LinkedIn icon"
+                      loading="lazy"
                   /></a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="https://github.com/torehirth" target="_blank" aria-label="GitHub"
-                    ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" loading="lazy"
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://github.com/torehirth"
+                    target="_blank"
+                    aria-label="GitHub"
+                    ><img
+                      src="./src/assets/icons/icons/github.svg"
+                      alt="GitHub icon"
+                      loading="lazy"
                   /></a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="https://www.instagram.com/torehirth" target="_blank" aria-label="Instagram"
-                    ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon" loading="lazy"
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://www.instagram.com/torehirth"
+                    target="_blank"
+                    aria-label="Instagram"
+                    ><img
+                      src="./src/assets/icons/icons/instagram.svg"
+                      alt="Instagram icon"
+                      loading="lazy"
                   /></a>
                 </li>
                 <li>
-                  <a rel="noopener noreferrer" href="https://www.facebook.com/torehirth" target="_blank" aria-label="Facebook"
-                    ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon" loading="lazy"
+                  <a
+                    rel="noopener noreferrer"
+                    href="https://www.facebook.com/torehirth"
+                    target="_blank"
+                    aria-label="Facebook"
+                    ><img
+                      src="./src/assets/icons/icons/facebook.svg"
+                      alt="Facebook icon"
+                      loading="lazy"
                   /></a>
                 </li>
               </ul>
@@ -107,7 +174,11 @@
               <!-- colour mode -->
               <div class="colour-mode-wrapper">
                 <button aria-label="Toggle light mode">
-                  <img class="light-mode-btn" src="./src/assets/icons/icons/Light-mode.svg" alt="Light mode icon" loading="lazy" />
+                  <img
+                    class="light-mode-btn"
+                    src="./src/assets/icons/icons/Light-mode.svg"
+                    alt="Light mode icon"
+                    loading="lazy" />
                 </button>
                 <p>Light mode</p>
               </div>
@@ -121,11 +192,21 @@
           <aside id="mobile-nav" class="mobile-nav">
             <nav class="mobile-nav-links" aria-label="Primary links">
               <ul class="page-link-wrapper">
-                <li><a href="#projects" class="main-link">Projects</a></li>
-                <li><a href="#skills" class="main-link">Skills</a></li>
+                <li>
+                  <a href="#projects" class="main-link">Projects</a>
+                </li>
+                <li>
+                  <a href="#skills" class="main-link">Skills</a>
+                </li>
                 <li><a href="#about" class="main-link">About</a></li>
-                <li><a href="#experience" class="main-link">Experience</a></li>
-                <li><a href="#contact" class="main-link">Contact</a></li>
+                <li>
+                  <a href="#experience" class="main-link"
+                    >Experience</a
+                  >
+                </li>
+                <li>
+                  <a href="#contact" class="main-link">Contact</a>
+                </li>
               </ul>
             </nav>
             <nav aria-label="Social Media">
@@ -137,7 +218,11 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Follow me on LinkedIn"
-                    ><img src="./src/assets/icons/icons/linkedin.svg" aria-hidden="true" loading="lazy" alt="Visit my LinkedIn profile" />
+                    ><img
+                      src="./src/assets/icons/icons/linkedin.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                      alt="Visit my LinkedIn profile" />
                     <p>LinkedIn</p></a
                   >
                 </li>
@@ -148,7 +233,11 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Follow me on GitHub">
-                    <img src="./src/assets/icons/icons/github.svg" aria-hidden="true" loading="lazy" alt="Visit my GitHub profile" />
+                    <img
+                      src="./src/assets/icons/icons/github.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                      alt="Visit my GitHub profile" />
                     <p>GitHub</p></a
                   >
                 </li>
@@ -159,7 +248,11 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Follow me on Instagram"
-                    ><img src="./src/assets/icons/icons/instagram.svg" aria-hidden="true" loading="lazy" alt="Follow my Instagram profile" />
+                    ><img
+                      src="./src/assets/icons/icons/instagram.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                      alt="Follow my Instagram profile" />
                     <p>Instagram</p></a
                   >
                 </li>
@@ -170,7 +263,11 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Follow me on Facebook">
-                    <img src="./src/assets/icons/icons/facebook.svg" aria-hidden="true" loading="lazy" alt="Facebook icon" />
+                    <img
+                      src="./src/assets/icons/icons/facebook.svg"
+                      aria-hidden="true"
+                      loading="lazy"
+                      alt="Facebook icon" />
                     <p>Facebook</p></a
                   >
                 </li>
@@ -181,15 +278,23 @@
           <article class="intro-container">
             <div class="section-heading">
               <div class="name-container">
-                <h1 aria-label="heading together with logo results in Tore M. Hirth">
-                  I'm<img src="./src/assets/images/logo/logo-big.svg" alt="logo shaped as a T" aria-hidden="false" />ore M. Hirth
+                <h1
+                  aria-label="heading together with logo results in Tore M. Hirth">
+                  I'm<img
+                    src="./src/assets/images/logo/logo-big.svg"
+                    alt="logo shaped as a T"
+                    aria-hidden="false" />ore M. Hirth
                 </h1>
               </div>
-              <span class="heading-underline" aria-hidden="true"></span>
+              <span
+                class="heading-underline"
+                aria-hidden="true"></span>
             </div>
             <p class="intro-text">
-              Aspiring Front-End Developer that strives to create intuitive and engaging user experiences. I love designing clean and accessible
-              interfaces that brings simplicity and functionality together.
+              Aspiring Front-End Developer that strives to create
+              intuitive and engaging user experiences. I love
+              designing clean and accessible interfaces that brings
+              simplicity and functionality together.
             </p>
             <div class="intro-btn-container">
               <a
@@ -198,7 +303,11 @@
                 href="https://github.com/torehirth"
                 class="primary-btn"
                 aria-label="Visit my GitHub profile"
-                >My GitHub<img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" aria-hidden="true" loading="lazy" />
+                >My GitHub<img
+                  src="./src/assets/icons/icons/github.svg"
+                  alt="GitHub icon"
+                  aria-hidden="true"
+                  loading="lazy" />
               </a>
               <a
                 rel="noopener noreferrer"
@@ -206,15 +315,25 @@
                 href="https://www.linkedin.com/in/torehirth"
                 class="primary-btn"
                 aria-label="Visit my LinkedIn profile"
-                >My LinkedIn<img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" aria-hidden="true" loading="lazy" />
+                >My LinkedIn<img
+                  src="./src/assets/icons/icons/linkedin.svg"
+                  alt="LinkedIn icon"
+                  aria-hidden="true"
+                  loading="lazy" />
               </a>
             </div>
           </article>
           <div class="btn-down-container">
             <p>Take a look at my projects</p>
-            <a class="btn-down" href="#projects" aria-label="Navigate down to projects section">
+            <a
+              class="btn-down"
+              href="#projects"
+              aria-label="Navigate down to projects section">
               <!-- <img src="./src/assets/icons/icons/button-down.svg" alt="Down arrow icon" loading="lazy" /> -->
-              <img src="./src/assets/icons/icons/double_arrow.svg" alt="Down arrow icon" loading="lazy" />
+              <img
+                src="./src/assets/icons/icons/double_arrow.svg"
+                alt="Down arrow icon"
+                loading="lazy" />
             </a>
           </div>
         </div>
@@ -239,19 +358,29 @@
                 <div class="text-inner-wrapper">
                   <h3>Description:</h3>
                   <p>
-                    Out 'n About is a blog website developed for Project Exam 1 in my Front-End Development course. The website showcases a clean,
-                    accessible design and dynamic functionality powered by JavaScript and WordPress, a headless CMS.
+                    Out 'n About is a blog website developed for
+                    Project Exam 1 in my Front-End Development course.
+                    The website showcases a clean, accessible design
+                    and dynamic functionality powered by JavaScript
+                    and WordPress, a headless CMS.
                   </p>
-                  <button aria-label="Open modal to read more about Out 'n About project">Read more..</button>
+                  <button
+                    aria-label="Open modal to read more about Out 'n About project">
+                    Read more..
+                  </button>
                 </div>
                 <div class="project-btn-container">
                   <a
-                    href="https://github.com/Torehirth/out-n-about"
                     class="primary-btn"
+                    href="https://github.com/Torehirth/out-n-about"
                     aria-label="View Out 'n About project repository on GitHub"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View repository<img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" aria-hidden="true" loading="lazy" />
+                    >View repository<img
+                      src="./src/assets/icons/icons/github.svg"
+                      alt="GitHub icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                   <a
                     href="https://tmh-outnabout.netlify.app/"
@@ -259,13 +388,23 @@
                     aria-label="Visit the live Out 'n About website"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Go to website<img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" aria-hidden="true" loading="lazy" />
+                    >Go to website<img
+                      src="./src/assets/icons/icons/navigate.svg"
+                      alt="LinkedIn icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                 </div>
               </div>
               <div class="video-wrapper">
-                <video autoplay loop muted aria-label="Video showcasing the Out 'n About website">
-                  <source src="./src/assets/images/outnabout.mp4" type="video/mp4" />
+                <video
+                  autoplay
+                  loop
+                  muted
+                  aria-label="Video showcasing the Out 'n About website">
+                  <source
+                    src="./src/assets/images/outnabout.mp4"
+                    type="video/mp4" />
                   <!-- Display message to the user in case browser does not support video -->
                   Your browser does not support the video tag.
                 </video>
@@ -284,10 +423,17 @@
                 <div class="text-inner-wrapper">
                   <h3>Description:</h3>
                   <p>
-                    This project is part of my front-end development coursework, where I developed an online store called Rainy Days for jackets. The
-                    goal was to create a dynamic website that uses the WordPress REST API to manage and display products from WooCommerce.
+                    This project is part of my front-end development
+                    coursework, where I developed an online store
+                    called Rainy Days for jackets. The goal was to
+                    create a dynamic website that uses the WordPress
+                    REST API to manage and display products from
+                    WooCommerce.
                   </p>
-                  <button aria-label="Open modal to read more about Rainy Days project">Read more..</button>
+                  <button
+                    aria-label="Open modal to read more about Rainy Days project">
+                    Read more..
+                  </button>
                 </div>
                 <div class="project-btn-container">
                   <a
@@ -296,7 +442,11 @@
                     aria-label="View Rainy Days project repository on GitHub"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View repository<img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" aria-hidden="true" loading="lazy" />
+                    >View repository<img
+                      src="./src/assets/icons/icons/github.svg"
+                      alt="GitHub icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                   <a
                     href="https://tmh-rainydays-cms.netlify.app/"
@@ -304,13 +454,23 @@
                     aria-label="Visit the live Rainy Days website"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Go to website<img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" aria-hidden="true" loading="lazy" />
+                    >Go to website<img
+                      src="./src/assets/icons/icons/navigate.svg"
+                      alt="LinkedIn icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                 </div>
               </div>
               <div class="video-wrapper">
-                <video autoplay loop muted aria-label="Video showcasing the Rainy Days website">
-                  <source src="./src/assets/images/rainy-days.mp4" type="video/mp4" />
+                <video
+                  autoplay
+                  loop
+                  muted
+                  aria-label="Video showcasing the Rainy Days website">
+                  <source
+                    src="./src/assets/images/rainy-days.mp4"
+                    type="video/mp4" />
                   <!-- Display message to the user in case browser does not support video -->
                   Your browser does not support the video tag.
                 </video>
@@ -329,11 +489,18 @@
                 <div class="text-inner-wrapper">
                   <h3>Description:</h3>
                   <p>
-                    This is my semester project for the first semester of Front-End Development. The website is responsive and engaging. It was
-                    designed for a children's museum, targeting kids aged 7-15 and families. It features a playful yet simple design, and emphasizes
-                    clean code, and a mobile-first approach.
+                    This is my semester project for the first semester
+                    of Front-End Development. The website is
+                    responsive and engaging. It was designed for a
+                    children's museum, targeting kids aged 7-15 and
+                    families. It features a playful yet simple design,
+                    and emphasizes clean code, and a mobile-first
+                    approach.
                   </p>
-                  <button aria-label="Open modal to read more about Community Science Museum project">Read more..</button>
+                  <button
+                    aria-label="Open modal to read more about Community Science Museum project">
+                    Read more..
+                  </button>
                 </div>
                 <div class="project-btn-container">
                   <a
@@ -342,7 +509,11 @@
                     aria-label="View Community Science Museum project repository on GitHub"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >View repository<img src="./src/assets/icons/icons/github.svg" alt="GitHub icon" aria-hidden="true" loading="lazy" />
+                    >View repository<img
+                      src="./src/assets/icons/icons/github.svg"
+                      alt="GitHub icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                   <a
                     href="https://tmh-semester-project-1.netlify.app/"
@@ -350,13 +521,23 @@
                     aria-label="Visit the live Community Science Museum website"
                     target="_blank"
                     rel="noopener noreferrer"
-                    >Go to website<img src="./src/assets/icons/icons/navigate.svg" alt="LinkedIn icon" aria-hidden="true" loading="lazy" />
+                    >Go to website<img
+                      src="./src/assets/icons/icons/navigate.svg"
+                      alt="LinkedIn icon"
+                      aria-hidden="true"
+                      loading="lazy" />
                   </a>
                 </div>
               </div>
               <div class="video-wrapper">
-                <video autoplay loop muted aria-label="Video showcasing the Community Science Museum website">
-                  <source src="./src/assets/images//community-science-museum.mp4" type="video/mp4" />
+                <video
+                  autoplay
+                  loop
+                  muted
+                  aria-label="Video showcasing the Community Science Museum website">
+                  <source
+                    src="./src/assets/images//community-science-museum.mp4"
+                    type="video/mp4" />
                   <!-- Display message to the user in case browser does not support video -->
                   Your browser does not support the video tag.
                 </video>
@@ -373,7 +554,9 @@
             <span class="heading-underline" aria-hidden="true"></span>
           </header>
           <div class="spacing-4" aria-hidden="true"></div>
-          <div class="skills-container" aria-label="infinite horizontal spinning carousel with tool stack icons">
+          <div
+            class="skills-container"
+            aria-label="infinite horizontal spinning carousel with tool stack icons">
             <div class="skill-slider"></div>
             <!-- duplicating the HTML, through JS, to get the infinite slide motion -->
             <div class="skill-slider"></div>
@@ -394,31 +577,53 @@
                 <div class="main-wrapper">
                   <h2>Hi there!</h2>
                   <p>
-                    My name is Tore M. Hirth, a dedicated front-end developer in training, I’m halfway through my formal education in front-end
-                    development, where I have gained solid experience in HTML, CSS, JavaScript, and WordPress. I have hands-on skills in creating
-                    responsive, accessible, and user-centered websites using modern web technologies. My knowledge of GitHub and version control helps
-                    ensure smooth project collaboration, while my work with CSS and JavaScript allows me to bring dynamic designs and functionality to
-                    life.
+                    My name is Tore M. Hirth, a dedicated front-end
+                    developer in training, I’m halfway through my
+                    formal education in front-end development, where I
+                    have gained solid experience in HTML, CSS,
+                    JavaScript, and WordPress. I have hands-on skills
+                    in creating responsive, accessible, and
+                    user-centered websites using modern web
+                    technologies. My knowledge of GitHub and version
+                    control helps ensure smooth project collaboration,
+                    while my work with CSS and JavaScript allows me to
+                    bring dynamic designs and functionality to life.
                   </p>
                   <p>
-                    I'm currently working on various projects, including "Out 'n About," an online blog built with WordPress as a headless CMS and the
-                    WordPress REST API. In this project, I fetch and display product data using JavaScript. I also focus on optimizing performance and
-                    ensuring compliance with web standards such as WCAG for accessibility.
+                    I'm currently working on various projects,
+                    including "Out 'n About," an online blog built
+                    with WordPress as a headless CMS and the WordPress
+                    REST API. In this project, I fetch and display
+                    product data using JavaScript. I also focus on
+                    optimizing performance and ensuring compliance
+                    with web standards such as WCAG for accessibility.
                   </p>
                   <p>
-                    Beyond technical proficiency, I’m passionate about UX/UI design principles, understanding the importance of designing with
-                    empathy, and creating intuitive interfaces that enhance user experiences. My academic journey and ongoing projects have given me
-                    strong problem-solving skills, creativity, and an eye for detail.
+                    Beyond technical proficiency, I’m passionate about
+                    UX/UI design principles, understanding the
+                    importance of designing with empathy, and creating
+                    intuitive interfaces that enhance user
+                    experiences. My academic journey and ongoing
+                    projects have given me strong problem-solving
+                    skills, creativity, and an eye for detail.
                   </p>
                   <p>
-                    Looking forward, I'm excited to leverage my growing expertise to build robust digital experiences, contribute to impactful
-                    projects, and continue evolving as a developer in the dynamic world of front-end development.
+                    Looking forward, I'm excited to leverage my
+                    growing expertise to build robust digital
+                    experiences, contribute to impactful projects, and
+                    continue evolving as a developer in the dynamic
+                    world of front-end development.
                   </p>
                 </div>
                 <figure class="secondary-wrapper">
-                  <img src="./src/assets/images/climb-profile.webp" alt="Me and my partner climbing on Hægefjell during summer" loading="lazy" />
+                  <img
+                    src="./src/assets/images/climb-profile.webp"
+                    alt="Me and my partner climbing on Hægefjell during summer"
+                    loading="lazy" />
                   <figcaption>
-                    Climbing at Hægefjell with my partner during summer, one of the outdoor activities I enjoy in my spare time.
+                    Climbing at Hægefjell with my partner during
+                    summer, one of the outdoor activities I enjoy in
+                    my spare time.
                   </figcaption>
                 </figure>
               </div>
@@ -441,13 +646,21 @@
                 <article class="qualification-articles">
                   <h3>Solution-oriented</h3>
                   <ul>
-                    <li>Finding solutions to various problems is something I do on an everyday basis through my studies and my work.</li>
+                    <li>
+                      Finding solutions to various problems is
+                      something I do on an everyday basis through my
+                      studies and my work.
+                    </li>
                   </ul>
                 </article>
                 <article class="qualification-articles">
                   <h3>Strong IT skills</h3>
                   <ul>
-                    <li>I have a broad interest in IT and technology and possess an understanding of various IT systems and applications.</li>
+                    <li>
+                      I have a broad interest in IT and technology and
+                      possess an understanding of various IT systems
+                      and applications.
+                    </li>
                   </ul>
                 </article>
               </div>
@@ -456,14 +669,20 @@
                   <h3>Communication skills</h3>
                   <ul>
                     <li>
-                      I effectively communicate daily in Norwegian and English, emphasizing efficient problem-solving and a good customer experience.
+                      I effectively communicate daily in Norwegian and
+                      English, emphasizing efficient problem-solving
+                      and a good customer experience.
                     </li>
                   </ul>
                 </article>
                 <article class="qualification-articles">
                   <h3>Eager to learn</h3>
                   <ul>
-                    <li>I enjoy learning new things and am always looking for opportunities to expand my knowledge.</li>
+                    <li>
+                      I enjoy learning new things and am always
+                      looking for opportunities to expand my
+                      knowledge.
+                    </li>
                   </ul>
                 </article>
               </div>
@@ -486,43 +705,75 @@
                   </ul>
                 </article>
                 <article class="card-container">
-                  <div><time datetime="2017-08">August 2017 - </time><time datetime="2019-10">October 2019</time></div>
+                  <div>
+                    <time datetime="2017-08">August 2017 - </time
+                    ><time datetime="2019-10">October 2019</time>
+                  </div>
                   <h3>Heavy-duty Vehicle Mechanic</h3>
                   <p>Trucknor Hordaland AS</p>
                   <ul>
-                    <li>Performed service, diagnostics, and repairs on trucks.</li>
+                    <li>
+                      Performed service, diagnostics, and repairs on
+                      trucks.
+                    </li>
                   </ul>
                 </article>
                 <article class="card-container">
-                  <div><time datetime="2010-06">June 2010 - </time><time datetime="2013-08">August 2013</time></div>
+                  <div>
+                    <time datetime="2010-06">June 2010 - </time
+                    ><time datetime="2013-08">August 2013</time>
+                  </div>
                   <h3>Agricultural Mechanic</h3>
                   <p>A-K Maskiner AS</p>
                   <ul>
-                    <li>Performed service, diagnostics, and repairs on agricultural equipment and machinerytems.</li>
+                    <li>
+                      Performed service, diagnostics, and repairs on
+                      agricultural equipment and machinerytems.
+                    </li>
                   </ul>
                 </article>
                 <section class="optional-heading">
                   <h2>Volunteer positions</h2>
                   <article class="card-container">
-                    <div><time datetime="2020-03">Mars 2020 - </time><time datetime="2024-03">March 2024</time></div>
+                    <div>
+                      <time datetime="2020-03">Mars 2020 - </time
+                      ><time datetime="2024-03">March 2024</time>
+                    </div>
                     <h3>Vice Chairman</h3>
-                    <p>Norske Konkurransefluefiskeres Forbund (NKFF)</p>
+                    <p>
+                      Norske Konkurransefluefiskeres Forbund (NKFF)
+                    </p>
                     <ul>
-                      <li>Norwegian fly fishing competition federation.</li>
+                      <li>
+                        Norwegian fly fishing competition federation.
+                      </li>
                     </ul>
                   </article>
                 </section>
                 <section class="optional-heading">
                   <h2>Interests</h2>
                   <article class="card-container">
-                    <p id="interests">IT, tech, and outdoor activities - such as climbing, running, skiing, and fly fishing.</p>
+                    <p id="interests">
+                      IT, tech, and outdoor activities - such as
+                      climbing, running, skiing, and fly fishing.
+                    </p>
                     <ul>
-                      <li>Member of <a href="https://www.hubbel.io/" target="_blank" rel="noopener noreferrer">Hubbel Kodeklubb 🧑‍💻</a></li>
+                      <li>
+                        Member of
+                        <a
+                          href="https://www.hubbel.io/"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >Hubbel Kodeklubb 🧑‍💻</a
+                        >
+                      </li>
                     </ul>
                   </article>
                 </section>
               </section>
-              <div class="center" aria-hidden="true"><span class="vertical-line"></span></div>
+              <div class="center" aria-hidden="true">
+                <span class="vertical-line"></span>
+              </div>
               <section class="right">
                 <h2>Education</h2>
                 <article class="card-container">
@@ -535,36 +786,64 @@
                   <ul>
                     <li>4-year online program (part-time).</li>
                     <li>
-                      Focuses on design (UX/UI/IxD) and the programming languages HTML, CSS, and JavaScript, and frameworks within these languages.
+                      Focuses on design (UX/UI/IxD) and the
+                      programming languages HTML, CSS, and JavaScript,
+                      and frameworks within these languages.
                     </li>
                   </ul>
                 </article>
                 <article class="card-container">
-                  <div><time datetime="2013-08">August 2013 - </time><time datetime="2017-06">June 2017</time></div>
+                  <div>
+                    <time datetime="2013-08">August 2013 - </time
+                    ><time datetime="2017-06">June 2017</time>
+                  </div>
                   <h3>Mechanical Engineer</h3>
-                  <p>University of South-East Norway/Higher Vocational School Tinius Olsen</p>
+                  <p>
+                    University of South-East Norway/Higher Vocational
+                    School Tinius Olsen
+                  </p>
                   <ul>
                     <li>
-                      Extensive coursework in Mechanical Engineering as part of a collaboration between the academic institutions (degree incomplete).
+                      Extensive coursework in Mechanical Engineering
+                      as part of a collaboration between the academic
+                      institutions (degree incomplete).
                     </li>
                   </ul>
                 </article>
                 <article class="card-container">
-                  <div><time datetime="2009-08">August 2009 - </time><time datetime="2010-06">June 2010</time></div>
+                  <div>
+                    <time datetime="2009-08">August 2009 - </time
+                    ><time datetime="2010-06">June 2010</time>
+                  </div>
                   <h3>Off-Piste Skiing/Outdoor recreation</h3>
                   <p>Øytun Folkehøgskole</p>
                   <ul>
-                    <li>The program focuses on backcountry skiing and avalanche education.</li>
-                    <li>Engaged in various outdoor activities throughout the year.</li>
+                    <li>
+                      The program focuses on backcountry skiing and
+                      avalanche education.
+                    </li>
+                    <li>
+                      Engaged in various outdoor activities throughout
+                      the year.
+                    </li>
                   </ul>
                 </article>
                 <article class="card-container">
-                  <div><time datetime="2006-08">August 2006 - </time><time datetime="2009-06">June 2009</time></div>
+                  <div>
+                    <time datetime="2006-08">August 2006 - </time
+                    ><time datetime="2009-06">June 2009</time>
+                  </div>
                   <h3>Agricultural Mechanic</h3>
                   <p>Voss Vidaregåande Skole</p>
                   <ul>
-                    <li>Studied in the field of technology and industrial production.</li>
-                    <li>May 2009: Completed vocational certificate as an Agricultural Mechanic.</li>
+                    <li>
+                      Studied in the field of technology and
+                      industrial production.
+                    </li>
+                    <li>
+                      May 2009: Completed vocational certificate as an
+                      Agricultural Mechanic.
+                    </li>
                   </ul>
                 </article>
               </section>
@@ -577,24 +856,38 @@
                   href="https://www.linkedin.com/in/torehirth"
                   class="primary-btn"
                   aria-label="Visit my LinkedIn profile"
-                  >My LinkedIn<img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon" aria-hidden="true" loading="lazy" />
+                  >My LinkedIn<img
+                    src="./src/assets/icons/icons/linkedin.svg"
+                    alt="LinkedIn icon"
+                    aria-hidden="true"
+                    loading="lazy" />
                 </a>
                 <a
                   href="./src/assets/cv/cv_tore_m_hirth.pdf"
                   class="primary-btn"
                   aria-label="Download my CV as PDF in Norwegian"
                   download="CV Tore Hirth"
-                  >Download CV (NO)<img src="./src/assets/icons/icons/download.svg" alt="Download icon" aria-hidden="true" loading="lazy" />
+                  >Download CV (NO)<img
+                    src="./src/assets/icons/icons/download.svg"
+                    alt="Download icon"
+                    aria-hidden="true"
+                    loading="lazy" />
                 </a>
                 <a
                   href="./src/assets/cv/cv-tore_m_hirth-eng.pdf"
                   class="primary-btn"
                   aria-label="Download my CV as PDF in English"
                   download="CV Tore Hirth"
-                  >Download CV (EN)<img src="./src/assets/icons/icons/download.svg" alt="Download icon" aria-hidden="true" loading="lazy" />
+                  >Download CV (EN)<img
+                    src="./src/assets/icons/icons/download.svg"
+                    alt="Download icon"
+                    aria-hidden="true"
+                    loading="lazy" />
                 </a>
               </div>
-              <small>* CV is in PDF file format and ~200kb in size.</small>
+              <small
+                >* CV is in PDF file format and ~200kb in size.</small
+              >
             </div>
           </div>
         </div>
@@ -610,43 +903,75 @@
           <div class="contact-container">
             <h2>I would love to hear from you!</h2>
             <p>
-              Send me a Email, or contact me through one of my other channels, with any questions or queries you may have. I’ll get back to you as
-              soon as possible.
+              Send me a Email, or contact me through one of my other
+              channels, with any questions or queries you may have.
+              I’ll get back to you as soon as possible.
             </p>
             <div class="contact-card-container">
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
-                  <img src="./src/assets/icons/icons/nav-logo.png" alt="My logo" aria-hidden="true" loading="lazy" />
+                  <img
+                    src="./src/assets/icons/icons/nav-logo.png"
+                    alt="My logo"
+                    aria-hidden="true"
+                    loading="lazy" />
                   <h3>Name</h3>
                 </div>
                 <p>Tore M. Hirth</p>
               </div>
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
-                  <img src="./src/assets/icons/icons/nav-arrow.svg" alt="Navigation arrow Icon" aria-hidden="true" loading="lazy" />
+                  <img
+                    src="./src/assets/icons/icons/nav-arrow.svg"
+                    alt="Navigation arrow Icon"
+                    aria-hidden="true"
+                    loading="lazy" />
                   <h3>Address</h3>
                 </div>
-                <address><a href="https://www.google.com/maps/place/Bergen/" target="_blank" rel="noopener noreferrer">Bergen, Norway</a></address>
+                <address>
+                  <a
+                    href="https://www.google.com/maps/place/Bergen/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Bergen, Norway</a
+                  >
+                </address>
               </div>
             </div>
             <div class="contact-card-container">
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
-                  <img src="./src/assets/icons/icons/mail.svg" alt="Send an email" aria-hidden="true" loading="lazy" />
+                  <img
+                    src="./src/assets/icons/icons/mail.svg"
+                    alt="Send an email"
+                    aria-hidden="true"
+                    loading="lazy" />
                   <h3>Email</h3>
                 </div>
-                <address><a href="mailto:torehirth@gmail.com">torehirth@gmail.com</a></address>
+                <address>
+                  <a href="mailto:torehirth@gmail.com"
+                    >torehirth@gmail.com</a
+                  >
+                </address>
               </div>
               <div class="contact-card-wrapper">
                 <div class="contact-inner-wrapper">
-                  <img src="./src/assets/icons/icons/phone.svg" alt="Call or text me" aria-hidden="true" loading="lazy" />
+                  <img
+                    src="./src/assets/icons/icons/phone.svg"
+                    alt="Call or text me"
+                    aria-hidden="true"
+                    loading="lazy" />
                   <h3>Phone</h3>
                 </div>
-                <address><a href="tel:+4741553583">+47 415 53 583</a></address>
+                <address>
+                  <a href="tel:+4741553583">+47 415 53 583</a>
+                </address>
               </div>
             </div>
             <div class="contact-card-container">
-              <nav class="contact-some-container" aria-label="Social media links">
+              <nav
+                class="contact-some-container"
+                aria-label="Social media links">
                 <ul class="some-links-wrapper">
                   <li class="some-link--wrapper">
                     <a
@@ -655,7 +980,11 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow me on LinkedIn"
-                      ><img src="./src/assets/icons/icons/linkedin.svg" aria-hidden="true" loading="lazy" alt="Visit my LinkedIn profile" />
+                      ><img
+                        src="./src/assets/icons/icons/linkedin.svg"
+                        aria-hidden="true"
+                        loading="lazy"
+                        alt="Visit my LinkedIn profile" />
                       <p>LinkedIn</p></a
                     >
                   </li>
@@ -666,7 +995,11 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow me on GitHub">
-                      <img src="./src/assets/icons/icons/github.svg" aria-hidden="true" loading="lazy" alt="Visit my GitHub profile" />
+                      <img
+                        src="./src/assets/icons/icons/github.svg"
+                        aria-hidden="true"
+                        loading="lazy"
+                        alt="Visit my GitHub profile" />
                       <p>GitHub</p></a
                     >
                   </li>
@@ -677,7 +1010,11 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow me on Instagram"
-                      ><img src="./src/assets/icons/icons/instagram.svg" aria-hidden="true" loading="lazy" alt="Follow my Instagram profile" />
+                      ><img
+                        src="./src/assets/icons/icons/instagram.svg"
+                        aria-hidden="true"
+                        loading="lazy"
+                        alt="Follow my Instagram profile" />
                       <p>Instagram</p></a
                     >
                   </li>
@@ -688,7 +1025,11 @@
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label="Follow me on Facebook">
-                      <img src="./src/assets/icons/icons/facebook.svg" aria-hidden="true" loading="lazy" alt="Facebook icon" />
+                      <img
+                        src="./src/assets/icons/icons/facebook.svg"
+                        aria-hidden="true"
+                        loading="lazy"
+                        alt="Facebook icon" />
                       <p>Facebook</p></a
                     >
                   </li>
@@ -704,10 +1045,14 @@
       <div class="inner-footer">
         <nav>
           <ul class="footer-main-nav">
-            <li><a class="main-link" href="#projects">Projects</a></li>
+            <li>
+              <a class="main-link" href="#projects">Projects</a>
+            </li>
             <li><a class="main-link" href="#skills">Skills</a></li>
             <li><a class="main-link" href="#about">About</a></li>
-            <li><a class="main-link" href="#experience">Experience</a></li>
+            <li>
+              <a class="main-link" href="#experience">Experience</a>
+            </li>
             <li><a class="main-link" href="#contact">Contact</a></li>
           </ul>
         </nav>
@@ -722,12 +1067,21 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow me on LinkedIn"
-                  ><img src="./src/assets/icons/icons/linkedin.svg" alt="LinkedIn icon"
+                  ><img
+                    src="./src/assets/icons/icons/linkedin.svg"
+                    alt="LinkedIn icon"
                 /></a>
               </li>
               <li>
-                <a class="some-link" href="https://github.com/torehirth" target="_blank" rel="noopener noreferrer" aria-label="Follow me on GitHub"
-                  ><img src="./src/assets/icons/icons/github.svg" alt="GitHub icon"
+                <a
+                  class="some-link"
+                  href="https://github.com/torehirth"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Follow me on GitHub"
+                  ><img
+                    src="./src/assets/icons/icons/github.svg"
+                    alt="GitHub icon"
                 /></a>
               </li>
               <li>
@@ -737,7 +1091,9 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow me on Instagram"
-                  ><img src="./src/assets/icons/icons/instagram.svg" alt="Instagram icon"
+                  ><img
+                    src="./src/assets/icons/icons/instagram.svg"
+                    alt="Instagram icon"
                 /></a>
               </li>
               <li>
@@ -747,18 +1103,27 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Follow me on Facebook"
-                  ><img src="./src/assets/icons/icons/facebook.svg" alt="Facebook icon"
+                  ><img
+                    src="./src/assets/icons/icons/facebook.svg"
+                    alt="Facebook icon"
                 /></a>
               </li>
             </ul>
           </nav>
         </div>
         <div class="footer-logo-container">
-          <img src="./src/assets/images/logo/logo-red.svg" alt="brand logo shaped as a T" aria-label="brand logo shaped as a T" />
-          <p class="slogan" aria-label="brand slogan">Intuitive. Innovative. Timeless</p>
+          <img
+            src="./src/assets/images/logo/logo-red.svg"
+            alt="brand logo shaped as a T"
+            aria-label="brand logo shaped as a T" />
+          <p class="slogan" aria-label="brand slogan">
+            Intuitive. Innovative. Timeless
+          </p>
         </div>
       </div>
-      <p class="copyright">&copy; 2024, Tore M. Hirth. All rights reserved!</p>
+      <p class="copyright">
+        &copy; 2024, Tore M. Hirth. All rights reserved!
+      </p>
     </footer>
   </body>
 </html>
