@@ -24,9 +24,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 20%;
-  transition: height variables.$transition, opacity variables.$transition;
-  z-index: -1;
+  height: 30%;
+  transition: height variables.$transition,
+    opacity variables.$transition;
   opacity: 0;
   color: variables.$primary-colour;
 }
