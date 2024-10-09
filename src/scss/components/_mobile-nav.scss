@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 /* --- hamburger menu --- */
 .hamburger,
@@ -14,6 +15,9 @@
     cursor: pointer;
     outline: none;
     border: none;
+    &:focus {
+      @include mixins.focus-styles;
+    }
   }
 
   .hamburger-bar,
@@ -50,12 +54,13 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     top: 0;
     left: 100%;
     width: 100%;
     height: 100vh;
-    background-color: variables.$sub-bg-colour;
+    background-color: variables.$main-bg-colour;
+    opacity: 0.95;
     padding-top: 150px;
     z-index: 1000;
     transition: variables.$transition;

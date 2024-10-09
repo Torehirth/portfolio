@@ -1,0 +1,64 @@
+@use "../abstracts/variables";
+
+.description-btn {
+  align-self: flex-start;
+  font-size: 1rem;
+  font-style: italic;
+  border-bottom: variables.$main-border;
+  padding: 2px 5px;
+  transition: all variables.$transition;
+
+  &:hover {
+    filter: opacity(variables.$opacity);
+  }
+  &:active {
+    border-bottom: 1px solid variables.$main-text-colour;
+  }
+}
+
+.description-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  //transition effects
+  position: relative;
+  top: -100%;
+  transition: all variables.$transition;
+  height: 0;
+  opacity: 0;
+  margin-bottom: -2rem;
+
+  ul {
+    list-style: disc;
+    padding-left: 1.125rem;
+  }
+  li,
+  p {
+    font-weight: 300;
+  }
+  // displaying content through JS
+  &.is-active {
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    margin-bottom: 0;
+  }
+}
+
+.tech-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  img {
+    width: 3rem;
+  }
+}
+
+.project-description-underline {
+  display: inline-block;
+  border-bottom: 1px solid variables.$sub-bg-colour;
+  width: 50%;
+  align-self: start;
+}

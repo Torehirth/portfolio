@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 // ----------------------------------
 // header / nav bar
 // ----------------------------------
@@ -28,6 +29,7 @@
   // Classes thats get implemented when scrolling
   &.scroll-up {
     background-color: variables.$sub-bg-colour;
+    filter: drop-shadow(0 1px 3px variables.$secondary-colour);
     opacity: 0.9;
     padding: 1.5rem;
   }
@@ -39,6 +41,7 @@
 .logo-container {
   // Add white colour to the logo to cheat the contrast ratio
   color: variables.$main-text-colour;
+  line-height: 0;
 }
 
 .links-container {
@@ -112,6 +115,10 @@
 
   button {
     line-height: 0;
+
+    &:focus-visible {
+      @include mixins.focus-styles;
+    }
   }
 
   p {
@@ -119,9 +126,13 @@
   }
 }
 
-.light-mode-btn:hover,
-.light-mode-btn:hover {
-  filter: opacity(variables.$opacity);
+.light-mode-btn {
+  &:hover {
+    filter: opacity(variables.$opacity);
+  }
+  &:active {
+    transform: scale(1.2);
+  }
 }
 
 // ----------------------------------
