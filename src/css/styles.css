@@ -379,6 +379,40 @@ footer {
   opacity: 0;
 }
 
+.description-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+  top: -100%;
+  transition: all 0.3s ease-in-out;
+  display: none;
+}
+.description-modal ul {
+  list-style: disc;
+  padding-left: 2rem;
+  font-weight: 300;
+}
+.description-modal li,
+.description-modal p {
+  font-weight: 300;
+}
+
+.description-modal.is-active {
+  top: 0;
+  display: flex;
+  transition: all 0.3s ease-in-out;
+}
+
+.description-slider {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.description-slider img {
+  width: 3rem;
+}
+
 .header-bar {
   display: flex;
   justify-content: space-between;
@@ -404,6 +438,7 @@ footer {
 }
 .header-bar-container.scroll-up {
   background-color: #363d48;
+  filter: drop-shadow(0 1px 3px #f22c50);
   opacity: 0.9;
   padding: 1.5rem;
 }
@@ -721,6 +756,7 @@ footer {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: left;
+  position: relative;
 }
 
 .text-outer-wrapper {
@@ -747,11 +783,13 @@ footer {
   flex-direction: column;
   gap: 0.5rem;
 }
-.text-inner-wrapper button {
+
+.description-btn {
   align-self: flex-start;
   font-size: 1rem;
-  font-weight: 500;
   font-style: italic;
+  border-bottom: 1px solid #f22c50;
+  padding: 2px 5px;
 }
 
 .project-btn-container {

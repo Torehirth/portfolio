@@ -28,10 +28,8 @@ export function closeMobileNavByClickOutside(e) {
 
 export const disableScrollWhenMobileNavOpen = () => {
   if (mobileNav.classList.contains("is-active")) {
-    console.log("Nav is active, disabling scroll");
     HTMLbody.classList.add("no-scroll");
   } else {
-    console.log("Nav is not active, enabling scroll");
     HTMLbody.classList.remove("no-scroll");
   }
 };
