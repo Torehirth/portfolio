@@ -1,38 +1,62 @@
 @use "../abstracts/variables";
 
-.description-modal {
+.description-btn {
+  align-self: flex-start;
+  font-size: 1rem;
+  font-style: italic;
+  border-bottom: variables.$main-border;
+  padding: 2px 5px;
+  transition: all variables.$transition;
+
+  &:hover {
+    filter: opacity(variables.$opacity);
+  }
+  &:active {
+    border-bottom: 1px solid variables.$main-text-colour;
+  }
+}
+
+.description-wrapper {
   display: flex;
   flex-direction: column;
   gap: 2rem;
+  //transition effects
   position: relative;
   top: -100%;
   transition: all variables.$transition;
-  display: none;
+  height: 0;
+  opacity: 0;
 
   ul {
     list-style: disc;
-    padding-left: 2rem;
-    font-weight: 300;
+    padding-left: 1.125rem;
   }
   li,
   p {
     font-weight: 300;
-    // font-size: 1rem;
+  }
+  // displaying content through JS
+  &.is-active {
+    top: 0;
+    height: 100%;
+    opacity: 1;
   }
 }
 
-.description-modal.is-active {
-  top: 0;
-  display: flex;
-  transition: all variables.$transition;
-}
-
-.description-slider {
+.tech-wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.5rem;
 
   img {
     width: 3rem;
   }
+}
+
+.project-description-underline {
+  display: inline-block;
+  border-bottom: 1px solid variables.$sub-bg-colour;
+  width: 50%;
+  align-self: start;
 }

@@ -1,0 +1,5 @@
+// Focus state style
+@mixin focus-styles {
+  border: 3px solid variables.$info-colour;
+  padding: 2px;
+}

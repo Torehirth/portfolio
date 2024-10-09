@@ -6,6 +6,7 @@
 // use abstracts
 @use "./abstracts/variables";
 @use "./abstracts/fonts";
+@use "./abstracts/mixins";
 
 // use components
 @use "./components/primary-button";
@@ -23,6 +24,3 @@
 @use "./layout/about";
 @use "./layout/experience";
 @use "./layout/contact";
-
-// use pages
-@use "./pages/index";

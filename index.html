@@ -186,9 +186,9 @@
                   <p>Light mode</p>
                 </div>
                 <!-- Hamburger button -->
-                <div class="hamburger" title="hamburger menu">
-                  <button class="hamburger-bar"></button>
-                </div>
+                <button class="hamburger" title="hamburger menu">
+                  <div class="hamburger-bar"></div>
+                </button>
               </div>
             </div>
           </div>
@@ -329,7 +329,6 @@
               class="btn-down"
               href="#projects"
               aria-label="Navigate down to projects section">
-              <!-- <img src="./src/assets/icons/icons/button-down.svg" alt="Down arrow icon" loading="lazy" /> -->
               <img
                 src="./src/assets/icons/icons/double_arrow.svg"
                 alt="Down arrow icon"
@@ -372,7 +371,10 @@
                     Read more..
                   </button>
                 </div>
-                <div class="description-modal">
+                <div class="description-wrapper">
+                  <span
+                    class="project-description-underline"
+                    aria-hidden="true"></span>
                   <article class="text-inner-wrapper">
                     <h4>Key Features:</h4>
                     <ul>
@@ -403,6 +405,9 @@
                       </li>
                     </ul>
                   </article>
+                  <span
+                    class="project-description-underline"
+                    aria-hidden="true"></span>
                   <article class="text-inner-wrapper">
                     <h4>Technical Overview:</h4>
                     <p>
@@ -415,6 +420,9 @@
                       display the markup efficiently.
                     </p>
                   </article>
+                  <span
+                    class="project-description-underline"
+                    aria-hidden="true"></span>
                   <article class="text-inner-wrapper">
                     <h4>Technologies Used:</h4>
                     <ul>
@@ -441,66 +449,56 @@
                       </li>
                     </ul>
                   </article>
+                  <span
+                    class="project-description-underline"
+                    aria-hidden="true"></span>
                   <div class="text-inner-wrapper">
                     <h4>Tech Stack:</h4>
-                    <div>
-                      <div
-                        class="description-slider"
-                        aria-label="slider with used programs and tools">
-                        <img
-                          src="./src/assets/icons/programming-languages/javascript-svgrepo-com.webp"
-                          alt="JavaScript icon"
-                          aria-label="JavaScript"
-                          title="JavaScript" />
-                        <img
-                          src="./src/assets/icons/programming-languages/html-5-svgrepo-com.webp"
-                          alt="HTML5 icon"
-                          aria-label="HTML5"
-                          title="HTML5" />
-                        <img
-                          src="./src/assets/icons/programming-languages/css-3-svgrepo-com.webp"
-                          alt="CSS3 icon"
-                          aria-label="CSS3"
-                          title="CSS3" />
-                        <img
-                          src="./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp"
-                          alt="WordPress icon"
-                          aria-label="WordPress"
-                          title="WordPress" />
-                        <img
-                          src="./src/assets/icons/programming-languages/figma-svgrepo-com.webp"
-                          alt="Figma icon"
-                          aria-label="Figma"
-                          title="Figma" />
-                        <img
-                          src="./src/assets/icons/programming-languages/github-svgrepo-com.webp"
-                          alt="GitHub icon"
-                          aria-label="GitHub"
-                          title="GitHub" />
-                        <img
-                          src="./src/assets/icons/programming-languages/git-svgrepo-com.webp"
-                          alt="Git icon"
-                          aria-label="Git"
-                          title="Git" />
-                        <img
-                          src="./src/assets/icons/programming-languages/vs-code-svgrepo-com.webp"
-                          alt="Visual Studio Code icon"
-                          aria-label="Visual Studio Code"
-                          title="Visual Studio Code" />
-                      </div>
+                    <div
+                      class="tech-wrapper"
+                      aria-label="wrapper with used programs and tools">
+                      <img
+                        src="./src/assets/icons/programming-languages/javascript-svgrepo-com.webp"
+                        alt="JavaScript icon"
+                        aria-label="JavaScript"
+                        title="JavaScript" />
+                      <img
+                        src="./src/assets/icons/programming-languages/html-5-svgrepo-com.webp"
+                        alt="HTML5 icon"
+                        aria-label="HTML5"
+                        title="HTML5" />
+                      <img
+                        src="./src/assets/icons/programming-languages/css-3-svgrepo-com.webp"
+                        alt="CSS3 icon"
+                        aria-label="CSS3"
+                        title="CSS3" />
+                      <img
+                        src="./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp"
+                        alt="WordPress icon"
+                        aria-label="WordPress"
+                        title="WordPress" />
+                      <img
+                        src="./src/assets/icons/programming-languages/figma-svgrepo-com.webp"
+                        alt="Figma icon"
+                        aria-label="Figma"
+                        title="Figma" />
+                      <img
+                        src="./src/assets/icons/programming-languages/github-svgrepo-com.webp"
+                        alt="GitHub icon"
+                        aria-label="GitHub"
+                        title="GitHub" />
+                      <img
+                        src="./src/assets/icons/programming-languages/git-svgrepo-com.webp"
+                        alt="Git icon"
+                        aria-label="Git"
+                        title="Git" />
+                      <img
+                        src="./src/assets/icons/programming-languages/vs-code-svgrepo-com.webp"
+                        alt="Visual Studio Code icon"
+                        aria-label="Visual Studio Code"
+                        title="Visual Studio Code" />
                     </div>
                   </div>
-                  <article class="text-inner-wrapper">
-                    <h4>Future Improvements:</h4>
-                    <ul>
-                      <li>Implementing a dark/light mode toggle.</li>
-                      <li>
-                        Optimizing lazy-loading for images to improve
-                        performance.
-                      </li>
-                      <li>Save form submissions to WordPress.</li>
-                    </ul>
-                  </article>
                   <button
                     id="read-less-btn"
                     class="description-btn"
@@ -508,6 +506,9 @@
                     Read less..
                   </button>
                 </div>
+                <span
+                  class="project-description-underline"
+                  aria-hidden="true"></span>
                 <div class="project-btn-container">
                   <a
                     class="primary-btn"
