@@ -285,7 +285,7 @@ footer {
     border: none;
   }
   .hamburger:focus {
-    border: 3px solid #4d8cff;
+    border: 1px solid #f0e9f2;
     padding: 2px;
   }
   .hamburger-bar,
@@ -548,13 +548,19 @@ footer {
 .colour-mode-wrapper button {
   line-height: 0;
 }
+.colour-mode-wrapper button:focus-visible {
+  border: 1px solid #f0e9f2;
+  padding: 2px;
+}
 .colour-mode-wrapper p {
   font-size: 0.75rem;
 }
 
-.light-mode-btn:hover,
 .light-mode-btn:hover {
   filter: opacity(0.7);
+}
+.light-mode-btn:active {
+  transform: scale(1.2);
 }
 
 @media (width <= 1000px) {
