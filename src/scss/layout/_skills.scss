@@ -58,10 +58,10 @@
   gap: 1rem;
   width: 135px;
   height: 135px;
-  background: variables.$main-bg-colour;
+  background: var(--primary-colour);
   border-radius: variables.$border-radius;
   margin: 0 2rem;
-  color: variables.$main-text-colour; // Adding white text colour to cheat the contrast checker
+  color: var(--text-colour); // Adding white text colour to cheat the contrast checker
 
   img {
     height: 50px;

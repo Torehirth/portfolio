@@ -28,8 +28,8 @@
 
   // Classes thats get implemented when scrolling
   &.scroll-up {
-    background-color: variables.$sub-bg-colour;
-    filter: drop-shadow(0 1px 3px variables.$secondary-colour);
+    background-color: var(--accent-colour);
+    filter: drop-shadow(0 1px 3px var(--secondary-colour));
     opacity: 0.9;
     padding: 1.5rem;
   }
@@ -40,7 +40,7 @@
 
 .logo-container {
   // Add white colour to the logo to cheat the contrast ratio
-  color: variables.$main-text-colour;
+  color: var(--text-colour);
   line-height: 0;
 }
 
@@ -68,7 +68,7 @@
   left: 0;
   width: 0%;
   height: 1px;
-  background-color: variables.$secondary-colour;
+  background-color: var(--secondary-colour);
   transition: width variables.$transition;
 }
 
@@ -77,7 +77,7 @@
 }
 
 .main-link:active::before {
-  background-color: variables.$main-text-colour;
+  background-color: var(--text-colour);
 }
 
 .page-link-wrapper a {
@@ -107,34 +107,6 @@
   gap: 2rem;
 }
 
-.colour-mode-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-
-  button {
-    line-height: 0;
-
-    &:focus-visible {
-      @include mixins.focus-styles;
-    }
-  }
-
-  p {
-    font-size: 0.75rem;
-  }
-}
-
-.light-mode-btn {
-  &:hover {
-    filter: opacity(variables.$opacity);
-  }
-  &:active {
-    transform: scale(1.2);
-  }
-}
-
 // ----------------------------------
 // Media query < 900px
 // ----------------------------------
@@ -151,13 +123,7 @@
 }
 
 @media (width <= 800px) {
-  .header-bar-container nav,
-  .colour-mode-wrapper p {
+  .header-bar-container nav {
     display: none;
-  }
-
-  .colour-mode-wrapper img {
-    width: 27px;
-    height: 27px;
   }
 }

@@ -31,7 +31,9 @@
 
 .video-wrapper {
   grid-column: 2 / 2;
-  color: variables.$main-text-colour; // Adding white colour to the image div to cheat the contrast checker
+  color: var(
+    --text-colour
+  ); // Adding white colour to the image div to cheat the contrast checker
   video {
     width: 100%;
     height: auto;
@@ -54,7 +56,7 @@
 
 .project-underline {
   display: inline-block;
-  border-bottom: variables.$accent-colour 1px solid;
+  border-bottom: 1px solid var(--accent-colour);
   width: 100%;
   margin-top: 4rem;
 }

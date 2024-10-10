@@ -18,7 +18,7 @@ button,
 span,
 figcaption,
 time {
-  color: variables.$main-text-colour;
+  color: var(--text-colour);
   line-height: 125%;
 }
 
@@ -55,7 +55,7 @@ span,
 figcaption,
 time {
   font: 400 1.125rem/125% "Karla", sans-serif;
-  color: variables.$main-text-colour;
+  color: var(--text-colour);
   letter-spacing: 1px;
 }
 
@@ -96,23 +96,3 @@ time {
     font-size: 1rem;
   }
 }
-// change styles on media queries for smaller screens
-// ol,
-// ul,
-// a,
-// p,
-// button,
-// span {
-//   font-size: 1rem;
-
-// }
-
-// h1 {
-//   font-size: 1.5rem;
-// }
-// h2 {
-//   font-size: 1.125rem;
-// }
-// h3 {
-//   font-size: 1rem;
-// }
