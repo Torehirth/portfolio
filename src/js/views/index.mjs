@@ -2,6 +2,7 @@ import { mobileNavEventListeners } from "../components/navigation/mobileNavEvent
 import { renderSkillElements } from "../components/skills/renderSkillElements.mjs";
 import { displayHeaderOnScrollUp } from "../ui/displayHeaderOnScrollUp.mjs";
 import { toggleProjectDescription } from "../ui/toggleProjectDescription.mjs";
+import { toggleColourMode } from "../ui/toggleColourMode.mjs";
 
 // Open/close the mobile nav
 mobileNavEventListeners();
@@ -11,3 +12,5 @@ renderSkillElements();
 displayHeaderOnScrollUp();
 // Open and Close project description
 toggleProjectDescription();
+// Toggle Colour mode/theme
+toggleColourMode();

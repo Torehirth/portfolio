@@ -10,10 +10,10 @@
 
 // Used inside .section-wrapper for changing the background colour of the sections.
 .primary-colour {
-  background-color: variables.$main-bg-colour;
+  background-color: var(--primary-colour);
 }
 .asset-colour {
-  background-color: variables.$sub-bg-colour;
+  background-color: var(--accent-colour);
 }
 
 // Spacing used in the sections

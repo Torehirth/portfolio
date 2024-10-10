@@ -1,27 +1,78 @@
-// Default colour scheme (dark mode)
-$primary-colour: #22252c;
-$accent-colour: #363d48;
-$secondary-colour: #f22c50;
-$white-colour: #f0e9f2;
-$success-colour: #55d6c2;
-$warning-colour: #eb5e55;
-$error-colour: #d30a2e;
-$info-colour: #4d8cff;
-$light-grey-colour: #c7c3c8;
-$full-white-colour: #f9f9f9;
+:root {
+  // Dark mode colours
+  --primary-colour: #22252c;
+  --accent-colour: #363d48;
+  --secondary-colour: #f22c50;
+  --text-colour: #f0e9f2;
+  --success-colour: #55d6c2;
+  --warning-colour: #eb5e55;
+  --error-colour: #d30a2e;
+  --info-colour: #4d8cff;
+}
 
-// Elements colours
-$main-bg-colour: $primary-colour;
-$sub-bg-colour: $accent-colour;
-$main-text-colour: $white-colour;
-$sub-text-colour: $secondary-colour;
-$main-border-colour: $secondary-colour;
-$sub-border-colour: $white-colour;
-$main-shadow-colour: $primary-colour;
-$sub-shadow-colour: $secondary-colour;
+body.light-mode {
+  // Light mode colours and styling
+  --primary-colour: #f9f9f9;
+  --accent-colour: #f0e9f2;
+  --secondary-colour: #f22c50;
+  --text-colour: #22252c;
+  --success-colour: #55d6c2;
+  --warning-colour: #eb5e55;
+  --error-colour: #d30a2e;
+  --info-colour: #4d8cff;
+
+  p,
+  a,
+  li,
+  time,
+  button {
+    font-weight: 500;
+  }
+
+  .primary-btn img {
+    filter: invert(1);
+  }
+  .some-links-wrapper img {
+    filter: invert(1);
+  }
+
+  .outer-header-container {
+    background-blend-mode: normal;
+  }
+
+  .btn-down-container {
+    transform: translate(-80%, -50%);
+
+    .btn-down {
+      border: 2px solid var(--secondary-colour);
+    }
+  }
+
+  .primary-btn {
+    border: 2px solid var(--secondary-colour);
+  }
+
+  .skills-container::before {
+    background: linear-gradient(to right, rgba(240, 233, 242, 1), rgba(240, 233, 242, 0));
+  }
+  .skills-container::after {
+    background: linear-gradient(to left, rgba(240, 233, 242, 1), rgba(240, 233, 242, 0));
+  }
+
+  @media (width <= 1000px) {
+    .btn-down-container {
+      transform: translate(-50%, -50%);
+    }
+  }
+  @media (width <= 600px) {
+    .btn-down-container {
+      transform: translate(-50%, -80%);
+    }
+  }
+}
 
 // general styles
-$main-border: 1px solid $main-border-colour;
+$main-border: 1px solid var(--secondary-colour);
 $border-radius: 5px;
 $max-width: 1400px;
 $max-characters-width: 65ch;

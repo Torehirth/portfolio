@@ -24,7 +24,7 @@
   align-items: center;
   width: 100%;
   max-width: inherit;
-  background-color: variables.$sub-bg-colour;
+  background-color: var(--accent-colour);
 }
 
 .contact-card-wrapper {
@@ -47,7 +47,7 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: variables.$main-text-colour; // add text colour to cheat the contrast checker
+  color: var(--text-colour); // add text colour to cheat the contrast checker
   img {
     width: 20px;
     height: 20px;

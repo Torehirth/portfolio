@@ -12,7 +12,7 @@
     filter: opacity(variables.$opacity);
   }
   &:active {
-    border-bottom: 1px solid variables.$main-text-colour;
+    border-bottom: 1px solid var(--text-colour);
   }
 }
 
@@ -26,21 +26,20 @@
   transition: all variables.$transition;
   height: 0;
   opacity: 0;
+  visibility: hidden;
   margin-bottom: -2rem;
 
   ul {
     list-style: disc;
     padding-left: 1.125rem;
   }
-  li,
-  p {
-    font-weight: 300;
-  }
+
   // displaying content through JS
   &.is-active {
     top: 0;
     height: 100%;
     opacity: 1;
+    visibility: visible;
     margin-bottom: 0;
   }
 }
@@ -50,6 +49,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  color: var(--text-colour);
 
   img {
     width: 3rem;
@@ -58,7 +58,7 @@
 
 .project-description-underline {
   display: inline-block;
-  border-bottom: 1px solid variables.$sub-bg-colour;
+  border-bottom: 1px solid var(--accent-colour);
   width: 50%;
   align-self: start;
 }

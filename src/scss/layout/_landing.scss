@@ -4,7 +4,7 @@
 // Content on landing section
 // ----------------------------------
 .landing-section {
-  background-color: variables.$main-bg-colour;
+  background-color: var(--primary-colour);
 }
 
 .outer-header-container {
@@ -13,9 +13,8 @@
   max-width: variables.$max-width;
   margin: 0 auto;
   padding: 0 1rem;
-  background: no-repeat url("../assets/images/profile1.webp") 100% center /
-    60% auto;
-  background-color: variables.$main-bg-colour;
+  background: no-repeat url("../assets/images/profile1.webp") 100% center / 60% auto;
+  background-color: var(--primary-colour);
   background-blend-mode: luminosity;
   overflow: hidden;
   // Ensures the content is on top of the background image
@@ -39,7 +38,7 @@
   display: flex;
   align-items: center;
   justify-self: center;
-  color: variables.$main-text-colour; // to cheat the contrast checker for the logo div
+  color: var(--text-colour); // to cheat the contrast checker for the logo div
   margin: 0 0 0.5rem 0;
 
   h1 {

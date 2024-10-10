@@ -1,8 +1,6 @@
-import {
-  hamburgerMenu,
-  mobileNav,
-  HTMLbody,
-} from "../../data/constants.mjs";
+const HTMLbody = document.querySelector("#body");
+const hamburgerMenu = document.querySelector(".hamburger");
+const mobileNav = document.querySelector("#mobile-nav");
 
 export function toggleMobileNav() {
   // toggles the hamburger menu and mobile nav.
@@ -25,6 +23,13 @@ export function closeMobileNavByClickOutside(e) {
     closeMobileNav();
   }
 }
+
+// Close mobile nav by Escape key press, executed in the event listener
+export const closeMobileNavByKeyPress = (e) => {
+  if (e.key === "Escape") {
+    closeMobileNav();
+  }
+};
 
 export const disableScrollWhenMobileNavOpen = () => {
   if (mobileNav.classList.contains("is-active")) {
