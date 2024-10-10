@@ -7,23 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--text-colour);
+  border: 2px solid var(--text-colour);
   border-radius: 20px;
   padding: 2px 5px;
-  // box-shadow: 0px -1px 6px var(--text-colour);
-
-  .colour-mode-btn.is-active {
-    .colour-mode-wrapper  {
-      box-shadow: 1px -1px 6px var(--text-colour);
-    }
-  }
 
   .colour-mode-btn {
     display: block;
     line-height: 0;
     // transition effect
     position: relative;
-    top: -100%;
     opacity: 0;
     visibility: hidden;
     transition: all variables.$transition;

@@ -55,14 +55,13 @@ span,
 figcaption,
 time {
   font: 400 1.125rem/125% "Karla", sans-serif;
-  color: var(--text-colour);
   letter-spacing: 1px;
 }
 
 p,
 b,
 figcaption {
-  font-weight: 300;
+  // font-weight: 300;
 }
 
 small {

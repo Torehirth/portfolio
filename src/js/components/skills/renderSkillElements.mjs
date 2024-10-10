@@ -55,7 +55,7 @@ export const renderSkillElements = () => {
   SkillsElements.push(
     createFigureElement(
       "GitHub icon",
-      "./src/assets/icons/programming-languages/github-svgrepo-com.webp",
+      "./src/assets/icons/programming-languages/github-svgrepo-com1.svg",
       "GitHub"
     )
   );

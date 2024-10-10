@@ -28,13 +28,14 @@
 
   // Classes thats get implemented when scrolling
   &.scroll-up {
-    background-color: var(--accent-colour);
+    background-color: var(--primary-colour);
     filter: drop-shadow(0 1px 3px var(--secondary-colour));
     opacity: 0.9;
     padding: 1.5rem;
   }
   &.scroll-down {
     opacity: 0;
+    background-color: var(--text-colour);
   }
 }
 
@@ -69,6 +70,7 @@
   width: 0%;
   height: 1px;
   background-color: var(--secondary-colour);
+  color: var(--text-colour);
   transition: width variables.$transition;
 }
 
@@ -82,6 +84,7 @@
 
 .page-link-wrapper a {
   font-size: 1.25rem;
+  color: var(--text-colour);
 }
 
 .some-links-wrapper {
