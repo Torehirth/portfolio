@@ -161,15 +161,25 @@
               </nav>
               <div class="utility-btn-wrapper">
                 <!-- colour mode -->
-                <div class="colour-mode-wrapper">
-                  <button aria-label="Toggle light mode">
+                <div class="colour-mode-wrapper" aria-label="Toggle colour modes">
+                  <button
+                    class="colour-mode-btn"
+                    aria-label="Click for light colour mode">
                     <img
-                      class="light-mode-btn"
+                      class="light-mode-icon"
                       src="./src/assets/icons/icons/Light-mode.svg"
                       alt="Light mode icon"
                       loading="lazy" />
+                    <p>Light mode</p>
                   </button>
-                  <p>Light mode</p>
+                  <button class="colour-mode-btn" aria-label="Click for dark colour mode">
+                    <img
+                      class="dark-mode-icon"
+                      src="./src/assets/icons/icons/dark-mode.svg"
+                      alt="Dark mode icon"
+                      loading="lazy" />
+                    <p>Dark mode</p>
+                  </button>
                 </div>
                 <!-- Hamburger button -->
                 <button class="hamburger" title="hamburger menu">
