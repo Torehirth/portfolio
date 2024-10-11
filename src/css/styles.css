@@ -581,7 +581,6 @@ footer {
 }
 .header-bar-container.scroll-down {
   opacity: 0;
-  background-color: var(--text-colour);
 }
 
 .logo-container {
