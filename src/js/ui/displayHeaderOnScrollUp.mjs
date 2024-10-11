@@ -3,9 +3,8 @@ const headerBar = document.querySelector(".header-bar");
 
 export const displayHeaderOnScrollUp = () => {
   // Keep track of last scroll position
-  console.log(window.scrollY);
-
   let lastScroll = 0;
+
   if (window.scrollY > 100) {
     headerBarContainer.classList.add("scroll-down");
   }
