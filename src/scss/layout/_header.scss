@@ -19,7 +19,6 @@
 }
 
 .header-bar-container {
-  visibility: hidden; // hides the nav bar faster on page refresh
   position: fixed;
   width: 100%;
   left: 0;
@@ -35,6 +34,7 @@
   }
   &.scroll-down {
     opacity: 0;
+    pointer-events: none; // Makes header links not clickable when hidden
   }
 }
 
