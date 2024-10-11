@@ -46,7 +46,7 @@
   font-style: italic; /* Italic style */
   font-display: swap;
 }
-:root {
+body {
   --primary-colour: #22252c;
   --accent-colour: #363d48;
   --secondary-colour: #f22c50;
@@ -56,7 +56,6 @@
   --error-colour: #d30a2e;
   --info-colour: #4d8cff;
 }
-
 body.light-mode {
   --primary-colour: #f9f9f9;
   --accent-colour: #f0e9f2;
