@@ -3,6 +3,8 @@ const headerBar = document.querySelector(".header-bar");
 
 export const displayHeaderOnScrollUp = () => {
   // Keep track of last scroll position
+  console.log(window.scrollY);
+
   let lastScroll = 0;
   if (window.scrollY > 100) {
     headerBarContainer.classList.add("scroll-down");
@@ -34,7 +36,7 @@ export const displayHeaderOnScrollUp = () => {
     }
 
     if (
-      // if scroll position is 100 pixels from the top it removes the class and adds initial padding, results in showing intial nav bar styling
+      // if scroll position is 100 pixels from the top it removes the class and adds initial padding, results in showing initial nav bar styling
       lastScroll < 100 &&
       headerBarContainer.classList.contains("scroll-up")
     ) {

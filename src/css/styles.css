@@ -566,7 +566,6 @@ footer {
 }
 
 .header-bar-container {
-  visibility: hidden;
   position: fixed;
   width: 100%;
   left: 0;
@@ -581,7 +580,7 @@ footer {
 }
 .header-bar-container.scroll-down {
   opacity: 0;
-  background-color: var(--text-colour);
+  pointer-events: none;
 }
 
 .logo-container {
