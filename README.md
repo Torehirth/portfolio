@@ -2,7 +2,7 @@
 
 <p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
 
-**A personal portfolio showcasing my journey and projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my expertise in building responsive, accessible, and engaging websites.**
+**A personal portfolio showcasing my  projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.**
 
 * Take a look at the live website [here](https://torehirth.no/)
 
