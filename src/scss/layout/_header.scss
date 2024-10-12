@@ -8,7 +8,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 1rem;
-  position: fixed;
+  position: relative;
   width: 100%;
   left: 0;
   right: 0;
@@ -16,6 +16,7 @@
   max-width: variables.$max-width;
   margin: 0 auto;
   transition: all variables.$transition;
+  z-index: 9999;
 }
 
 .header-bar-container {
@@ -23,14 +24,11 @@
   width: 100%;
   left: 0;
   transition: all variables.$transition;
-  z-index: 9999;
-
   // Classes thats get implemented when scrolling
   &.scroll-up {
     background-color: var(--primary-colour);
     filter: drop-shadow(0 1px 3px var(--secondary-colour));
     opacity: 0.9;
-    padding: 1.5rem;
   }
   &.scroll-down {
     opacity: 0;

@@ -61,7 +61,7 @@
     height: 100vh;
     background-color: var(--primary-colour);
     padding-top: 150px;
-    z-index: 1000;
+    z-index: 999;
     transition: variables.$transition;
   }
 
