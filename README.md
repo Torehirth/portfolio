@@ -4,7 +4,7 @@
 
 **A personal portfolio showcasing my journey and projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my expertise in building responsive, accessible, and engaging websites.**
 
-* Take a look at the website [here](https://torehirth.no/)
+* Take a look at the live website [here](https://torehirth.no/)
 
 </br>
 
