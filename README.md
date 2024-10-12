@@ -74,7 +74,7 @@ npm run start
 
 ## Acknowledgments
 
-- Figma for design prototyping.
+- Figma for design prototyping
 - Fonts from [Google Fonts](https://fonts.google.com/) 
 - [Consentmanager](https://www.consentmanager.net/) for cookie consent management
 - Icons and images from [Google Material Symbols](https://fonts.google.com/icons) and [SVG Repo](https://www.svgrepo.com/)
