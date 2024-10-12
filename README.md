@@ -1,8 +1,8 @@
-# Tore M. Hirth's Portfolio Website
+# Tore M. Hirth | Front-End Development Portfolio
 
 <p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
 
-**A responsive, accessible portfolio showcasing my front-end development projects and experience.**
+**A personal portfolio showcasing my journey and projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my expertise in building responsive, accessible, and engaging websites.**
 
 * Take a look at the website [here](https://torehirth.no/)
 
@@ -10,16 +10,19 @@
 
 ## Description
 
-This portfolio website highlights my journey as a front-end developer, showcasing key projects, skills, and experience. The site features light and dark mode options, follows WCAG guidelines, and is responsive across all devices. It includes sections such as:
+This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
 
-- Landing Area with a large image, intro, and links to my GitHub, LinkedIn, and other profiles.
-- Projects Section showcasing three key projects:
-    - Out 'n About – A blog website.
-    - Rainy Days – An online store for jackets.
-    - Community Science Museum – A museum website for kids and families.
-- Skills Section detailing my front-end development skills.
-- Experience Section formatted as a CV with card-style layouts.
-- Contact Section with a form and contact details.
+Key features:
+- Follows WCAG accessibility guidelines (contrast, alt text, ARIA)
+- Fully responsive design for mobile, tablet, and desktop
+- Dark and light mode themes with a toggle button
+- Sticky header that hides on scroll down and reappears on scroll up
+- Landing area covering the entire viewport
+- Projects section with videos, dynamic read more functionality, and external links to GitHub repositories and live sites
+- Skills section with a continuously spinning carousel displaying my tech stack
+- About me section with a detailed introduction and image
+- Work experience and education section with downloadable CVs in both Norwegian and English
+- Contact section with social media links and contact details
 
 The site is deployed using GitHub Actions, which handles both deployments via GitHub Pages and automatic version creation for each pull request and push to the main branch, and it's hosted through one.com
 
@@ -27,11 +30,13 @@ The site is deployed using GitHub Actions, which handles both deployments via Gi
 
 ## Built With
 
-- Figma (prototype)
-- HTML
-- CSS
-- SASS/SCSS
-- JavaScript
+- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [SASS/SCSS](https://sass-lang.com/)
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [GitHub Actions](https://github.com/features/actions)
+- [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/)
+- [Google Analytics](https://analytics.google.com/)
 
 </br>
 
@@ -68,4 +73,3 @@ npm run start
 </br>
 
 <p align="left" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=900&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B%2C40F8FF%3Bsass%2CSASS%2C40F8FF%3B" alt="My Tech Stack" /> </p>
-
