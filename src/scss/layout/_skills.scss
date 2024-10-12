@@ -31,6 +31,7 @@
   left: 0;
   z-index: 2;
   background: linear-gradient(to right, rgba(54, 61, 72, 1), rgba(54, 61, 72, 0));
+  pointer-events: none;
 }
 // Creates a fade in/out style on the left and right side of the slider
 .skills-container::after {
@@ -41,8 +42,9 @@
   height: 100%;
   top: 0;
   right: 0;
-  z-index: 2;
+  z-index: 0;
   background: linear-gradient(to left, rgba(54, 61, 72, 1), rgba(54, 61, 72, 0));
+  pointer-events: none;
 }
 
 .skill-slider {
@@ -62,7 +64,6 @@
   border-radius: variables.$border-radius;
   margin: 0 2rem;
   color: var(--text-colour); // Adding white text colour to cheat the contrast checker
-
   img {
     height: 50px;
     width: 50px;
