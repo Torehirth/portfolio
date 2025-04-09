@@ -1,2 +1,8 @@
-@import "tailwindcss";
 @import "./fonts.css";
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Karla", sans-serif;
+  --font-karla: "Karla", sans-serif;
+  --font-unbounded: "Unbounded", sans-serif;
+}
