@@ -1,20 +1,7 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,jsx,ts,tsx}"],
-  safelist: ["text-4xl", "font-bold", "text-blue-600"],
+  safelist: [],
   darkMode: "selector",
-  theme: {
-    extend: {
-      colors: {
-        primaryBlack: "#22252C",
-        primaryWhite: "#F0E9F2",
-        accentGrey: "#363D48",
-        success: "",
-        warning: "",
-        error: "",
-        info: "",
-      },
-      screens: {},
-    },
-  },
+  theme: {}, // In TailwindCSS v4 every custom theme-style must be under @theme in index.css
   plugins: [],
 };
