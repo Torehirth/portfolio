@@ -1,0 +1,18 @@
+@import "./fonts.css";
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-primaryBlack: #22252c;
+  --color-primaryWhite: #f0e9f2;
+  --color-secondaryRed: #f22c50;
+  --color-accentGrey: #363d48;
+  --color-success: #55d6c2;
+  --color-warning: #eb5e55;
+  --color-error: #d30a2e;
+  --color-info: #4d8cff;
+  /* Fonts */
+  --font-sans: "Karla", sans-serif;
+  --font-karla: "Karla", sans-serif;
+  --font-unbounded: "Unbounded", sans-serif;
+}
