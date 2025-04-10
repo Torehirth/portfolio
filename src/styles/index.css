@@ -1,6 +1,7 @@
 @import "./fonts.css";
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
 @theme {
   /* Colors */
   --color-primaryBlack: #22252c;
