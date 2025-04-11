@@ -1,26 +1,29 @@
 import LightModeSharpIcon from "@mui/icons-material/LightModeSharp";
-import DarkModeIcon from "@mui/icons-material/DarkMode";
+import DarkModeSharpIcon from "@mui/icons-material/DarkModeSharp";
+import useTheme from "../../hooks/useTheme.mjs";
 
 const ThemeToggle = () => {
+  const { theme, toggleTheme } = useTheme();
+
   return (
     <div>
       <button
+        onClick={toggleTheme}
         aria-label="Toggle colour theme"
         title="Toggle colour theme"
-        className="ring-1 rounded-xl px-1 dark:ring-primaryWhite group"
+        className="inlet-shadow group cursor-pointer"
       >
-        <span aria-label="Click for light colour mode">
+        {theme === "dark" ? (
           <LightModeSharpIcon
-            className="dark:text-primaryWhite mr-0.5 group-hover:scale-90"
+            className="text-primaryWhite group-hover:scale-95"
             aria-label="Light mode icon"
           />
-        </span>
-        <span>
-          <DarkModeIcon
-            className="dark:opacity-0 ml-0.5 group-hover:scale-90"
+        ) : (
+          <DarkModeSharpIcon
+            className="text-primaryBlack ml-0.5 group-hover:scale-95"
             aria-label="Dark mode icon"
           />
-        </span>
+        )}
       </button>
     </div>
   );

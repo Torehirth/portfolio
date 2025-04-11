@@ -28,17 +28,13 @@
           j = d.createElement(s),
           dl = l != "dataLayer" ? "&l=" + l : "";
         j.async = true;
-        j.src =
-          "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
         f.parentNode.insertBefore(j, f);
       })(window, document, "script", "dataLayer", "GTM-PMGFC8B8");
     </script>
     <!-- Basic Page Info -->
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <!-- SEO Meta Tags -->
     <meta
@@ -72,11 +68,18 @@
     <meta property="og:url" content="https://torehirth.no/" />
     <meta property="og:type" content="website" />
     <!-- Favicon -->
-    <link
-      rel="icon"
-      href="/favicon/favicon.ico"
-      type="image/x-icon"
-    />
+    <link rel="icon" href="/favicon/favicon.ico" type="image/x-icon" />
+    <script>
+      if (
+        localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      ) {
+        document.documentElement.classList.add("dark");
+      } else {
+        document.documentElement.classList.remove("dark");
+      }
+    </script>
     <script type="module" src="./src/main.jsx"></script>
     <title>Tore M. Hirth | Front-end Development Portfolio</title>
   </head>
