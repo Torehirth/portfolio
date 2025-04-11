@@ -1,3 +1,4 @@
+import HamburgerMenu from "./HamburgerMenu";
 import Logo from "./Logo";
 import NavLinks from "./NavLinks";
 import SoMeLinks from "./SoMeLinks";
@@ -17,7 +18,10 @@ const Header = () => {
         ]}
       />
       <SoMeLinks />
-      <ThemeToggle />
+      <div className="flex gap-4">
+        <ThemeToggle />
+        <HamburgerMenu />
+      </div>
     </header>
   );
 };

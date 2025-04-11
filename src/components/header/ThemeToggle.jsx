@@ -15,12 +15,12 @@ const ThemeToggle = () => {
       >
         {theme === "dark" ? (
           <LightModeSharpIcon
-            className="text-primaryWhite group-hover:scale-95"
+            className="text-primaryWhite group-hover:scale-105"
             aria-label="Light mode icon"
           />
         ) : (
           <DarkModeSharpIcon
-            className="text-primaryBlack ml-0.5 group-hover:scale-95"
+            className="text-primaryBlack ml-0.5 group-hover:scale-105"
             aria-label="Dark mode icon"
           />
         )}

@@ -6,7 +6,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const SoMeLinks = () => {
   return (
     <nav aria-label="Social Media">
-      <ul className="hidden lg:flex w-full items-center gap-3">
+      <ul className="hidden lg:flex w-full items-center gap-4">
         <li>
           <a
             rel="noopener noreferrer"
