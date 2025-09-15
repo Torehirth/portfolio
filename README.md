@@ -2,9 +2,9 @@
 
 <p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
 
-**A personal portfolio showcasing my  projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.**
+**A personal portfolio showcasing my projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.**
 
-* Take a look at the live website [here](https://torehirth.no/)
+- Take a look at the live website [here](https://torehirth.no/)
 
 </br>
 
@@ -13,6 +13,7 @@
 This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
 
 Key features:
+
 - Follows WCAG accessibility guidelines (contrast, alt text, ARIA)
 - Fully responsive design for mobile, tablet, and desktop
 - Dark and light mode themes with a toggle button
@@ -75,7 +76,7 @@ npm run start
 ## Acknowledgments
 
 - Figma for design prototyping
-- Fonts from [Google Fonts](https://fonts.google.com/) 
+- Fonts from [Google Fonts](https://fonts.google.com/)
 - [Consentmanager](https://www.consentmanager.net/) for cookie consent management
 - Icons and images from [Google Material Symbols](https://fonts.google.com/icons) and [SVG Repo](https://www.svgrepo.com/)
 

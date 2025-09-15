@@ -12,6 +12,13 @@ export const renderSkillElements = () => {
   const SkillsElements = [];
   SkillsElements.push(
     createFigureElement(
+      "JavaScript icon",
+      "./src/assets/icons/programming-languages/javascript-svgrepo-com.webp",
+      "JavaScript"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
       "HTML5 icon",
       "./src/assets/icons/programming-languages/html-5-svgrepo-com.webp",
       "HTML"
@@ -26,16 +33,16 @@ export const renderSkillElements = () => {
   );
   SkillsElements.push(
     createFigureElement(
-      "JavaScript icon",
-      "./src/assets/icons/programming-languages/javascript-svgrepo-com.webp",
-      "JavaScript"
+      "SASS icon",
+      "./src/assets/icons/programming-languages/sass-svgrepo-com.svg",
+      "SASS"
     )
   );
   SkillsElements.push(
     createFigureElement(
-      "SASS icon",
-      "./src/assets/icons/programming-languages/sass-svgrepo-com.svg",
-      "SASS"
+      "Tailwind CSS icon",
+      "./src/assets/icons/programming-languages/tailwindcss-mark.d52e9897.svg",
+      "Tailwind CSS"
     )
   );
   SkillsElements.push(
@@ -71,6 +78,27 @@ export const renderSkillElements = () => {
       "WordPress icon",
       "./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp",
       "WordPress"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Vite icon",
+      "./src/assets/icons/programming-languages/Vite.js.svg",
+      "Vite"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Vitest icon",
+      "./src/assets/icons/programming-languages/vitest-seeklogo.svg",
+      "Vitest"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Playwright icon",
+      "./src/assets/icons/programming-languages/playwright-logo.svg",
+      "Playwright"
     )
   );
 
