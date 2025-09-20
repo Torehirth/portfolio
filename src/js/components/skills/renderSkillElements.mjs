@@ -81,11 +81,7 @@ export const renderSkillElements = () => {
     )
   );
   SkillsElements.push(
-    createFigureElement(
-      "Vite icon",
-      "./src/assets/icons/programming-languages/Vite.js.svg",
-      "Vite"
-    )
+    createFigureElement("Vite icon", "./src/assets/icons/programming-languages/Vite.js.svg", "Vite")
   );
   SkillsElements.push(
     createFigureElement(

@@ -6,8 +6,8 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: read      
-  pages: write     
+  contents: read
+  pages: write
   id-token: write
 
 concurrency:
@@ -27,7 +27,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v4
         with:
-          path: ./   
+          path: ./
 
   deploy:
     runs-on: ubuntu-latest

@@ -1,14 +1,25 @@
 {
   "name": "portfolio",
   "version": "1.0.0",
-  "description": "![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)",
-  "main": "index.js",
+  "description": "Tore Hirth Portfolio - showcase of my projects and skills as a front-end developer.",
+  "homepage": "https://torehirth.no/",
+  "type": "module",
+  "main": "index.mjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Torehirth/portfolio.git"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "npx live-server --port=5500",
+    "lint": "eslint .",
+    "fix": "eslint . --fix",
+    "format": "prettier --write . "
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.6.2"
   }
 }

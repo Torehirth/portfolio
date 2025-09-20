@@ -30,9 +30,7 @@
   gap: 0.5rem;
   max-width: 20vw;
   min-width: 250px;
-  color: var(
-    --text-colour
-  ); // added to override the default colour to pass the contrast ratio test
+  color: var(--text-colour); // added to override the default colour to pass the contrast ratio test
 
   figcaption {
     font-size: 1rem;

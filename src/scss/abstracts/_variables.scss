@@ -52,18 +52,10 @@ body {
     }
 
     .skills-container::before {
-      background: linear-gradient(
-        to right,
-        rgba(240, 233, 242, 1),
-        rgba(240, 233, 242, 0)
-      );
+      background: linear-gradient(to right, rgba(240, 233, 242, 1), rgba(240, 233, 242, 0));
     }
     .skills-container::after {
-      background: linear-gradient(
-        to left,
-        rgba(240, 233, 242, 1),
-        rgba(240, 233, 242, 0)
-      );
+      background: linear-gradient(to left, rgba(240, 233, 242, 1), rgba(240, 233, 242, 0));
     }
 
     @media (width <= 1000px) {

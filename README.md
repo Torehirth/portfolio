@@ -1,8 +1,10 @@
-# Tore M. Hirth | Front-End Development Portfolio
+# Tore Hirth | Portfolio
+
+</br>
 
 <p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
 
-**A personal portfolio showcasing my projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.**
+A personal portfolio showcasing my projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.
 
 - Take a look at the live website [here](https://torehirth.no/)
 
@@ -10,22 +12,20 @@
 
 ## Description
 
-This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
+This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The portfolio site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
 
-Key features:
+## Key features:
 
 - Follows WCAG accessibility guidelines (contrast, alt text, ARIA)
 - Fully responsive design for mobile, tablet, and desktop
 - Dark and light mode themes with a toggle button
 - Sticky header that hides on scroll down and reappears on scroll up
 - Landing area covering the entire viewport
-- Projects section with videos, dynamic read more functionality, and external links to GitHub repositories and live sites
-- Skills section with a continuously spinning carousel displaying my tech stack
-- About me section with a detailed introduction and image
-- Work experience and education section with downloadable CVs in both Norwegian and English
-- Contact section with social media links and contact details
-
-The site is deployed using GitHub Actions, which handles both deployments via GitHub Pages and automatic version creation for each pull request and push to the main branch, and it's hosted through one.com
+- Projects section with information, illustrations, and links to GitHub repositories and live sites.
+- Skills section with infinity carousel displaying my tech stack.
+- About me section with a detailed introduction and image.
+- Work experience and education section with downloadable CVs in both Norwegian and English.
+- Contact section with social media links and contact details.
 
 </br>
 
@@ -36,8 +36,6 @@ The site is deployed using GitHub Actions, which handles both deployments via Gi
 - [SASS/SCSS](https://sass-lang.com/)
 - [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 - [GitHub Actions](https://github.com/features/actions)
-- [Google Tag Manager](https://marketingplatform.google.com/about/tag-manager/)
-- [Google Analytics](https://analytics.google.com/)
 
 </br>
 
@@ -77,7 +75,6 @@ npm run start
 
 - Figma for design prototyping
 - Fonts from [Google Fonts](https://fonts.google.com/)
-- [Consentmanager](https://www.consentmanager.net/) for cookie consent management
 - Icons and images from [Google Material Symbols](https://fonts.google.com/icons) and [SVG Repo](https://www.svgrepo.com/)
 
 </br>
