@@ -12,9 +12,44 @@ export const renderSkillElements = () => {
   const SkillsElements = [];
   SkillsElements.push(
     createFigureElement(
+      "React icon",
+      "./src/assets/icons/programming-languages/react-logo_dark.svg",
+      "React"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "TypeScript icon",
+      "./src/assets/icons/programming-languages/ts-logo-128.svg",
+      "TypeScript"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
       "JavaScript icon",
       "./src/assets/icons/programming-languages/javascript-svgrepo-com.webp",
       "JavaScript"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Tailwind CSS icon",
+      "./src/assets/icons/programming-languages/tailwindcss-mark.d52e9897.svg",
+      "Tailwind CSS"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "GitHub icon",
+      "./src/assets/icons/programming-languages/github-svgrepo-com1.svg",
+      "GitHub"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Git icon",
+      "./src/assets/icons/programming-languages/git-svgrepo-com.webp",
+      "Git"
     )
   );
   SkillsElements.push(
@@ -39,10 +74,20 @@ export const renderSkillElements = () => {
     )
   );
   SkillsElements.push(
+    createFigureElement("Vite icon", "./src/assets/icons/programming-languages/Vite.js.svg", "Vite")
+  );
+  SkillsElements.push(
     createFigureElement(
-      "Tailwind CSS icon",
-      "./src/assets/icons/programming-languages/tailwindcss-mark.d52e9897.svg",
-      "Tailwind CSS"
+      "Vitest icon",
+      "./src/assets/icons/programming-languages/vitest-seeklogo.svg",
+      "Vitest"
+    )
+  );
+  SkillsElements.push(
+    createFigureElement(
+      "Playwright icon",
+      "./src/assets/icons/programming-languages/playwright-logo.svg",
+      "Playwright"
     )
   );
   SkillsElements.push(
@@ -59,42 +104,12 @@ export const renderSkillElements = () => {
       "VS Code"
     )
   );
-  SkillsElements.push(
-    createFigureElement(
-      "GitHub icon",
-      "./src/assets/icons/programming-languages/github-svgrepo-com1.svg",
-      "GitHub"
-    )
-  );
-  SkillsElements.push(
-    createFigureElement(
-      "Git icon",
-      "./src/assets/icons/programming-languages/git-svgrepo-com.webp",
-      "Git"
-    )
-  );
+
   SkillsElements.push(
     createFigureElement(
       "WordPress icon",
       "./src/assets/icons/programming-languages/wordpress-color-svgrepo-com.webp",
       "WordPress"
-    )
-  );
-  SkillsElements.push(
-    createFigureElement("Vite icon", "./src/assets/icons/programming-languages/Vite.js.svg", "Vite")
-  );
-  SkillsElements.push(
-    createFigureElement(
-      "Vitest icon",
-      "./src/assets/icons/programming-languages/vitest-seeklogo.svg",
-      "Vitest"
-    )
-  );
-  SkillsElements.push(
-    createFigureElement(
-      "Playwright icon",
-      "./src/assets/icons/programming-languages/playwright-logo.svg",
-      "Playwright"
     )
   );
 
