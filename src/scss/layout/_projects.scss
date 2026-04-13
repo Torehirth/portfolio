@@ -32,6 +32,10 @@
   flex-direction: column;
   gap: 2rem;
   max-width: variables.$max-characters-width;
+
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .image-wrapper-container {
@@ -71,14 +75,12 @@
 .text-inner-wrapper {
   display: flex;
   flex-direction: column;
-  gap: rem;
 
   .subheading {
-    font-size: 1rem;
+    font-size: 1.125rem;
     margin-bottom: 1rem;
   }
   .subdescription {
-    font-weight: 100;
     font-size: 1rem;
     display: flex;
     flex-direction: column;

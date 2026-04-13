@@ -892,6 +892,9 @@ footer {
   gap: 2rem;
   max-width: 65ch;
 }
+.text-outer-wrapper h3 {
+  font-size: 1.25rem;
+}
 
 .image-wrapper-container {
   display: flex;
@@ -931,14 +934,12 @@ footer {
 .text-inner-wrapper {
   display: flex;
   flex-direction: column;
-  gap: rem;
 }
 .text-inner-wrapper .subheading {
-  font-size: 1rem;
+  font-size: 1.125rem;
   margin-bottom: 1rem;
 }
 .text-inner-wrapper .subdescription {
-  font-weight: 100;
   font-size: 1rem;
   display: flex;
   flex-direction: column;
