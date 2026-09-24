@@ -1,82 +1,73 @@
-# Tore Hirth | Portfolio
+# React + TypeScript + Vite
 
-</br>
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-<p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
+Currently, two official plugins are available:
 
-A personal portfolio showcasing my projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-- Take a look at the live website [here](https://torehirth.no/)
+## React Compiler
 
-</br>
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Description
+## Expanding the ESLint configuration
 
-This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The portfolio site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
 
-## Key features:
+```js
+export default defineConfig([
+  globalIgnores(["dist"]),
+  {
+    files: ["**/*.{ts,tsx}"],
+    extends: [
+      // Other configs...
 
-- Follows WCAG accessibility guidelines (contrast, alt text, ARIA)
-- Fully responsive design for mobile, tablet, and desktop
-- Dark and light mode themes with a toggle button
-- Sticky header that hides on scroll down and reappears on scroll up
-- Landing area covering the entire viewport
-- Projects section with information, illustrations, and links to GitHub repositories and live sites.
-- Skills section with infinity carousel displaying my tech stack.
-- About me section with a detailed introduction and image.
-- Work experience and education section with downloadable CVs in both Norwegian and English.
-- Contact section with social media links and contact details.
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
 
-</br>
-
-## Built With
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [SASS/SCSS](https://sass-lang.com/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [GitHub Actions](https://github.com/features/actions)
-
-</br>
-
-## Getting Started
-
-### Installing
-
-1. Clone the repository:
-
-```bash
-git clone  https://github.com/torehirth/portfolio.git
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+]);
 ```
 
-2. Install the dependencies:
+You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
 
+```js
+// eslint.config.js
+import reactX from "eslint-plugin-react-x";
+import reactDom from "eslint-plugin-react-dom";
+
+export default defineConfig([
+  globalIgnores(["dist"]),
+  {
+    files: ["**/*.{ts,tsx}"],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs["recommended-typescript"],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ["./tsconfig.node.json", "./tsconfig.app.json"],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+]);
 ```
-npm install
-```
-
-### Running
-
-To run the app locally, run the following commands:
-
-```bash
-npm run start
-```
-
-</br>
-
-## Contact
-
-[My LinkedIn profile](https://www.linkedin.com/in/torehirth) | [My GitHub profile](https://github.com/Torehirth)
-
-</br>
-
-## Acknowledgments
-
-- Figma for design prototyping
-- Fonts from [Google Fonts](https://fonts.google.com/)
-- Icons and images from [Google Material Symbols](https://fonts.google.com/icons) and [SVG Repo](https://www.svgrepo.com/)
-
-</br>
-
-<p align="left" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=900&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B%2C40F8FF%3Bsass%2CSASS%2C40F8FF%3B" alt="My Tech Stack" /> </p>

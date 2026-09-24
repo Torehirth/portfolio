@@ -1,25 +1,46 @@
 {
   "name": "portfolio",
-  "version": "1.0.0",
-  "description": "Tore Hirth Portfolio - showcase of my projects and skills as a front-end developer.",
-  "homepage": "https://torehirth.no/",
+  "private": true,
+  "version": "v2.0.0",
   "type": "module",
-  "main": "index.mjs",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Torehirth/portfolio.git"
-  },
+  "author": "Tore M. Hirth",
+  "description": "portfolio website with project developed by Tore M. Hirth",
   "scripts": {
-    "start": "npx live-server --port=5500",
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "format": "prettier . --write",
+    "format:check": "prettier . --check",
     "lint": "eslint .",
-    "fix": "eslint . --fix",
-    "format": "prettier --write . "
+    "preview": "vite preview",
+    "prepare": "husky"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "lucide-react": "^1.48.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "react-router": "^7.18.4",
+    "tailwindcss": "^4.3.3"
+  },
   "devDependencies": {
-    "eslint": "^8.57.0",
-    "live-server": "^1.2.2",
-    "prettier": "^3.6.2"
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "eslint": "^10.10.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.6",
+    "globals": "^17.12.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.4.0",
+    "prettier": "3.9.9",
+    "typescript": "~6.0.2",
+    "typescript-eslint": "^8.69.0",
+    "vite": "^8.3.0"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }

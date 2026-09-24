@@ -1,7 +1,0 @@
-@use "./variables";
-
-// Focus state style
-@mixin focus-styles {
-  border: 1px solid var(--text-colour);
-  padding: 2px;
-}

@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  /* Typography */
+  --font-sans: "Geist", sans-serif;
+  --font-mono: "Geist Mono", monospace;
+  /* Font size */
+  --text-hero: clamp(3.5rem, 9vw, 7rem);
+  --text-h1: clamp(2rem, 5vw, 3.5rem);
+  --text-h2: 1.875rem;
+  --text-h3: 1.25rem;
+
+  /* Layout */
+  --container-layout: 72rem;
+
+  /* Light theme */
+  --color-canvas: #ede5d8;
+  --color-surface: #f5eee2;
+  --color-subtle: #e2d8c8;
+  --color-text: #1c1008;
+  --color-accent: #8c3214;
+  --color-accent-dark: #6e2510;
+  --color-warm: #5a6320;
+  --color-border: #c9bbaa;
+  --color-border-strong: #a69080;
+}
+
+html.dark {
+  --color-canvas: #111116;
+  --color-surface: #18181f;
+  --color-subtle: #22222c;
+  --color-text: #eeeef2;
+  --color-accent: #22d3ee;
+  --color-accent-dark: #0ea5e9;
+  --color-warm: #f97316;
+  --color-border: #242430;
+  --color-border-strong: #363648;
+}
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  /* font-family: var(--font-sans); */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}
