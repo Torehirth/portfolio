@@ -46,7 +46,7 @@ html {
 body {
   background-color: var(--color-canvas);
   color: var(--color-text);
-  /* font-family: var(--font-sans); */
+  font-family: var(--font-sans);
   display: flex;
   flex-direction: column;
   min-height: 100%;
