@@ -1,5 +1,12 @@
-@import "tailwindcss";
 @import "./tokens.css";
+@import "tailwindcss";
+
+*,
+*::before,
+*::after {
+  list-style: none;
+  box-sizing: border-box;
+}
 
 html {
   scroll-behavior: smooth;
@@ -13,16 +20,25 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 footer {
   margin-top: auto;
 }
 
-a {
-  color: var(--color-accent);
+a,
+button {
+  color: var(--color-text);
 }
 
-a:hover {
-  color: var(--color-accent-dark);
+a:hover,
+button:hover {
+  filter: opacity(0.7);
+}
+
+a:active,
+button:active {
+  color: var(--color-accent);
 }

@@ -5,6 +5,7 @@ import { ProjectsPage } from "../../features/projects/pages/ProjectsPage";
 import { ProjectDetailsPage } from "../../features/projectDetails/pages/ProjectDetailsPage";
 import { ContactPage } from "../../features/contact/pages/ContactPage";
 import { NotFoundPage } from "../../features/notFound/pages/NotFoundPage";
+import { AboutPage } from "../../features/about/pages/AboutPage";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,7 @@ const router = createBrowserRouter([
       { path: "/projects", Component: ProjectsPage },
       { path: "/projects/:id", Component: ProjectDetailsPage },
       { path: "/contact", Component: ContactPage },
+      { path: "/about", Component: AboutPage },
       { path: "*", Component: NotFoundPage },
     ],
   },
