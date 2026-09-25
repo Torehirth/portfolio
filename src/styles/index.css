@@ -1,0 +1,28 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+footer {
+  margin-top: auto;
+}
+
+a {
+  color: var(--color-accent);
+}
+
+a:hover {
+  color: var(--color-accent-dark);
+}

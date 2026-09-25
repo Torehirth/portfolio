@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:ital,wght@0,100..900;1,100..900&family=Geist:ital,wght@0,100..900;1,100..900&display=swap");
-@import "tailwindcss";
 
 @theme {
   /* Typography */
@@ -36,30 +35,4 @@ html.dark {
   --color-warm: #f97316;
   --color-border: #242430;
   --color-border-strong: #363648;
-}
-
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
-
-body {
-  background-color: var(--color-canvas);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-footer {
-  margin-top: auto;
-}
-
-a {
-  color: var(--color-accent);
-}
-
-a:hover {
-  color: var(--color-accent-dark);
 }
