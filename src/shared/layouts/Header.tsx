@@ -15,6 +15,7 @@ import {
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const [copied, setCopied] = useState(false);
 
   const closeMenu = () => {
     setIsMenuOpen(false);
@@ -23,19 +24,33 @@ export const Header = () => {
   const linkInitialStyle = "px-2 py-1 text-lg font-medium";
   const linkActiveStyle = `${linkInitialStyle} text-accent`;
 
+  const copyDiscordUsername = async () => {
+    await navigator.clipboard.writeText("torehirth");
+    setCopied(true);
+
+    setTimeout(() => {
+      setCopied(false);
+    }, 2000);
+  };
+
   return (
     <>
       <header className="border-border/50 relative h-16 border-b">
         <div className="max-w-layout mx-auto flex items-center justify-between px-4 md:px-8">
-          <div className="flex">
-            {isDarkMode ? <Logo variant="darkMode" /> : <Logo variant="lightMode" />}
-          </div>
+          <Link to="/" className="flex">
+            {isDarkMode ? (
+              <Logo variant="darkMode" aria-hidden="true" />
+            ) : (
+              <Logo variant="lightMode" aria-hidden="true" />
+            )}
+          </Link>
           <div className="flex items-center justify-between">
             {/* Desktop navigation */}
             <nav aria-label="desktop navigation menu">
               <ul className="hidden items-center gap-4 md:flex">
                 <li>
                   <NavLink
+                    aria-label="Navigate to home page"
                     to="/"
                     className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}>
                     Home
@@ -43,6 +58,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <NavLink
+                    aria-label="Navigate to projects page"
                     to="/projects"
                     className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}>
                     Projects
@@ -50,20 +66,28 @@ export const Header = () => {
                 </li>
                 <li>
                   <NavLink
+                    aria-label="Navigate to about page"
                     to="/about"
                     className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}>
                     About
                   </NavLink>
                 </li>
                 <li>
-                  <ButtonLink to="/contact" variant="primary">
+                  <ButtonLink aria-label="Navigate to contact page" to="/contact" variant="primary">
                     Contact
                   </ButtonLink>
                 </li>
               </ul>
             </nav>
-            <button type="button" className="cursor-pointer pr-2 md:ml-6 md:pr-0">
-              {isDarkMode ? <Sun className="h-5 w-5" /> : <MoonIcon className="h-5 w-5" />}
+            <button
+              type="button"
+              className="cursor-pointer pr-2 md:ml-6 md:pr-0"
+              aria-label="Toggle dark mode">
+              {isDarkMode ? (
+                <Sun className="h-5 w-5" aria-hidden="true" />
+              ) : (
+                <MoonIcon className="h-5 w-5" aria-hidden="true" />
+              )}
             </button>
 
             {/* Mobile menu btn */}
@@ -71,8 +95,9 @@ export const Header = () => {
               <button
                 type="button"
                 className="ml-2 cursor-pointer px-2 py-1"
+                aria-label="Toggle mobile navigation menu"
                 onClick={() => setIsMenuOpen((prevState) => !prevState)}>
-                {isMenuOpen ? <X /> : <Menu />}
+                {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
               </button>
             </div>
           </div>
@@ -88,7 +113,8 @@ export const Header = () => {
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}
-              onClick={closeMenu}>
+              onClick={closeMenu}
+              aria-label="Navigate to home page">
               Home
             </NavLink>
           </li>
@@ -96,7 +122,8 @@ export const Header = () => {
             <NavLink
               to="/projects"
               className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}
-              onClick={closeMenu}>
+              onClick={closeMenu}
+              aria-label="Navigate to projects page">
               Projects
             </NavLink>
           </li>
@@ -104,41 +131,69 @@ export const Header = () => {
             <NavLink
               to="/about"
               className={({ isActive }) => (isActive ? linkActiveStyle : linkInitialStyle)}
-              onClick={closeMenu}>
+              onClick={closeMenu}
+              aria-label="Navigate to about page">
               About
             </NavLink>
           </li>
           <li>
-            <ButtonLink to="/contact" variant="primary" onClick={closeMenu}>
+            <ButtonLink
+              to="/contact"
+              variant="primary"
+              onClick={closeMenu}
+              aria-label="Navigate to contact page">
               Contact
             </ButtonLink>
           </li>
         </ul>
         <ul className="mt-auto flex justify-center gap-4 pb-12">
           <li>
-            <Link to="https://www.linkedin.com/in/torehirth/">
-              <FontAwesomeIcon icon={faLinkedin} size="xl" />
-            </Link>
+            <a
+              aria-label="Navigate to Tore Hirth's Linkedin profile"
+              href="https://www.linkedin.com/in/torehirth/"
+              rel="noopener noreferrer"
+              target="_blank">
+              <FontAwesomeIcon aria-hidden="true" icon={faLinkedin} size="xl" />
+            </a>
           </li>
           <li>
-            <Link to="https://github.com/Torehirth/">
-              <FontAwesomeIcon icon={faGithub} size="xl" />
-            </Link>
+            <a
+              aria-label="Navigate to Tore Hirth's GitHub profile"
+              href="https://github.com/Torehirth/"
+              rel="noopener noreferrer"
+              target="_blank">
+              <FontAwesomeIcon aria-hidden="true" icon={faGithub} size="xl" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://www.facebook.com/torehirth"
+              rel="noopener noreferrer"
+              target="_blank"
+              aria-label="Navigate to Tore Hirth's Facebook profile">
+              <FontAwesomeIcon aria-hidden="true" icon={faFacebook} size="xl" />
+            </a>
           </li>
           <li>
-            <Link to="">
-              <FontAwesomeIcon icon={faDiscord} size="xl" />
-            </Link>
+            <a
+              aria-label="Navigate to Tore Hirth's Instagram profile"
+              href="https://www.instagram.com/torehirth/"
+              rel="noopener noreferrer"
+              target="_blank">
+              <FontAwesomeIcon aria-hidden="true" icon={faInstagram} size="xl" />
+            </a>
           </li>
           <li>
-            <Link to="https://www.facebook.com/torehirth">
-              <FontAwesomeIcon icon={faFacebook} size="xl" />
-            </Link>
-          </li>
-          <li>
-            <Link to="https://www.instagram.com/torehirth/">
-              <FontAwesomeIcon icon={faInstagram} size="xl" />
-            </Link>
+            <button aria-label="Copy Discord username" onClick={copyDiscordUsername}>
+              <FontAwesomeIcon aria-hidden="true" icon={faDiscord} size="xl" />
+              {/* Pop over info */}
+              {copied && (
+                <span className="bg-accent/80 text-surface absolute right-0 bottom-20 left-0 mx-20 mb-4 rounded-lg border px-4 py-3 whitespace-nowrap">
+                  <p className="">Username copied!</p>
+                </span>
+              )}
+            </button>
           </li>
         </ul>
       </nav>
