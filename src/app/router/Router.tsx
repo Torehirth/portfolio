@@ -6,11 +6,13 @@ import { ProjectDetailsPage } from "../../features/projectDetails/pages/ProjectD
 import { ContactPage } from "../../features/contact/pages/ContactPage";
 import { NotFoundPage } from "../../features/notFound/pages/NotFoundPage";
 import { AboutPage } from "../../features/about/pages/AboutPage";
+import { RootErrorBoundary } from "../../shared/layouts/RootErrorBoundary";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: RootLayout,
+    ErrorBoundary: RootErrorBoundary,
     children: [
       { index: true, Component: HomePage },
       { path: "/projects", Component: ProjectsPage },
