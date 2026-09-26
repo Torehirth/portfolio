@@ -1,39 +1,46 @@
 @import "./tokens.css";
 @import "tailwindcss";
 
-*,
-*::before,
-*::after {
-  list-style: none;
-  box-sizing: border-box;
-}
+@layer base {
+  *,
+  *::before,
+  *::after {
+    list-style: none;
+    box-sizing: border-box;
+  }
 
-html {
-  scroll-behavior: smooth;
-  height: 100%;
-}
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
 
-body {
-  background-color: var(--color-canvas);
-  color: var(--color-text);
-  font-family: var(--font-sans);
-  display: flex;
-  flex-direction: column;
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-}
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
-footer {
-  margin-top: auto;
-}
+  footer {
+    margin-top: auto;
+  }
 
-a:hover,
-button:hover {
-  filter: opacity(0.7);
-}
+  a,
+  button {
+    color: var(--color-text);
+  }
 
-a:active,
-button:active {
-  color: var(--color-accent);
+  a:hover,
+  button:hover {
+    opacity: 0.7;
+  }
+
+  a:active,
+  button:active {
+    color: var(--color-accent);
+  }
 }
