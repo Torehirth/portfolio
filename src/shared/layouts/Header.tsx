@@ -1,6 +1,6 @@
 import { Menu, MoonIcon, Sun, X } from "lucide-react";
-import { Link, NavLink } from "react-router";
-import { useState } from "react";
+import { NavLink } from "react-router";
+import { useEffect, useState } from "react";
 import { ButtonLink } from "../components/ui/buttons/ButtonLink";
 import { Logo } from "../components/ui/brand/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -33,17 +33,43 @@ export const Header = () => {
     }, 2000);
   };
 
+  useEffect(() => {
+    const initialTheme = () => {
+      document.documentElement.classList.toggle(
+        "dark",
+        localStorage.darkMode === "true" ||
+          (!("darkMode" in localStorage) &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches),
+      );
+      setIsDarkMode(document.documentElement.classList.contains("dark"));
+    };
+    initialTheme();
+  }, []);
+
+  const toggleDarkMode = () => {
+    document.documentElement.classList.toggle("dark");
+    if (document.documentElement.classList.contains("dark")) {
+      setIsDarkMode(true);
+      localStorage.setItem("darkMode", "true");
+    } else {
+      setIsDarkMode(false);
+      localStorage.setItem("darkMode", "false");
+    }
+  };
+
+  console.log(isDarkMode);
+
   return (
     <>
       <header className="border-border/50 relative h-16 border-b">
         <div className="max-w-layout mx-auto flex items-center justify-between px-4 md:px-8">
-          <Link to="/" className="flex">
+          <div className="flex">
             {isDarkMode ? (
               <Logo variant="darkMode" aria-hidden="true" />
             ) : (
               <Logo variant="lightMode" aria-hidden="true" />
             )}
-          </Link>
+          </div>
           <div className="flex items-center justify-between">
             {/* Desktop navigation */}
             <nav aria-label="desktop navigation menu">
@@ -80,6 +106,7 @@ export const Header = () => {
               </ul>
             </nav>
             <button
+              onClick={toggleDarkMode}
               type="button"
               className="cursor-pointer pr-2 md:ml-6 md:pr-0"
               aria-label="Toggle dark mode">
