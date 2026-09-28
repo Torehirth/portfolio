@@ -1,6 +1,6 @@
 import { Menu, MoonIcon, Sun, X } from "lucide-react";
 import { NavLink } from "react-router";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { ButtonLink } from "../components/ui/buttons/ButtonLink";
 import { Logo } from "../components/ui/brand/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,17 +11,18 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
+import { useDarkMode } from "../hooks/useDarkMode";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const [copied, setCopied] = useState(false);
+  const { isDarkMode, toggleDarkMode } = useDarkMode();
 
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
 
-  const linkInitialStyle = "px-2 py-1 text-lg font-medium";
+  const linkInitialStyle = "px-2 py-1 text-lg";
   const linkActiveStyle = `${linkInitialStyle} text-accent`;
 
   const copyDiscordUsername = async () => {
@@ -32,32 +33,6 @@ export const Header = () => {
       setCopied(false);
     }, 2000);
   };
-
-  useEffect(() => {
-    const initialTheme = () => {
-      document.documentElement.classList.toggle(
-        "dark",
-        localStorage.darkMode === "true" ||
-          (!("darkMode" in localStorage) &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches),
-      );
-      setIsDarkMode(document.documentElement.classList.contains("dark"));
-    };
-    initialTheme();
-  }, []);
-
-  const toggleDarkMode = () => {
-    document.documentElement.classList.toggle("dark");
-    if (document.documentElement.classList.contains("dark")) {
-      setIsDarkMode(true);
-      localStorage.setItem("darkMode", "true");
-    } else {
-      setIsDarkMode(false);
-      localStorage.setItem("darkMode", "false");
-    }
-  };
-
-  console.log(isDarkMode);
 
   return (
     <>
