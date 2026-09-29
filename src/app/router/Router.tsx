@@ -6,7 +6,7 @@ import { ProjectDetailsPage } from "../../features/projectDetails/pages/ProjectD
 import { ContactPage } from "../../features/contact/pages/ContactPage";
 import { NotFoundPage } from "../../features/notFound/pages/NotFoundPage";
 import { AboutPage } from "../../features/about/pages/AboutPage";
-import { RootErrorBoundary } from "../../shared/layouts/RootErrorBoundary";
+import { RootErrorBoundary } from "../../shared/errors/RootErrorBoundary";
 
 const router = createBrowserRouter([
   {
