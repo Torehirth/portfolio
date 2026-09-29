@@ -1,6 +1,6 @@
 import { Menu, MoonIcon, Sun, X } from "lucide-react";
 import { NavLink } from "react-router";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { ButtonLink } from "../components/ui/buttons/ButtonLink";
 import { Logo } from "../components/ui/brand/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -11,12 +11,17 @@ import {
   faInstagram,
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-import { useDarkMode } from "../hooks/useDarkMode";
+import { ThemeContext } from "../context/ThemeContext";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [copied, setCopied] = useState(false);
-  const { isDarkMode, toggleDarkMode } = useDarkMode();
+
+  const theme = useContext(ThemeContext);
+  if (!theme) {
+    throw new Error("ThemeContext must be used within a provider");
+  }
+  const { isDarkMode, toggleDarkMode } = theme;
 
   const closeMenu = () => {
     setIsMenuOpen(false);
