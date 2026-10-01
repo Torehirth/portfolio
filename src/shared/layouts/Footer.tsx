@@ -1,7 +1,8 @@
-import { ExternalLink } from "lucide-react";
 import { Logo } from "../components/ui/brand/Logo";
 import { useContext } from "react";
 import { ThemeContext } from "../context/ThemeContext";
+import { useCopyDiscordName } from "../hooks/useCopyDiscordName";
+import { FeedbackPopup } from "../components/ui/feedback/feedbackPopup";
 
 export const Footer = () => {
   const theme = useContext(ThemeContext);
@@ -9,6 +10,8 @@ export const Footer = () => {
     throw new Error("ThemeContext must be used within a provider");
   }
   const { isDarkMode } = theme;
+
+  const { copied, copyDiscordUsername } = useCopyDiscordName();
 
   return (
     <footer>
@@ -84,9 +87,25 @@ export const Footer = () => {
               </li>
 
               <li>
+                <button
+                  onClick={copyDiscordUsername}
+                  className="inline-flex items-center gap-2 hover:underline">
+                  Discord
+                </button>
+                {!copied && (
+                  <FeedbackPopup className="bg-accent/80 text-surface absolute right-1/2 bottom-0 mb-4 translate-x-1/2 rounded-lg border px-4 py-3 whitespace-nowrap">
+                    Username copied!
+                  </FeedbackPopup>
+                )}
+              </li>
+              <li>
                 <a href="#" className="inline-flex items-center gap-2 hover:underline">
-                  CV / Résumé
-                  <ExternalLink size={15} aria-hidden="true" />
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" className="inline-flex items-center gap-2 hover:underline">
+                  Instagram
                 </a>
               </li>
             </ul>

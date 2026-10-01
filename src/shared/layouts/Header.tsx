@@ -12,10 +12,13 @@ import {
   faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
 import { ThemeContext } from "../context/ThemeContext";
+import { useCopyDiscordName } from "./../hooks/useCopyDiscordName";
+import { FeedbackPopup } from "../components/ui/feedback/feedbackPopup";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
+  // const [copied, setCopied] = useState(false);
+  const { copied, copyDiscordUsername } = useCopyDiscordName();
 
   const theme = useContext(ThemeContext);
   if (!theme) {
@@ -30,14 +33,14 @@ export const Header = () => {
   const linkInitialStyle = "px-2 py-1 text-lg";
   const linkActiveStyle = `${linkInitialStyle} text-accent`;
 
-  const copyDiscordUsername = async () => {
-    await navigator.clipboard.writeText("torehirth");
-    setCopied(true);
+  // const copyDiscordUsername = async () => {
+  //   await navigator.clipboard.writeText("torehirth");
+  //   setCopied(true);
 
-    setTimeout(() => {
-      setCopied(false);
-    }, 2000);
-  };
+  //   setTimeout(() => {
+  //     setCopied(false);
+  //   }, 2000);
+  // };
 
   return (
     <>
@@ -196,9 +199,9 @@ export const Header = () => {
               <FontAwesomeIcon aria-hidden="true" icon={faDiscord} size="xl" />
               {/* Pop over info */}
               {copied && (
-                <span className="bg-accent/80 text-surface absolute right-0 bottom-20 left-0 mx-20 mb-4 rounded-lg border px-4 py-3 whitespace-nowrap">
-                  <p className="">Username copied!</p>
-                </span>
+                <FeedbackPopup className="bg-accent/80 text-surface absolute right-0 bottom-20 left-0 mx-20 mb-4 rounded-lg border px-4 py-3 whitespace-nowrap">
+                  Username copied!
+                </FeedbackPopup>
               )}
             </button>
           </li>
