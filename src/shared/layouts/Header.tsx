@@ -4,13 +4,7 @@ import { useContext, useState } from "react";
 import { ButtonLink } from "../components/ui/buttons/ButtonLink";
 import { Logo } from "../components/ui/brand/Logo";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faDiscord,
-  faFacebook,
-  faGithub,
-  faInstagram,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faDiscord, faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { ThemeContext } from "../context/ThemeContext";
 import { useCopyDiscordName } from "./../hooks/useCopyDiscordName";
 import { FeedbackPopup } from "../components/ui/feedback/FeedbackPopup";
