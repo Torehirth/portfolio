@@ -6,9 +6,10 @@ interface LogoProps {
   variant: "lightMode" | "darkMode";
   to?: string;
   size?: "sm" | "md" | "lg" | "xl";
+  mobileSize?: "sm" | "md" | "lg" | "xl";
 }
 
-export const Logo = ({ variant, to = "/", size = "md" }: LogoProps) => {
+export const Logo = ({ variant, to = "/", size = "md", mobileSize = "sm" }: LogoProps) => {
   const variants = {
     lightMode: lightModeLogo,
     darkMode: darkModeLogo,
@@ -26,7 +27,7 @@ export const Logo = ({ variant, to = "/", size = "md" }: LogoProps) => {
       <img
         src={variants[variant]}
         alt="Tore Hirth's initials as logo"
-        className={`h-${sizes[size]} w-${sizes[size]}`}
+        className={`h-${sizes[mobileSize]} w-${sizes[mobileSize]} md:h-${sizes[size]} w-${sizes[size]}`}
       />
     </Link>
   );
