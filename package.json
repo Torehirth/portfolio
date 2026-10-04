@@ -4,7 +4,7 @@
   "version": "v2.0.0",
   "type": "module",
   "author": "Tore M. Hirth",
-  "description": "portfolio website with project developed by Tore M. Hirth",
+  "description": "portfolio website that showcases projects developed by Tore M. Hirth",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
