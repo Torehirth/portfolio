@@ -1,12 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router";
 import { RootLayout } from "../../shared/layouts/RootLayout";
-import { HomePage } from "../../features/home/pages/HomePage";
-import { ProjectsPage } from "../../features/projects/pages/ProjectsPage";
-import { ProjectDetailsPage } from "../../features/projectDetails/pages/ProjectDetailsPage";
-import { ContactPage } from "../../features/contact/pages/ContactPage";
 import { NotFoundPage } from "../../features/notFound/pages/NotFoundPage";
 import { AboutPage } from "../../features/about/pages/AboutPage";
 import { RootErrorBoundary } from "../../shared/errors/RootErrorBoundary";
+import { ProjectsPage } from "./../../features/projects/pages/ProjectsPage";
+import { HomePage } from "../../features/home/pages/HomePage";
+import { ContactPage } from "./../../features/contact/pages/ContactPage";
 
 const router = createBrowserRouter([
   {
@@ -16,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: "/projects", Component: ProjectsPage },
-      { path: "/projects/:id", Component: ProjectDetailsPage },
+      { path: "/projects/:id", Component: ProjectsPage },
       { path: "/contact", Component: ContactPage },
       { path: "/about", Component: AboutPage },
       { path: "*", Component: NotFoundPage },
