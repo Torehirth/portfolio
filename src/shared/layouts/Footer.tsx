@@ -21,7 +21,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="max-w-layout mx-auto px-6 py-16 pb-6 md:px-10 md:pt-20">
+      <div className="max-w-layout mx-auto px-6 py-16 pb-6 md:px-10 md:pt-12">
         <div className="grid gap-8 md:grid-cols-[5fr_1fr_1fr]">
           {/* Contact */}
           <div>
