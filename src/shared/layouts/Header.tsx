@@ -13,11 +13,10 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { ThemeContext } from "../context/ThemeContext";
 import { useCopyDiscordName } from "./../hooks/useCopyDiscordName";
-import { FeedbackPopup } from "../components/ui/feedback/feedbackPopup";
+import { FeedbackPopup } from "../components/ui/feedback/FeedbackPopup";
 
 export const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  // const [copied, setCopied] = useState(false);
   const { copied, copyDiscordUsername } = useCopyDiscordName();
 
   const theme = useContext(ThemeContext);
@@ -32,15 +31,6 @@ export const Header = () => {
 
   const linkInitialStyle = "px-2 py-1 text-lg";
   const linkActiveStyle = `${linkInitialStyle} text-accent`;
-
-  // const copyDiscordUsername = async () => {
-  //   await navigator.clipboard.writeText("torehirth");
-  //   setCopied(true);
-
-  //   setTimeout(() => {
-  //     setCopied(false);
-  //   }, 2000);
-  // };
 
   return (
     <>
@@ -99,7 +89,6 @@ export const Header = () => {
                 <MoonIcon className="h-5 w-5" aria-hidden="true" />
               )}
             </button>
-
             {/* Mobile menu btn */}
             <div className="md:hidden">
               <button
@@ -113,7 +102,6 @@ export const Header = () => {
           </div>
         </div>
       </header>
-
       {/* Mobile nav menu */}
       <nav
         aria-label="mobile navigation menu"
@@ -175,39 +163,19 @@ export const Header = () => {
               <FontAwesomeIcon aria-hidden="true" icon={faGithub} size="xl" />
             </a>
           </li>
-
-          <li>
-            <a
-              href="https://www.facebook.com/torehirth"
-              rel="noopener noreferrer"
-              target="_blank"
-              aria-label="Navigate to Tore Hirth's Facebook profile">
-              <FontAwesomeIcon aria-hidden="true" icon={faFacebook} size="xl" />
-            </a>
-          </li>
-          <li>
-            <a
-              aria-label="Navigate to Tore Hirth's Instagram profile"
-              href="https://www.instagram.com/torehirth/"
-              rel="noopener noreferrer"
-              target="_blank">
-              <FontAwesomeIcon aria-hidden="true" icon={faInstagram} size="xl" />
-            </a>
-          </li>
           <li>
             <button aria-label="Copy Discord username" onClick={copyDiscordUsername}>
               <FontAwesomeIcon aria-hidden="true" icon={faDiscord} size="xl" />
               {/* Pop over info */}
               {copied && (
                 <FeedbackPopup className="bg-accent/80 text-surface absolute right-0 bottom-20 left-0 mx-20 mb-4 rounded-lg border px-4 py-3 whitespace-nowrap">
-                  Username copied!
+                  Discord username copied!
                 </FeedbackPopup>
               )}
             </button>
           </li>
         </ul>
       </nav>
-
       {/* Backdrop blur */}
       {isMenuOpen && (
         <div
