@@ -28,13 +28,13 @@ export const Header = () => {
 
   return (
     <>
-      <header className="border-border/50 relative h-16 border-b">
-        <div className="max-w-layout mx-auto flex items-center justify-between px-4 md:px-8">
+      <header className="border-border/50 relative border-b">
+        <div className="max-w-layout mx-auto flex min-h-16 items-center justify-between px-4 md:px-8">
           <div className="flex">
             {isDarkMode ? (
-              <Logo variant="darkMode" aria-hidden="true" />
+              <Logo variant="darkMode" aria-hidden="true" size="md" />
             ) : (
-              <Logo variant="lightMode" aria-hidden="true" />
+              <Logo variant="lightMode" aria-hidden="true" size="md" />
             )}
           </div>
           <div className="flex items-center justify-between">

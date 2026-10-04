@@ -5,17 +5,29 @@ import darkModeLogo from "../../../assets/logo/light-logo.svg";
 interface LogoProps {
   variant: "lightMode" | "darkMode";
   to?: string;
+  size?: "sm" | "md" | "lg" | "xl";
 }
 
-export const Logo = ({ variant, to = "/" }: LogoProps) => {
+export const Logo = ({ variant, to = "/", size = "md" }: LogoProps) => {
   const variants = {
     lightMode: lightModeLogo,
     darkMode: darkModeLogo,
   };
 
+  const sizes = {
+    sm: "h-7 w-7",
+    md: "h-10 w-10",
+    lg: "h-13 w-13",
+    xl: "h-16 w-16",
+  };
+
   return (
     <Link to={to} className="px-4 py-2">
-      <img src={variants[variant]} alt="Tore Hirth's initials as logo" className="h-10 w-10" />
+      <img
+        src={variants[variant]}
+        alt="Tore Hirth's initials as logo"
+        className={`h-${sizes[size]} w-${sizes[size]}`}
+      />
     </Link>
   );
 };
