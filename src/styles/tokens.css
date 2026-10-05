@@ -5,7 +5,7 @@
   --font-sans: "Geist", sans-serif;
   --font-mono: "Geist Mono", monospace;
   /* Font size */
-  --text-hero: clamp(3.5rem, 9vw, 7rem);
+  --text-hero: clamp(3.5rem, 9vw, 5rem);
   --text-h1: clamp(2rem, 5vw, 3.5rem);
   --text-h2: 1.875rem;
   --text-h3: 1.25rem;
