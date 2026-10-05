@@ -72,26 +72,28 @@ export const Header = () => {
                 </li>
               </ul>
             </nav>
-            <button
-              onClick={toggleDarkMode}
-              type="button"
-              className="cursor-pointer pr-2 md:ml-6 md:pr-0"
-              aria-label="Toggle dark mode">
-              {isDarkMode ? (
-                <Sun className="h-5 w-5" aria-hidden="true" />
-              ) : (
-                <MoonIcon className="h-5 w-5" aria-hidden="true" />
-              )}
-            </button>
-            {/* Mobile menu btn */}
-            <div className="md:hidden">
+            <div className="flex w-full items-center justify-center gap-4">
               <button
+                onClick={toggleDarkMode}
                 type="button"
-                className="ml-2 cursor-pointer px-2 py-1"
-                aria-label="Toggle mobile navigation menu"
-                onClick={() => setIsMenuOpen((prevState) => !prevState)}>
-                {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+                className="cursor-pointer md:ml-6"
+                aria-label="Toggle dark mode">
+                {isDarkMode ? (
+                  <Sun className="h-5 w-5" aria-hidden="true" />
+                ) : (
+                  <MoonIcon className="h-5 w-5" aria-hidden="true" />
+                )}
               </button>
+              {/* Mobile menu btn */}
+              <div className="h-6 w-full md:hidden">
+                <button
+                  type="button"
+                  className="ml-2 cursor-pointer"
+                  aria-label="Toggle mobile navigation menu"
+                  onClick={() => setIsMenuOpen((prevState) => !prevState)}>
+                  {isMenuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+                </button>
+              </div>
             </div>
           </div>
         </div>

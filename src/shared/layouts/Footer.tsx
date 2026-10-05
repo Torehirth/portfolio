@@ -16,13 +16,13 @@ export const Footer = () => {
 
   const { copied, copyDiscordUsername } = useCopyDiscordName();
 
-  const linkInitialStyle = "px-2 py-1 text-lg";
+  const linkInitialStyle = "text-lg";
   const linkActiveStyle = `${linkInitialStyle} text-accent`;
 
   return (
     <footer>
-      <div className="max-w-layout mx-auto px-6 py-8 pb-6 md:px-10 md:pt-12 md:pb-12">
-        <div className="grid gap-8 md:grid-cols-[5fr_1fr_1fr]">
+      <div className="bg-surface py-8 pb-6 md:pt-12 md:pb-12">
+        <div className="max-w-layout mx-auto grid gap-8 px-4 md:grid-cols-[5fr_1fr_1fr] md:px-8">
           <div>
             {isDarkMode ? (
               <Logo to="/" variant={"darkMode"} />
@@ -111,7 +111,7 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        <div className="border-border mt-8 flex flex-col gap-3 border-t pt-8 text-sm md:mt-14 md:flex-row md:items-center md:justify-between">
+        <div className="border-border max-w-layout mx-auto mt-8 flex flex-col gap-3 border-t px-4 pt-8 text-sm md:mt-14 md:flex-row md:items-center md:justify-between md:px-8">
           <div className="flex flex-col gap-1 font-mono text-xs md:flex-row md:gap-4">
             <span className="mb-1 md:mb-0">© 2026 Tore Hirth.</span>
             <span>Built with React, TypeScript and Tailwind CSS.</span>

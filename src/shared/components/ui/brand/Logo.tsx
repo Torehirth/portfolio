@@ -23,7 +23,7 @@ export const Logo = ({ variant, to = "/", size = "md", mobileSize = "sm" }: Logo
   };
 
   return (
-    <Link to={to} className="px-4 py-2">
+    <Link to={to}>
       <img
         src={variants[variant]}
         alt="Tore Hirth's initials as logo"
