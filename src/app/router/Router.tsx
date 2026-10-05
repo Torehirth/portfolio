@@ -6,6 +6,7 @@ import { RootErrorBoundary } from "../../shared/errors/RootErrorBoundary";
 import { ProjectsPage } from "./../../features/projects/pages/ProjectsPage";
 import { HomePage } from "../../features/home/pages/HomePage";
 import { ContactPage } from "./../../features/contact/pages/ContactPage";
+import { ProjectDetailPage } from "../../features/projectDetails/pages/ProjectDetailsPage";
 
 const router = createBrowserRouter([
   {
@@ -15,7 +16,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, Component: HomePage },
       { path: "/projects", Component: ProjectsPage },
-      { path: "/projects/:id", Component: ProjectsPage },
+      { path: "/projects/:id", Component: ProjectDetailPage },
       { path: "/contact", Component: ContactPage },
       { path: "/about", Component: AboutPage },
       { path: "*", Component: NotFoundPage },
