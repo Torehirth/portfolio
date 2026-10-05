@@ -76,13 +76,21 @@ export const Footer = () => {
             <p className="mb-4 font-mono text-xs tracking-[0.18em] uppercase">Elsewhere</p>
             <ul className="space-y-3">
               <li>
-                <a href="#" className="inline-flex items-center gap-1 hover:underline">
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1 hover:underline"
+                  rel="noreferrer noopener"
+                  target="_blank">
                   <FontAwesomeIcon aria-hidden="true" icon={faGithub} />
                   GitHub
                 </a>
               </li>
               <li>
-                <a href="#" className="inline-flex items-center gap-1 hover:underline">
+                <a
+                  href="#"
+                  className="inline-flex items-center gap-1 hover:underline"
+                  rel="noreferrer noopener"
+                  target="_blank">
                   <FontAwesomeIcon aria-hidden="true" icon={faLinkedin} />
                   LinkedIn
                 </a>
