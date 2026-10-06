@@ -8,6 +8,8 @@ export const projects = [
     title: "HelTech",
     assignment: "JavaScript Frameworks",
     year: 2026,
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
     shortDescription:
       "A React webshop with product browsing, cart management, checkout and reusable components.",
     type: "noroff teamwork",
@@ -23,6 +25,8 @@ export const projects = [
     title: "Posteria",
     assignment: "CSS Frameworks",
     year: 2025,
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
     shortDescription:
       "A social media platform for creating posts, connecting with others and interacting with a shared feed.",
     type: "noroff solo",
@@ -38,6 +42,8 @@ export const projects = [
     title: "BidRally",
     assignment: "Semester Project 2",
     year: 2025,
+    description:
+      "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibu",
     shortDescription:
       "An auction platform where users can create listings, place bids, search auctions and manage their profile.",
     type: "noroff solo",
