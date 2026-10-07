@@ -72,35 +72,38 @@ export const HomePage = () => {
           </div>
           <ul className="grid gap-4 md:grid-cols-2">
             {data.slice(0, 2).map((project) => (
-              <li key={project.id}>
-                <article className="border-border overflow-hidden rounded-xl border">
-                  <img
-                    src={project.image}
-                    alt={project.imageAlt}
-                    className="aspect-video w-full object-cover"
-                  />
-                  <div className="p-5 md:p-6">
-                    <p className="font-mono text-xs capitalize">
-                      <span className="text-accent">● {project.year}</span> · {project.type} project
-                    </p>
-                    <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
-                    <p className="text-muted mt-3 leading-6">{project.shortDescription}</p>
-                    <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
-                      {project.technologies.map((tech) => (
-                        <li
-                          key={tech}
-                          className="border-border rounded border px-2 py-1 font-mono text-xs">
-                          {tech}
-                        </li>
-                      ))}
-                    </ul>
-                    <Link
-                      to={`/projects/${project.id}`}
-                      className="text-accent mt-5 inline-block font-medium">
-                      View case study →
-                    </Link>
-                  </div>
-                </article>
+              <li key={project.id} className="ease-in-out hover:scale-[99.5%]">
+                <Link to={`/projects/${project.id}`} className="hover:opacity-100">
+                  <article className="border-border overflow-hidden rounded-xl border">
+                    <img
+                      src={project.image}
+                      alt={project.imageAlt}
+                      className="aspect-video w-full object-cover"
+                    />
+                    <div className="p-5 md:p-6">
+                      <p className="font-mono text-xs capitalize">
+                        <span className="text-accent">● {project.year}</span> · {project.type}{" "}
+                        project
+                      </p>
+                      <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
+                      <p className="text-muted mt-3 leading-6">{project.shortDescription}</p>
+                      <ul className="mt-4 flex flex-wrap gap-2" aria-label="Technologies used">
+                        {project.technologies.map((tech) => (
+                          <li
+                            key={tech}
+                            className="border-border rounded border px-2 py-1 font-mono text-xs">
+                            {tech}
+                          </li>
+                        ))}
+                      </ul>
+                      <Link
+                        to={`/projects/${project.id}`}
+                        className="text-accent mt-5 inline-block font-medium">
+                        View case study →
+                      </Link>
+                    </div>
+                  </article>
+                </Link>
               </li>
             ))}
           </ul>
