@@ -10,7 +10,7 @@ import { useCopyDiscordName } from "./../hooks/useCopyDiscordName";
 import { FeedbackPopup } from "../components/ui/feedback/FeedbackPopup";
 
 export const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
   const { copied, copyDiscordUsername } = useCopyDiscordName();
 
   const theme = useContext(ThemeContext);
@@ -28,7 +28,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="border-border/50 relative border-b">
+      <header className="relative">
         <div className="max-w-layout mx-auto flex min-h-16 items-center justify-between px-4 md:px-8">
           <div className="flex">
             {isDarkMode ? (
