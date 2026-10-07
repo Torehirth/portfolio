@@ -17,6 +17,7 @@ export const projects = [
     liveUrl: "https://helTech.netlify.app/",
     repoUrl: "https://github.com/Torehirth/helTech",
     readmeUrl: "https://github.com/Torehirth/helTech/blob/main/README.md",
+    portfolioProjectUrl: "https://www.torehirth.no/projects/helTech",
     technologies: ["React", "TypeScript", "Vite", "React Router", "Zustand", "Noroff API", "Git"],
     overview:
       "HelTech is an e-commerce application built with React, TypeScript and Vite. It includes product browsing, product details, a shopping cart, checkout flow, routing and a contact page. The project was developed together with another student as part of the JavaScript Frameworks course.",
@@ -41,6 +42,7 @@ export const projects = [
     liveUrl: "https://js2-posteria.netlify.app",
     repoUrl: "https://github.com/Torehirth/posteria",
     readmeUrl: "https://github.com/Torehirth/posteria/blob/main/README.md",
+    portfolioProjectUrl: "https://www.torehirth.no/projects/posteria",
     technologies: ["HTML", "Tailwind CSS", "JavaScript", "Noroff API", "Git"],
     overview:
       "Posteria is a responsive social media platform where users can create and share posts, view profiles and interact with other users. The project was built with HTML, JavaScript and Tailwind CSS, using the Noroff API as the data source.",
@@ -65,6 +67,7 @@ export const projects = [
     liveUrl: "https://torehirth.github.io/Bid-Rally/",
     repoUrl: "https://github.com/Torehirth/Bid-Rally",
     readmeUrl: "https://github.com/Torehirth/Bid-Rally/blob/main/README.md",
+    portfolioProjectUrl: "https://www.torehirth.no/projects/bidRally",
     technologies: ["Vite", "Tailwind CSS", "JavaScript", "Noroff API", "Git"],
     overview:
       "BidRally is an online auction platform where users can register, create auction listings, place bids, search for listings and manage their profile. It was built with Vite, Tailwind CSS and vanilla JavaScript using the Noroff API v2 with JWT authentication.",

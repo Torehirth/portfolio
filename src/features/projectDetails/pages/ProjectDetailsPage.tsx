@@ -43,7 +43,7 @@ export const ProjectDetailPage = () => {
             <p className="text-muted mt-6 max-w-3xl text-lg leading-8">
               {project.shortDescription}
             </p>
-            <figure className="mt-10 md:mt-14">
+            <figure className="mt-10 max-w-250 md:mx-auto md:mt-14">
               <img
                 src={project.image}
                 alt={project.imageAlt}
@@ -63,7 +63,7 @@ export const ProjectDetailPage = () => {
                 <dt className="text-muted font-mono text-xs uppercase">Tech</dt>
                 {project.technologies.map((tech) => {
                   return (
-                    <dd key={tech} className="mt-2 text-sm">
+                    <dd key={tech} className="mt-2 text-sm font-medium">
                       {tech}
                     </dd>
                   );
@@ -71,11 +71,11 @@ export const ProjectDetailPage = () => {
               </div>
               <div>
                 <dt className="text-muted font-mono text-xs uppercase">Role</dt>
-                <dd className="mt-2 text-sm capitalize">{project.role}</dd>
+                <dd className="mt-2 text-sm font-medium capitalize">{project.role}</dd>
               </div>
               <div>
                 <dt className="font-mono text-xs uppercase">Year</dt>
-                <dd className="mt-2 text-sm">{project.year}</dd>
+                <dd className="mt-2 text-sm font-medium">{project.year}</dd>
               </div>
             </dl>
             <div className="flex flex-col items-center gap-4 md:min-w-120 md:flex-row md:gap-6">
@@ -102,20 +102,20 @@ export const ProjectDetailPage = () => {
                   </button>
                   <LinkedinShareButton
                     onClick={closeShareButtonPopup}
-                    url={project.liveUrl}
+                    url={project.portfolioProjectUrl}
                     aria-label="Share on Facebook">
                     <LinkedinIcon round size={28} />
                   </LinkedinShareButton>
                   <EmailShareButton
                     subject="Hva synes du?"
                     body="Hei, Kom over denne nettsiden - verdt å sjekke ut!"
-                    url={project.liveUrl}
+                    url={project.portfolioProjectUrl}
                     aria-label="Share by email">
                     <EmailIcon round size={28} />
                   </EmailShareButton>
                   <FacebookShareButton
                     onClick={closeShareButtonPopup}
-                    url={project.liveUrl}
+                    url={project.portfolioProjectUrl}
                     hashtag={`#${project.title}`}
                     aria-label="Share on Facebook">
                     <FacebookIcon round size={28} />
@@ -130,7 +130,7 @@ export const ProjectDetailPage = () => {
                       `#${project.technologies[1]}`,
                       "website",
                     ]}
-                    url={project.liveUrl}
+                    url={project.portfolioProjectUrl}
                     aria-label="Share on X">
                     <XIcon size={28} round />
                   </XShareButton>
