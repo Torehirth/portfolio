@@ -4,6 +4,7 @@ import { useState } from "react";
 import { useForm, type SubmitHandler } from "react-hook-form";
 import { FeedbackMessage } from "../../../shared/components/ui/feedback/FeedbackMessage";
 import { Loader } from "./../../../shared/components/ui/loader/Loader";
+import { fetchApi } from "../services/fetchApi";
 
 interface Inputs {
   name: string;
@@ -24,17 +25,11 @@ export const ContactPage = () => {
   const sendMessage: SubmitHandler<Inputs> = async (data) => {
     setError(null);
     try {
-      const response = await fetch("https://formspree.io/f/xzedranr", {
+      await fetchApi({
+        url: "https://formspree.io/f/xzedranr",
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
+        formData: data,
       });
-
-      if (!response.ok) {
-        throw new Error("Something went wrong with the request");
-      }
 
       setSuccess(true);
     } catch (caughtError) {
