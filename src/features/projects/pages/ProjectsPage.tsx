@@ -22,40 +22,38 @@ export const ProjectsPage = () => {
             <ul className="flex flex-col gap-8 md:gap-12">
               {data.map((project) => (
                 <li key={project.id} className="ease-in-out hover:scale-[99.5%]">
-                  <Link to={`/projects/${project.id}`} className="hover:opacity-100">
-                    <article className="overflow-hidden rounded-xl hover:shadow-md md:grid md:grid-cols-[0.38fr_0.62fr]">
-                      <img
-                        src={project.image}
-                        alt={project.imageAlt}
-                        className="h-full min-h-64 w-full object-cover"
-                      />
-                      <div className="flex flex-col justify-between p-6 md:p-10">
-                        <div>
-                          <p className="text-muted font-mono text-xs">
-                            <span className="text-accent">● {project.year}</span>
-                          </p>
-                          <h2 className="mt-6 text-2xl font-medium md:text-3xl">{project.title}</h2>
-                          <p className="text-muted mt-4 max-w-2xl leading-7">
-                            {project.shortDescription}
-                          </p>
-                          <ul className="mt-5 flex flex-wrap gap-2">
-                            {project.technologies.map((tech) => (
-                              <li
-                                key={tech}
-                                className="border-border rounded border px-2 py-1 font-mono text-xs">
-                                {tech}
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                        <Link
-                          to={`/projects/${project.id}`}
-                          className="text-accent mt-7 font-medium md:self-end">
-                          Case study →
-                        </Link>
+                  <article className="relative overflow-hidden rounded-xl hover:shadow-md md:grid md:grid-cols-[0.38fr_0.62fr]">
+                    <img
+                      src={project.image}
+                      alt={project.imageAlt}
+                      className="h-full min-h-64 w-full object-cover"
+                    />
+                    <div className="flex flex-col justify-between p-6 md:p-10">
+                      <div>
+                        <p className="text-muted font-mono text-xs">
+                          <span className="text-accent">● {project.year}</span>
+                        </p>
+                        <h2 className="mt-6 text-2xl font-medium md:text-3xl">{project.title}</h2>
+                        <p className="text-muted mt-4 max-w-2xl leading-7">
+                          {project.shortDescription}
+                        </p>
+                        <ul className="mt-5 flex flex-wrap gap-2">
+                          {project.technologies.map((tech) => (
+                            <li
+                              key={tech}
+                              className="border-border rounded border px-2 py-1 font-mono text-xs">
+                              {tech}
+                            </li>
+                          ))}
+                        </ul>
                       </div>
-                    </article>
-                  </Link>
+                      <Link
+                        to={`/projects/${project.id}`}
+                        className="text-accent mt-7 font-medium after:absolute after:inset-0 md:self-end">
+                        Case study →
+                      </Link>
+                    </div>
+                  </article>
                 </li>
               ))}
             </ul>
