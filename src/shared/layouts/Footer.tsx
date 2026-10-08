@@ -33,7 +33,7 @@ export const Footer = () => {
             <p className="text-h2 mb-4 font-semibold tracking-tight md:text-4xl">
               Always up for coffee or a chat!
             </p>
-            <a href="mailto:tore@torehirth.dev" className="text-accent text-lg hover:underline">
+            <a href="mailto:torehirth@gmail.com" className="text-accent text-lg hover:underline">
               torehirth@gmail.com
             </a>
           </div>
