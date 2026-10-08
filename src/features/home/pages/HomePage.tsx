@@ -6,7 +6,7 @@ export const HomePage = () => {
   const data = projects;
   return (
     <>
-      {/* SEO */}
+      {/* Meta */}
       <title>Front-end Developer | Tore Hirth</title>
       <meta
         name="description"
@@ -22,8 +22,8 @@ export const HomePage = () => {
       <meta property="og:url" content="https://torehirth.no/" />
       <meta property="og:type" content="website" />
       {/* content */}
-      <section className="max-w-layout mx-auto w-full px-4 pt-16 pb-12 md:px-8 md:pt-40 md:pb-36">
-        <div className="">
+      <section className="max-w-layout mx-auto h-[calc(100vh-64px)] w-full px-4 pt-32 pb-12 md:px-8 md:pt-60 md:pb-36">
+        <div>
           <p className="text-accent mb-4 font-mono text-xs tracking-[6px] uppercase">
             <span aria-hidden="true">●</span> Available for work
           </p>
@@ -33,11 +33,11 @@ export const HomePage = () => {
             all the way from an idea to a launched product.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <ButtonLink variant="primary" to="/projects">
+            <ButtonLink variant="primary" to="#projects">
               View my work
             </ButtonLink>
             <ButtonLink variant="outline" to="/about">
-              View my work
+              About me
             </ButtonLink>
             <a
               href="https://github.com/Torehirth"
@@ -47,7 +47,7 @@ export const HomePage = () => {
               GitHub ↗
             </a>
           </div>
-          <p className="text-muted mt-10 font-mono text-xs leading-6 md:mt-16">
+          <p className="mt-10 font-mono text-xs leading-6 md:mt-16">
             React&nbsp;&nbsp;|&nbsp;&nbsp;TypeScript&nbsp;&nbsp;|&nbsp;&nbsp;Tailwind
             CSS&nbsp;&nbsp;|&nbsp;&nbsp;Headless WordPress&nbsp;&nbsp;|&nbsp;&nbsp;Figma
             &nbsp;&nbsp;|&nbsp;&nbsp;Git
@@ -55,7 +55,10 @@ export const HomePage = () => {
         </div>
       </section>
       {/* Projects */}
-      <section aria-labelledby="projects-heading" className="bg-surface py-14 md:py-28">
+      <section
+        id="projects"
+        aria-labelledby="projects-heading"
+        className="bg-surface py-14 md:py-28">
         <div className="max-w-layout mx-auto px-4 md:px-8">
           <div className="mb-8 flex w-full items-end justify-between">
             <div>
@@ -74,7 +77,7 @@ export const HomePage = () => {
             {data.slice(0, 2).map((project) => (
               <li key={project.id} className="ease-in-out hover:scale-[99.5%]">
                 <Link to={`/projects/${project.id}`} className="hover:opacity-100">
-                  <article className="border-border overflow-hidden rounded-xl border">
+                  <article className="overflow-hidden rounded-xl hover:shadow-md">
                     <img
                       src={project.image}
                       alt={project.imageAlt}
@@ -122,9 +125,9 @@ export const HomePage = () => {
             </h2>
             <p className="text-muted mt-5 max-w-xl leading-7">
               Before moving into front-end development, I spent years working with customers and
-              solving practical problems. That experience still shapes how I work today —
-              understanding what people actually need before deciding how to build it. I work mainly
-              with React and TypeScript, but my projects also cover UI design in Figma,
+              solving practical problems. That experience still shapes how I work today,
+              understanding what people actually need before deciding how to build it. <br /> I work
+              mainly with React and TypeScript, but my projects also cover UI design in Figma,
               accessibility, API's and the full process from idea to deployed product.
             </p>
             <a href="/about" className="text-accent mt-6 inline-block font-medium">

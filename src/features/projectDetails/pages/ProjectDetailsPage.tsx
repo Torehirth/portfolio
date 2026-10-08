@@ -1,6 +1,6 @@
 import { useParams } from "react-router";
 import { projects } from "../../../shared/data/projects";
-import { Share2, X } from "lucide-react";
+import { ExternalLink, Share2, X } from "lucide-react";
 import { ExternalButtonLinks } from "../../../shared/components/ui/buttons/ExternalButtonLinks";
 import {
   EmailIcon,
@@ -13,6 +13,8 @@ import {
   XShareButton,
 } from "react-share";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export const ProjectDetailPage = () => {
   const [popupOpen, setPopupOpen] = useState<boolean>(false);
@@ -30,6 +32,9 @@ export const ProjectDetailPage = () => {
 
   return (
     <>
+      {/* Meta */}
+      <title></title>
+      {/* Content */}
       <article>
         <header className="px-4 pt-16 pb-10 md:px-8 md:pt-24 md:pb-14">
           <div className="max-w-layout mx-auto md:px-8">
@@ -39,11 +44,11 @@ export const ProjectDetailPage = () => {
             <p className="mt-8 font-mono text-xs tracking-[2px] uppercase md:mt-12">
               {project.type} · {project.year}
             </p>
-            <h1 className="mt-5 text-4xl font-medium md:text-6xl">{project.title}</h1>
+            <h1 className="text-h1 mt-5 font-medium">{project.title}</h1>
             <p className="text-muted mt-6 max-w-3xl text-lg leading-8">
               {project.shortDescription}
             </p>
-            <figure className="mt-10 max-w-250 md:mx-auto md:mt-14">
+            <figure className="mt-10 max-w-250 md:mt-14">
               <img
                 src={project.image}
                 alt={project.imageAlt}
@@ -54,9 +59,7 @@ export const ProjectDetailPage = () => {
           </div>
         </header>
         {/* Metadata */}
-        <section
-          aria-label="Project information"
-          className="border-border bg-subtle border-y px-4 py-6 md:px-8">
+        <section aria-label="Project information" className="bg-subtle px-4 py-12 md:px-8 md:py-18">
           <div className="max-w-layout relative mx-auto flex flex-col gap-7 md:flex-row md:items-end md:justify-between md:px-8">
             <dl className="grid grid-cols-2 gap-x-10 gap-y-6 md:grid-cols-3">
               <div>
@@ -86,10 +89,12 @@ export const ProjectDetailPage = () => {
                 <Share2 aria-hidden="true" className="text-accent stroke-2" />
               </button>
               <ExternalButtonLinks variant="primary" href={project.liveUrl}>
+                <ExternalLink aria-hidden="true" />
                 Live website
               </ExternalButtonLinks>
               <ExternalButtonLinks variant="outline" href={project.repoUrl}>
-                Github
+                <FontAwesomeIcon icon={faGithub} size="lg" />
+                GitHub
               </ExternalButtonLinks>
               {popupOpen && (
                 <nav className="bg-canvas absolute bottom-40 z-30 flex gap-4 rounded-xl px-16 py-12 md:right-105 md:bottom-15">
@@ -140,7 +145,7 @@ export const ProjectDetailPage = () => {
           </div>
         </section>
         {/* Article body */}
-        <div className="px-4 py-14 md:px-8 md:py-24">
+        <div className="px-4 py-12 md:px-8 md:py-20">
           <div className="max-w-layout mx-auto">
             <div className="max-w-3xl space-y-16 md:px-8">
               <section aria-labelledby="overview-heading">

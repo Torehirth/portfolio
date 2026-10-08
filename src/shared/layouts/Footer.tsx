@@ -21,7 +21,7 @@ export const Footer = () => {
 
   return (
     <footer>
-      <div className="bg-surface py-8 pb-6 md:pt-12 md:pb-12">
+      <div className="bg-surface py-8 pb-6 md:pt-20 md:pb-8">
         <div className="max-w-layout mx-auto grid gap-8 px-4 md:grid-cols-[5fr_1fr_1fr] md:px-8">
           <div>
             {isDarkMode ? (
@@ -78,7 +78,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-1 hover:underline"
+                  className="inline-flex items-center gap-1"
                   rel="noreferrer noopener"
                   target="_blank">
                   <FontAwesomeIcon aria-hidden="true" icon={faGithub} />
@@ -88,7 +88,7 @@ export const Footer = () => {
               <li>
                 <a
                   href="#"
-                  className="inline-flex items-center gap-1 hover:underline"
+                  className="inline-flex items-center gap-1"
                   rel="noreferrer noopener"
                   target="_blank">
                   <FontAwesomeIcon aria-hidden="true" icon={faLinkedin} />
@@ -96,9 +96,7 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <button
-                  onClick={copyDiscordUsername}
-                  className="inline-flex items-center gap-1 hover:underline">
+                <button onClick={copyDiscordUsername} className="inline-flex items-center gap-1">
                   <FontAwesomeIcon aria-hidden="true" icon={faDiscord} />
                   Discord
                 </button>

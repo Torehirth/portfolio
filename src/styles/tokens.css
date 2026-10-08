@@ -5,8 +5,8 @@
   --font-sans: "Geist", sans-serif;
   --font-mono: "Geist Mono", monospace;
   /* Font size */
-  --text-hero: clamp(3.5rem, 9vw, 5rem);
-  --text-h1: clamp(2rem, 5vw, 3.5rem);
+  --text-hero: clamp(3.5rem, 2.75rem + 3vw, 5rem);
+  --text-h1: clamp(2.25rem, 6vw, 4.5rem);
   --text-h2: 1.875rem;
   --text-h3: 1.25rem;
 
@@ -18,11 +18,10 @@
   --color-surface: #f5eee2;
   --color-subtle: #e2d8c8;
   --color-text: #1c1008;
-  --color-accent: #8c3214;
-  --color-accent-dark: #6e2510;
+  --color-accent: #6e2510;
   --color-warm: #5a6320;
   --color-border: #c9bbaa;
-  --color-border-strong: #a69080;
+  --color-border-strong: #aba79b;
 }
 
 html.dark {
@@ -31,8 +30,7 @@ html.dark {
   --color-subtle: #22222c;
   --color-text: #eeeef2;
   --color-accent: #22d3ee;
-  --color-accent-dark: #0ea5e9;
   --color-warm: #f97316;
-  --color-border: #242430;
-  --color-border-strong: #363648;
+  --color-border: #30303f;
+  --color-border-strong: #686767;
 }

@@ -24,7 +24,7 @@ export const Header = () => {
   };
 
   const linkInitialStyle = "px-2 py-1 text-lg";
-  const linkActiveStyle = `${linkInitialStyle} text-accent`;
+  const linkActiveStyle = `${linkInitialStyle} border-b border-border-strong`;
 
   return (
     <>
@@ -40,7 +40,7 @@ export const Header = () => {
           <div className="flex items-center justify-between">
             {/* Desktop navigation */}
             <nav aria-label="desktop navigation menu">
-              <ul className="hidden items-center gap-4 md:flex">
+              <ul className="hidden items-center gap-6 md:flex">
                 <li>
                   <NavLink
                     aria-label="Navigate to home page"
