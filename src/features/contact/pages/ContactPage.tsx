@@ -70,10 +70,11 @@ export const ContactPage = () => {
         content="Get in touch with Tore Hirth, a front-end developer interested in new opportunities, collaborations and building modern, accessible web experiences."
       />
       <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+
       {/* === Content === */}
       {error && (
-        <div className="mx-auto mt-24 max-w-xl">
-          <FeedbackMessage variant="error" message="test test test"></FeedbackMessage>
+        <div className="mx-auto mt-24 max-w-xl" role="alert">
+          <FeedbackMessage variant="error" message={error} />
         </div>
       )}
       <div className="px-4 py-16 md:px-8 md:py-28">
@@ -87,7 +88,7 @@ export const ContactPage = () => {
             </p>
             <div className="order-2 mt-10 flex flex-col gap-2">
               <p className="text-accent flex items-center gap-2 font-mono text-xs tracking-[3px] uppercase">
-                <Mail size={16} className="text-accent" />
+                <Mail size={16} className="text-accent" aria-hidden="true" />
                 Email
               </p>
               <a href="mailto:torehirth@gmail.com" className="font-medium underline">
@@ -97,7 +98,7 @@ export const ContactPage = () => {
             <div className="mt-6 flex flex-col gap-2 md:mt-10">
               <p className="text-accent flex items-center gap-2 font-mono text-xs tracking-[3px] uppercase">
                 <span>
-                  <Map size={16} className="text-accent" />
+                  <Map size={16} className="text-accent" aria-hidden="true" />
                 </span>
                 Address
               </p>
@@ -106,7 +107,7 @@ export const ContactPage = () => {
           </section>
           <section className="relative mt-2 md:mt-0">
             {success && (
-              <div className="mb-8">
+              <div className="mb-8" role="status">
                 <FeedbackMessage
                   variant="success"
                   message="Thanks for reaching out. I'll be in touch shortly! "
@@ -114,13 +115,16 @@ export const ContactPage = () => {
               </div>
             )}
             {isSubmitting && (
-              <div className="absolute top-1/2 right-1/2 z-50 mx-auto flex w-full translate-x-1/2 -translate-y-1/2 justify-center">
+              <div
+                role="status"
+                aria-label="Sending message"
+                className="absolute top-1/2 right-1/2 z-50 mx-auto flex w-full translate-x-1/2 -translate-y-1/2 justify-center">
                 <Loader />
               </div>
             )}
             <h2 className="text-accent flex items-center gap-2 font-mono text-xs tracking-[3px] uppercase">
               <span>
-                <Pencil size={16} />
+                <Pencil size={16} aria-hidden="true" />
               </span>
               Contact form
             </h2>
@@ -133,6 +137,8 @@ export const ContactPage = () => {
                     placeholder=" "
                     autoComplete="name"
                     className={inputClass}
+                    aria-invalid={!!errors.name}
+                    aria-describedby={errors.name ? "name-error" : undefined}
                     {...register("name", {
                       required: "Please enter your name",
                       minLength: { value: 2, message: "Name must contain at least 2 characters" },
@@ -142,7 +148,9 @@ export const ContactPage = () => {
                     Enter your name <span className="text-xs">(required)</span>
                   </label>
                   {errors.name && (
-                    <p className="mt-1 -mb-3 text-sm text-red-700">{String(errors.name.message)}</p>
+                    <p id="name-error" role="alert" className="mt-1 -mb-3 text-sm text-red-700">
+                      {String(errors.name.message)}
+                    </p>
                   )}
                 </div>
                 <div className="relative">
@@ -151,6 +159,8 @@ export const ContactPage = () => {
                     id="email"
                     placeholder=" "
                     autoComplete="email"
+                    aria-invalid={!!errors.email}
+                    aria-describedby={errors.email ? "email-error" : undefined}
                     {...register("email", {
                       required: "Please enter your email address",
                       pattern: {
@@ -164,7 +174,7 @@ export const ContactPage = () => {
                     Enter Your email address <span className="text-xs">(required)</span>
                   </label>
                   {errors.email && (
-                    <p className="mt-1 -mb-3 text-sm text-red-700">
+                    <p id="email-error" role="alert" className="mt-1 -mb-3 text-sm text-red-700">
                       {String(errors.email.message)}
                     </p>
                   )}
@@ -174,6 +184,8 @@ export const ContactPage = () => {
                     type="text"
                     id="subject"
                     placeholder=" "
+                    aria-invalid={!!errors.subject}
+                    aria-describedby={errors.subject ? "subject-error" : undefined}
                     {...register("subject", {
                       required: "Please enter a subject",
                       minLength: {
@@ -182,14 +194,15 @@ export const ContactPage = () => {
                       },
                       maxLength: { value: 90, message: "Subject cannot exceed 90 characters" },
                     })}
-
                     className={inputClass}
                   />
                   <label htmlFor="subject" className={labelClass}>
                     Enter a subject <span className="text-xs">(required)</span>
                   </label>
                   {errors.subject && (
-                    <p className="mt-1 -mb-3 text-sm text-red-700">Subject is required</p>
+                    <p id="subject-error" role="alert" className="mt-1 -mb-3 text-sm text-red-700">
+                      Subject is required
+                    </p>
                   )}
                 </div>
                 <div className="relative">
@@ -198,6 +211,8 @@ export const ContactPage = () => {
                     placeholder=" "
                     rows={8}
                     className={inputClass}
+                    aria-invalid={!!errors.message}
+                    aria-describedby={errors.message ? "message-error" : undefined}
                     {...register("message", {
                       required: "Please enter a message",
                       minLength: {
@@ -211,7 +226,7 @@ export const ContactPage = () => {
                     Write your message <span className="text-xs">(required)</span>
                   </label>
                   {errors.message && (
-                    <p className="mt-1 -mb-3 text-sm text-red-700">
+                    <p id="message-error" role="alert" className="mt-1 -mb-3 text-sm text-red-700">
                       {String(errors.message.message)}
                     </p>
                   )}

@@ -44,6 +44,7 @@ export const ProjectDetailPage = () => {
       <meta name="twitter:title" content={project.seo.title} />
       <meta name="twitter:description" content={project.seo.description} />
       <meta name="twitter:image" content={project.image} />
+
       {/* === Content === */}
       <article>
         <header className="px-4 pt-16 pb-10 md:px-8 md:pt-24 md:pb-14">
@@ -95,7 +96,9 @@ export const ProjectDetailPage = () => {
               <button
                 onClick={() => setPopupOpen((prevState) => !prevState)}
                 className="cursor-pointer"
-                aria-label="share project">
+                aria-label="Share project"
+                aria-expanded={popupOpen}
+                aria-controls="share-options">
                 <Share2 aria-hidden="true" className="text-accent stroke-2" />
               </button>
               <ExternalButtonLinks variant="primary" href={project.liveUrl}>
@@ -103,37 +106,41 @@ export const ProjectDetailPage = () => {
                 Live website
               </ExternalButtonLinks>
               <ExternalButtonLinks variant="outline" href={project.repoUrl}>
-                <FontAwesomeIcon icon={faGithub} size="lg" />
+                <FontAwesomeIcon icon={faGithub} size="lg" aria-hidden="true" />
                 GitHub
               </ExternalButtonLinks>
               {popupOpen && (
-                <nav className="bg-canvas absolute bottom-40 z-30 flex gap-4 rounded-xl px-16 py-12 md:right-105 md:bottom-15">
+                <div
+                  id="share-options"
+                  role="group"
+                  aria-label="Share project"
+                  className="bg-canvas absolute bottom-40 z-30 flex gap-4 rounded-xl px-16 py-12 md:right-105 md:bottom-15">
                   <button
                     onClick={closeShareButtonPopup}
                     type="button"
                     className="absolute top-0 right-0 mt-2 mr-2 cursor-pointer"
                     aria-label="Close sharing menu">
-                    <X />
+                    <X aria-hidden="true" />
                   </button>
                   <LinkedinShareButton
                     onClick={closeShareButtonPopup}
                     url={project.portfolioProjectUrl}
-                    aria-label="Share on Facebook">
-                    <LinkedinIcon round size={28} />
+                    aria-label="Share on LinkedIn">
+                    <LinkedinIcon round size={28} aria-hidden="true" />
                   </LinkedinShareButton>
                   <EmailShareButton
                     subject="Hva synes du?"
                     body="Hei, Kom over denne nettsiden - verdt å sjekke ut!"
                     url={project.portfolioProjectUrl}
                     aria-label="Share by email">
-                    <EmailIcon round size={28} />
+                    <EmailIcon round size={28} aria-hidden="true" />
                   </EmailShareButton>
                   <FacebookShareButton
                     onClick={closeShareButtonPopup}
                     url={project.portfolioProjectUrl}
                     hashtag={`#${project.title}`}
                     aria-label="Share on Facebook">
-                    <FacebookIcon round size={28} />
+                    <FacebookIcon round size={28} aria-hidden="true" />
                   </FacebookShareButton>
                   <XShareButton
                     onClick={closeShareButtonPopup}
@@ -147,9 +154,9 @@ export const ProjectDetailPage = () => {
                     ]}
                     url={project.portfolioProjectUrl}
                     aria-label="Share on X">
-                    <XIcon size={28} round />
+                    <XIcon size={28} round aria-hidden="true" />
                   </XShareButton>
-                </nav>
+                </div>
               )}
             </div>
           </div>
@@ -189,6 +196,7 @@ export const ProjectDetailPage = () => {
       {/* Backdrop blur */}
       {popupOpen && (
         <div
+          aria-hidden="true"
           className="fixed inset-0 top-0 z-10 backdrop-blur-xs"
           onClick={closeShareButtonPopup}></div>
       )}

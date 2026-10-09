@@ -91,7 +91,10 @@ export const HomePage = () => {
                   />
                   <div className="p-5 md:p-6">
                     <p className="font-mono text-xs capitalize">
-                      <span className="text-accent">● {project.year}</span> · {project.type} project
+                      <span className="text-accent">
+                        <span aria-hidden="true">●</span> {project.year}
+                      </span>{" "}
+                      · {project.type} project
                     </p>
                     <h3 className="mt-4 text-xl font-medium">{project.title}</h3>
                     <p className="text-muted mt-3 leading-6">{project.shortDescription}</p>
@@ -106,6 +109,7 @@ export const HomePage = () => {
                     </ul>
                     <Link
                       to={`/projects/${project.id}`}
+                      aria-label={`View case study: ${project.title}`}
                       className="text-accent after mt-5 inline-block font-medium after:absolute after:inset-0">
                       View case study →
                     </Link>

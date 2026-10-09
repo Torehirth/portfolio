@@ -27,6 +27,7 @@ export const ProjectsPage = () => {
         content="Explore front-end projects by Tore Hirth, including web applications built with React, TypeScript, JavaScript and modern development tools."
       />
       <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+
       {/* === Content === */}
       <section className="py-16 md:py-24">
         <div className="max-w-layout mx-auto px-4 md:px-8">
@@ -51,7 +52,9 @@ export const ProjectsPage = () => {
                     <div className="flex flex-col justify-between p-6 md:p-10">
                       <div>
                         <p className="text-muted font-mono text-xs">
-                          <span className="text-accent">● {project.year}</span>
+                          <span className="text-accent">
+                            <span aria-hidden="true">●</span> {project.year}
+                          </span>
                         </p>
                         <h2 className="mt-6 text-2xl font-medium md:text-3xl">{project.title}</h2>
                         <p className="text-muted mt-4 max-w-2xl leading-7">
@@ -69,6 +72,7 @@ export const ProjectsPage = () => {
                       </div>
                       <Link
                         to={`/projects/${project.id}`}
+                        aria-label={`View case study: ${project.title}`}
                         className="text-accent mt-7 font-medium after:absolute after:inset-0 md:self-end">
                         Case study →
                       </Link>
