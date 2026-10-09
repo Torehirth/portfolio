@@ -27,6 +27,11 @@ export const projects = [
       "One of the main challenges was managing cart and checkout state across different parts of the application while keeping the components reusable and the data flow understandable. Working collaboratively also meant coordinating changes through Git and making sure our work could be combined without introducing conflicts.",
     learned:
       "HelTech gave me more experience building a complete application in React and TypeScript rather than working only on isolated components. I also gained practical experience with shared application state, reusable components and collaborating with another developer through Git and GitHub.",
+    seo: {
+      title: "Holidaze | React Booking Application | Tore Hirth",
+      description:
+        "Explore Holidaze, an accommodation booking application built with React, TypeScript and Tailwind CSS, featuring venue management, authentication and bookings.",
+    },
   },
   {
     id: "posteria",
@@ -52,6 +57,11 @@ export const projects = [
       "One of the main challenges was combining API-driven functionality with a consistent responsive interface across several pages, including the feed, profiles and individual posts. The project also included both light and dark themes, which added another layer of UI state and styling to manage.",
     learned:
       "Posteria gave me more experience working with an API in a larger multi-page project and helped me understand how a CSS framework can be used to build a consistent responsive interface. It also gave me more practice moving from a Figma prototype into a working application.",
+    seo: {
+      title: "HelTech | React E-Commerce Project | Tore Hirth",
+      description:
+        "Discover HelTech, a collaborative e-commerce project built with React, TypeScript and Redux, featuring product browsing, shopping cart and checkout functionality.",
+    },
   },
   {
     id: "bidRally",
@@ -77,5 +87,10 @@ export const projects = [
       "A major part of the project was handling authenticated and unauthenticated user flows correctly while working with API data across several features. The project also introduced automated testing, which required me to think more deliberately about how individual functions and complete user flows could be tested.",
     learned:
       "BidRally was my first project where I wrote automated tests. I used Vitest for testing JavaScript functionality and Playwright for browser-based tests. The project also gave me more experience with authentication, API integration and organising a larger vanilla JavaScript application.",
+    seo: {
+      title: "BidRally | Auction Platform Project | Tore Hirth",
+      description:
+        "Explore BidRally, an auction platform built with JavaScript, Vite and Tailwind CSS, featuring API integration, user authentication and automated testing.",
+    },
   },
 ];
