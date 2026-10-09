@@ -12,7 +12,7 @@ import {
   XIcon,
   XShareButton,
 } from "react-share";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -22,13 +22,22 @@ export const ProjectDetailPage = () => {
   const { id } = useParams();
   const project = projects.find((project) => project.id.toLowerCase() === id?.toLowerCase());
 
-  if (!project) {
-    return;
-  }
+  useEffect(() => {
+    if (!popupOpen) return;
+
+    const handleKeyPress = (Event: KeyboardEvent) => {
+      if (Event.key === "Escape") {
+        setPopupOpen(false);
+      }
+    };
+    document.addEventListener("keydown", handleKeyPress);
+  }, [popupOpen]);
 
   const closeShareButtonPopup = () => {
     setPopupOpen(false);
   };
+
+  if (!project) return null;
 
   return (
     <>
