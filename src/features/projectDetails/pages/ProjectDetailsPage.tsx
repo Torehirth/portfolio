@@ -32,9 +32,19 @@ export const ProjectDetailPage = () => {
 
   return (
     <>
-      {/* Meta */}
-      <title></title>
-      {/* Content */}
+      {/* === Meta === */}
+      <title>{project.seo.title}</title>
+      <meta name="description" content={project.seo.description} />
+      <meta property="og:title" content={project.seo.title} />
+      <meta property="og:description" content={project.seo.description} />
+      <meta property="og:image" content={project.image} />
+      <meta property="og:url" content={window.location.href} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content={project.seo.title} />
+      <meta name="twitter:description" content={project.seo.description} />
+      <meta name="twitter:image" content={project.image} />
+      {/* === Content === */}
       <article>
         <header className="px-4 pt-16 pb-10 md:px-8 md:pt-24 md:pb-14">
           <div className="max-w-layout mx-auto md:px-8">

@@ -5,9 +5,29 @@ export const ProjectsPage = () => {
   const data = projects;
   return (
     <>
-      {/* Meta */}
-      <title></title>
-      {/* Content */}
+      {/* === Meta === */}
+      <title>Front-End Development Projects | Tore Hirth</title>
+      <meta
+        name="description"
+        content="Explore front-end projects by Tore Hirth, including web applications built with React, TypeScript, JavaScript and modern development tools."
+      />
+      <meta property="og:title" content="Front-End Development Projects | Tore Hirth" />
+      <meta
+        property="og:description"
+        content="Explore front-end projects by Tore Hirth, including web applications built with React, TypeScript, JavaScript and modern development tools."
+      />
+      <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
+      <meta property="og:url" content="https://torehirth.no/projects" />
+      <meta property="og:type" content="website" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Front-End Development Projects | Tore Hirth" />
+      <meta
+        name="twitter:description"
+        content="Explore front-end projects by Tore Hirth, including web applications built with React, TypeScript, JavaScript and modern development tools."
+      />
+      <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+      {/* === Content === */}
       <section className="py-16 md:py-24">
         <div className="max-w-layout mx-auto px-4 md:px-8">
           <p className="text-accent mb-5 px-4 font-mono text-xs tracking-[0.18em] uppercase md:px-8">

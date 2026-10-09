@@ -48,9 +48,29 @@ export const ContactPage = () => {
 
   return (
     <>
-      {/* Meta */}
-      <title></title>
-      {/* Content */}
+      {/* === Meta === */}
+      <title>Contact | Tore Hirth – Front-End Developer</title>
+      <meta
+        name="description"
+        content="Get in touch with Tore Hirth, a front-end developer interested in new opportunities, collaborations and building modern, accessible web experiences."
+      />
+      <meta property="og:title" content="Contact | Tore Hirth – Front-End Developer" />
+      <meta
+        property="og:description"
+        content="Get in touch with Tore Hirth, a front-end developer interested in new opportunities, collaborations and building modern, accessible web experiences."
+      />
+      <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
+      <meta property="og:url" content="https://torehirth.no/contact" />
+      <meta property="og:type" content="website" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Contact | Tore Hirth – Front-End Developer" />
+      <meta
+        name="twitter:description"
+        content="Get in touch with Tore Hirth, a front-end developer interested in new opportunities, collaborations and building modern, accessible web experiences."
+      />
+      <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+      {/* === Content === */}
       {error && (
         <div className="mx-auto mt-24 max-w-xl">
           <FeedbackMessage variant="error" message="test test test"></FeedbackMessage>

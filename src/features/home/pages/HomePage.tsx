@@ -6,22 +6,29 @@ export const HomePage = () => {
   const data = projects;
   return (
     <>
-      {/* Meta */}
-      <title>Front-end Developer | Tore Hirth</title>
+      {/* === Meta === */}
+      <title>Front-End Developer | Tore Hirth</title>
       <meta
         name="description"
-        content="Front-end developer working with React and TypeScript. Explore my projects, skills and experience building accessible user interfaces."
+        content="Explore the portfolio of Tore Hirth, a front-end developer working with React, TypeScript and modern web technologies. Discover my projects and skills."
       />
-      <meta name="robots" content="index, follow" />
-      <link rel="canonical" href="https://torehirth.no/" />
-      <meta property="og:title" content="Tore Hirth | Front-End Developer" />
+      <meta property="og:title" content="Front-End Developer | Tore Hirth" />
       <meta
         property="og:description"
-        content="Front-end developer working with React and TypeScript. Explore my projects and development work."
+        content="Explore the portfolio of Tore Hirth, a front-end developer working with React, TypeScript and modern web technologies. Discover my projects and skills."
       />
+      <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
       <meta property="og:url" content="https://torehirth.no/" />
       <meta property="og:type" content="website" />
-      {/* content */}
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="Front-End Developer | Tore Hirth" />
+      <meta
+        name="twitter:description"
+        content="Explore the portfolio of Tore Hirth, a front-end developer working with React, TypeScript and modern web technologies. Discover my projects and skills."
+      />
+      <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+      {/* === content === */}
       <section className="max-w-layout mx-auto h-[calc(100vh-64px)] w-full px-4 pt-32 pb-12 md:px-8 md:pt-60 md:pb-36">
         <div>
           <p className="text-accent mb-4 font-mono text-xs tracking-[6px] uppercase">

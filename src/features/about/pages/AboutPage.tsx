@@ -5,9 +5,29 @@ import { ButtonLink } from "../../../shared/components/ui/buttons/ButtonLink";
 export const AboutPage = () => {
   return (
     <>
-      {/* Meta */}
-      <title></title>
-      {/* Content */}
+      {/* === Meta === */}
+      <title>About Me | Tore Hirth</title>
+      <meta
+        name="description"
+        content="Learn about Tore Hirth, a front-end developer with a background in mechanics and customer service, now focused on React, TypeScript and accessible web development."
+      />
+      <meta property="og:title" content="About Me | Tore Hirth" />
+      <meta
+        property="og:description"
+        content="Learn about Tore Hirth, a front-end developer with a background in mechanics and customer service, now focused on React, TypeScript and accessible web development."
+      />
+      <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
+      <meta property="og:url" content="https://torehirth.no/about" />
+      <meta property="og:type" content="website" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="About Me | Tore Hirth" />
+      <meta
+        name="twitter:description"
+        content="Learn about Tore Hirth, a front-end developer with a background in mechanics and customer service, now focused on React, TypeScript and accessible web development."
+      />
+      <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
+      {/* === Content === */}
       <section className="flex flex-col gap-10 md:gap-20">
         <div className="px-4 pt-16 md:px-8 md:pt-28">
           <div className="max-w-layout mx-auto md:px-8">
