@@ -23,8 +23,8 @@ export const Header = () => {
     setIsMenuOpen(false);
   };
 
-  const linkInitialStyle = "px-2 py-1 text-lg";
-  const linkActiveStyle = `${linkInitialStyle} border-b border-border-strong`;
+  const linkInitialStyle = "px-2 py-1 text-lg text-text";
+  const linkActiveStyle = `${linkInitialStyle} opacity-85 border-b border-border-strong`;
 
   return (
     <>
