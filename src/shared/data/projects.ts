@@ -1,6 +1,6 @@
-import posteriaImage from "../assets/images/posteria-desktop.webp";
-import helTechImage from "../assets/images/heltech-desktop.webp";
-import bidRallyImage from "../assets/images/bidrally-website.webp";
+import posteriaImage from "../assets/images/posteria.webp";
+import helTechImage from "../assets/images/heltech.webp";
+import bidRallyImage from "../assets/images/bidrally.webp";
 
 export const projects = [
   {
@@ -34,36 +34,6 @@ export const projects = [
     },
   },
   {
-    id: "posteria",
-    title: "Posteria",
-    assignment: "CSS Frameworks",
-    year: 2025,
-    shortDescription:
-      "A social media platform for creating posts, connecting with others and interacting with a shared feed.",
-    type: "noroff solo project",
-    role: "solo",
-    image: posteriaImage,
-    imageAlt: "Posteria social media platform",
-    liveUrl: "https://js2-posteria.netlify.app",
-    repoUrl: "https://github.com/Torehirth/posteria",
-    readmeUrl: "https://github.com/Torehirth/posteria/blob/main/README.md",
-    portfolioProjectUrl: "https://www.torehirth.no/projects/posteria",
-    technologies: ["HTML", "Tailwind CSS", "JavaScript", "Noroff API", "Git"],
-    overview:
-      "Posteria is a responsive social media platform where users can create and share posts, view profiles and interact with other users. The project was built with HTML, JavaScript and Tailwind CSS, using the Noroff API as the data source.",
-    approach:
-      "The project started with interface design and prototyping in Figma before moving into development. Tailwind CSS was used to build a responsive interface, while the JavaScript was organised around the different pages and interactions with the Noroff API.",
-    challenges:
-      "One of the main challenges was combining API-driven functionality with a consistent responsive interface across several pages, including the feed, profiles and individual posts. The project also included both light and dark themes, which added another layer of UI state and styling to manage.",
-    learned:
-      "Posteria gave me more experience working with an API in a larger multi-page project and helped me understand how a CSS framework can be used to build a consistent responsive interface. It also gave me more practice moving from a Figma prototype into a working application.",
-    seo: {
-      title: "HelTech | React E-Commerce Project | Tore Hirth",
-      description:
-        "Discover HelTech, a collaborative e-commerce project built with React, TypeScript and Redux, featuring product browsing, shopping cart and checkout functionality.",
-    },
-  },
-  {
     id: "bidRally",
     title: "BidRally",
     assignment: "Semester Project 2",
@@ -91,6 +61,36 @@ export const projects = [
       title: "BidRally | Auction Platform Project | Tore Hirth",
       description:
         "Explore BidRally, an auction platform built with JavaScript, Vite and Tailwind CSS, featuring API integration, user authentication and automated testing.",
+    },
+  },
+  {
+    id: "posteria",
+    title: "Posteria",
+    assignment: "CSS Frameworks",
+    year: 2025,
+    shortDescription:
+      "A social media platform for creating posts, connecting with others and interacting with a shared feed.",
+    type: "noroff solo project",
+    role: "solo",
+    image: posteriaImage,
+    imageAlt: "Posteria social media platform",
+    liveUrl: "https://js2-posteria.netlify.app",
+    repoUrl: "https://github.com/Torehirth/posteria",
+    readmeUrl: "https://github.com/Torehirth/posteria/blob/main/README.md",
+    portfolioProjectUrl: "https://www.torehirth.no/projects/posteria",
+    technologies: ["HTML", "Tailwind CSS", "JavaScript", "Noroff API", "Git"],
+    overview:
+      "Posteria is a responsive social media platform where users can create and share posts, view profiles and interact with other users. The project was built with HTML, JavaScript and Tailwind CSS, using the Noroff API as the data source.",
+    approach:
+      "The project started with interface design and prototyping in Figma before moving into development. Tailwind CSS was used to build a responsive interface, while the JavaScript was organised around the different pages and interactions with the Noroff API.",
+    challenges:
+      "One of the main challenges was combining API-driven functionality with a consistent responsive interface across several pages, including the feed, profiles and individual posts. The project also included both light and dark themes, which added another layer of UI state and styling to manage.",
+    learned:
+      "Posteria gave me more experience working with an API in a larger multi-page project and helped me understand how a CSS framework can be used to build a consistent responsive interface. It also gave me more practice moving from a Figma prototype into a working application.",
+    seo: {
+      title: "HelTech | React E-Commerce Project | Tore Hirth",
+      description:
+        "Discover HelTech, a collaborative e-commerce project built with React, TypeScript and Redux, featuring product browsing, shopping cart and checkout functionality.",
     },
   },
 ];
