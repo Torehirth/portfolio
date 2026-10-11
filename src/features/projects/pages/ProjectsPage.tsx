@@ -19,7 +19,6 @@ export const ProjectsPage = () => {
       <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
       <meta property="og:url" content="https://torehirth.no/projects" />
       <meta property="og:type" content="website" />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Front-End Development Projects | Tore Hirth" />
       <meta

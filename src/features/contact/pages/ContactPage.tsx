@@ -62,7 +62,6 @@ export const ContactPage = () => {
       <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
       <meta property="og:url" content="https://torehirth.no/contact" />
       <meta property="og:type" content="website" />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Contact | Tore Hirth – Front-End Developer" />
       <meta

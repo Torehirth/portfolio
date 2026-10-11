@@ -19,7 +19,6 @@ export const AboutPage = () => {
       <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
       <meta property="og:url" content="https://torehirth.no/about" />
       <meta property="og:type" content="website" />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="About Me | Tore Hirth" />
       <meta
