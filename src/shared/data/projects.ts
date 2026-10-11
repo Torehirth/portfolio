@@ -1,8 +1,39 @@
 import posteriaImage from "../assets/images/posteria.webp";
 import helTechImage from "../assets/images/heltech.webp";
 import bidRallyImage from "../assets/images/bidrally.webp";
+import holidazeImage from "../assets/images/holidaze.webp";
 
 export const projects = [
+  {
+    id: "holidaze",
+    title: "Holidaze",
+    assignment: "Project Exam 2",
+    year: 2026,
+    shortDescription:
+      "An accommodation booking platform where users can discover and book stays, while venue managers can create and manage their listings.",
+    type: "noroff solo project",
+    role: "solo",
+    image: holidazeImage,
+    imageAlt: "Holidaze accommodation booking platform",
+    liveUrl: "https://tmh-holidaze.netlify.app/",
+    repoUrl: "https://github.com/Torehirth/Holidaze",
+    readmeUrl: "https://github.com/Torehirth/Holidaze/blob/main/README.md",
+    portfolioProjectUrl: "https://www.torehirth.no/projects/holidaze",
+    technologies: ["React", "TypeScript", "Tailwind CSS", "React Router", "Noroff API", "Git"],
+    overview:
+      "Holidaze is a responsive accommodation booking platform developed as my final exam project at Noroff. Visitors can search for venues and check availability, registered users can make bookings and manage their profiles, and venue managers can create, edit and manage their own listings. The application uses the Noroff Holidaze API for venue, booking and user data.",
+    approach:
+      "I started by planning the interface and user flows for the different user roles. The application was built with React, TypeScript and Tailwind CSS, using a feature-based folder structure and reusable components. API requests were separated into service functions, while React Context and protected routes were used to handle authentication and access to different parts of the application. Accessibility and responsive design were considered throughout development.",
+    challenges:
+      "One of the main challenges was handling authentication and the different levels of access for visitors, registered users and venue managers. Another was implementing the booking calendar, where existing reservations had to be accounted for to prevent overlapping bookings. Managing API data and keeping the interface updated after changes also required careful handling of application state.",
+    learned:
+      "Holidaze gave me valuable experience developing a larger React and TypeScript application from start to finish. I became more comfortable with typed API responses, authentication, protected routes and managing state across components. The project also helped me understand the benefits of a feature-based architecture and reinforced the importance of keeping code maintainable while building a functional and accessible user interface.",
+    seo: {
+      title: "Holidaze | React Booking App | Tore Hirth",
+      description:
+        "Explore Holidaze, an accommodation booking platform built with React and TypeScript, featuring venue search, bookings, authentication and venue management.",
+    },
+  },
   {
     id: "helTech",
     title: "HelTech",
@@ -28,9 +59,9 @@ export const projects = [
     learned:
       "HelTech gave me more experience building a complete application in React and TypeScript rather than working only on isolated components. I also gained practical experience with shared application state, reusable components and collaborating with another developer through Git and GitHub.",
     seo: {
-      title: "Holidaze | React Booking Application | Tore Hirth",
+      title: "HelTech | React E-Commerce Project | Tore Hirth",
       description:
-        "Explore Holidaze, an accommodation booking application built with React, TypeScript and Tailwind CSS, featuring venue management, authentication and bookings.",
+        "Discover HelTech, a collaborative e-commerce project built with React, TypeScript and Redux, featuring product browsing, shopping cart and checkout functionality.",
     },
   },
   {
@@ -88,9 +119,9 @@ export const projects = [
     learned:
       "Posteria gave me more experience working with an API in a larger multi-page project and helped me understand how a CSS framework can be used to build a consistent responsive interface. It also gave me more practice moving from a Figma prototype into a working application.",
     seo: {
-      title: "HelTech | React E-Commerce Project | Tore Hirth",
+      title: "Posteria | Social Media Platform | Tore Hirth",
       description:
-        "Discover HelTech, a collaborative e-commerce project built with React, TypeScript and Redux, featuring product browsing, shopping cart and checkout functionality.",
+        "Explore Posteria, a responsive social media platform built with JavaScript and Tailwind CSS, featuring user profiles, posts and interactions using the Noroff API.",
     },
   },
 ];

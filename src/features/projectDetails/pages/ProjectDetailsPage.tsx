@@ -173,7 +173,7 @@ export const ProjectDetailPage = () => {
         {/* Article body */}
         <div className="px-4 py-12 md:px-8 md:py-20">
           <div className="max-w-layout mx-auto">
-            <div className="max-w-3xl space-y-16 md:px-8">
+            <div className="max-w-3xl space-y-8 md:px-8">
               <section aria-labelledby="overview-heading">
                 <h2 id="overview-heading" className="text-2xl font-medium">
                   Overview

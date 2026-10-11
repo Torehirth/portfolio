@@ -29,7 +29,7 @@ export const HomePage = () => {
       />
       <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
       {/* === content === */}
-      <section className="max-w-layout mx-auto h-[calc(100vh-64px)] w-full px-4 pt-32 pb-12 md:px-8 md:pt-60 md:pb-36">
+      <section className="max-w-layout mx-auto w-full px-4 py-24 md:px-8 md:py-60">
         <div>
           <p className="text-accent mb-4 font-mono text-xs tracking-[6px] uppercase">
             <span aria-hidden="true">●</span> Available for work
@@ -82,7 +82,9 @@ export const HomePage = () => {
           </div>
           <ul className="grid gap-4 md:grid-cols-2">
             {data.slice(0, 2).map((project) => (
-              <li key={project.id} className="ease-in-out hover:scale-[99.5%]">
+              <li
+                key={project.id}
+                className="border-border rounded-xl border ease-in-out hover:scale-[99.5%]">
                 <article className="group relative overflow-hidden rounded-xl hover:shadow-md">
                   <img
                     src={project.image}
