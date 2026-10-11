@@ -42,7 +42,9 @@ export const ProjectsPage = () => {
             {/* Project */}
             <ul className="flex flex-col gap-8 md:gap-12">
               {data.map((project) => (
-                <li key={project.id} className="ease-in-out hover:scale-[99.5%]">
+                <li
+                  key={project.id}
+                  className="border-border rounded-xl border ease-in-out hover:scale-[99.5%] md:border-0">
                   <article className="relative overflow-hidden rounded-xl hover:shadow-md md:grid md:grid-cols-[0.38fr_0.62fr]">
                     <img
                       src={project.image}
