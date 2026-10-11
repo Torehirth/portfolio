@@ -2,62 +2,84 @@
 
 ## Description
 
-A personal portfolio showcasing my projects.
-This site highlights my live projects, skills and tools to demonstrate my experience in designing and building responsive, accessible, and engaging websites.
+A personal portfolio website designed and developed to showcase my work as a front-end developer, including selected projects, technical skills, and experience.
 
-## Key features
+The website is built with React, TypeScript, and Tailwind CSS, featuring a responsive, multi-page layout with dedicated project pages, an about section, and a contact page. Each project has its own page with information about the application, the technologies used, and links to the live website and GitHub repository.
 
-- Responsive design for various devices
-- Dark and light mode support
-- Clean and modern UI design
-- Showcases live projects with links to both the website and GitHub repositories
-- Highlights skills and tools used in projects
+The design focuses on simplicity, accessibility, and usability, with a consistent visual style, reusable components, and support for both light and dark modes. The application is structured around separate features and shared components to keep the code organised and maintainable.
 
-## Getting Started
+## Live site
+
+[https://torehirth.no](https://torehirth.no)
+
+## Features
+
+- Responsive layout for desktop, tablet and mobile
+- Dark and light mode
+- Dedicated pages for projects, about and contact
+- Individual project detail pages
+- Links to live projects and GitHub repositories
+- Accessible and reusable UI components
+- Custom error and 404 pages
+
+## Built with
+
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- React Hook Form
+- Lucide and Font Awesome icons
+- ESLint
+- Prettier
+- Husky and lint-staged
+
+## Getting started
 
 ### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone  https://github.com/torehirth/portfolio.git
+git clone https://github.com/Torehirth/portfolio.git
 ```
 
-2. Install the dependencies:
+2. Navigate to the project:
 
+```bash
+cd portfolio
 ```
+
+3. Install the dependencies:
+
+```bash
 npm install
 ```
 
-### Running
-
-To run the app locally, run the following commands:
+4. Start the development server:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-## Available Scripts
+## Available scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Run Vite preview server
-- `npm run lint` - Run ESLint
-- `npm run format` - Run Prettier
-- `npm run format:check` - Run Prettier check
-- `npm run prepare` - Run Husky and lint-staged for pre-commit hooks
+- `npm run dev` – Start the Vite development server
+- `npm run build` – Type-check and build the project for production
+- `npm run preview` – Preview the production build locally
+- `npm run lint` – Run ESLint
+- `npm run format` – Format files with Prettier
+- `npm run format:check` – Check formatting with Prettier
 
-## Built with
+## Portfolio 2
 
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- ESLint
-- Prettier
-- Husky and lint-staged for pre-commit hooks
-- Lucide icons
+This portfolio is a complete redesign of my previous website, built to improve both the user experience and the underlying code structure.
+
+The project gave me an opportunity to work with component-based architecture, client-side routing, responsive layouts, and theme management. I also focused on creating a consistent design across pages while keeping the code readable, reusable, and easier to maintain.
 
 ## Author
 
-[Portfolio](https://torehirth.no) · [LinkedIn](https://www.linkedin.com/in/torehirth/)
+**Tore M. Hirth**
+
+[Portfolio](https://torehirth.no) · [GitHub](https://github.com/Torehirth) · [LinkedIn](https://www.linkedin.com/in/torehirth/)
