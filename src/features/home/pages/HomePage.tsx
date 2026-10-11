@@ -83,7 +83,7 @@ export const HomePage = () => {
             {data.slice(0, 2).map((project) => (
               <li
                 key={project.id}
-                className="border-border rounded-xl border ease-in-out hover:scale-[99.5%]">
+                className="border-border rounded-xl border ease-in-out hover:scale-[99.5%] md:border-none">
                 <article className="group relative overflow-hidden rounded-xl hover:shadow-md">
                   <img
                     src={project.image}
