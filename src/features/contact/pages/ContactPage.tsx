@@ -19,8 +19,17 @@ export const ContactPage = () => {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors, isSubmitting },
-  } = useForm<Inputs>({ mode: "onChange" });
+  } = useForm<Inputs>({
+    mode: "onChange",
+    defaultValues: {
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    },
+  });
 
   const sendMessage: SubmitHandler<Inputs> = async (data) => {
     setError(null);
@@ -32,6 +41,7 @@ export const ContactPage = () => {
       });
 
       setSuccess(true);
+      reset();
     } catch (caughtError) {
       if (caughtError instanceof Error) {
         setError(caughtError.message);
@@ -126,7 +136,7 @@ export const ContactPage = () => {
               </span>
               Contact form
             </h2>
-            <form className="" onSubmit={handleSubmit(sendMessage)} noValidate>
+            <form id="contact-form" onSubmit={handleSubmit(sendMessage)} noValidate>
               <fieldset className="mt-4 space-y-7 md:mt-8" disabled={isSubmitting}>
                 <div className="relative">
                   <input
