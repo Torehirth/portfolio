@@ -1,82 +1,81 @@
-# Tore Hirth | Portfolio
+# Portfolio | Tore Hirth
 
-</br>
+A personal portfolio built as part of the **Portfolio 2** course assignment at Noroff.
 
-<p align="left"><img src="https://github.com/user-attachments/assets/e2d941bb-6c1a-42df-bd75-bca7cbff2bbe" alt="Brand logo shaped as a T" /></p>
+The site presents selected front-end projects and gives a more detailed look at the work behind them, including the technologies used, project links and individual project pages. It was rebuilt as a responsive React application with a stronger focus on structure, accessibility and presentation.
 
-A personal portfolio showcasing my projects throughout my front-end development course. This site highlights my skills, experiences, and live projects, all designed to demonstrate my experience in building responsive, accessible, and engaging websites.
+## Live site
 
-- Take a look at the live website [here](https://torehirth.no/)
+[https://torehirth.no](https://torehirth.no)
 
-</br>
+## Features
 
-## Description
+- Responsive layout for desktop, tablet and mobile
+- Dark and light mode
+- Dedicated pages for projects, about and contact
+- Individual project detail pages
+- Links to live projects and GitHub repositories
+- Accessible and reusable UI components
+- Custom error and 404 pages
 
-This portfolio features a collection of my front-end development projects, each created as part of my ongoing education. The portfolio site is designed with a modern, minimalistic approach, focusing on accessibility, user experience, and responsiveness across all devices.
+## Built with
 
-## Key features:
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- React Hook Form
+- Lucide and Font Awesome icons
+- ESLint
+- Prettier
+- Husky and lint-staged
 
-- Follows WCAG accessibility guidelines (contrast, alt text, ARIA)
-- Fully responsive design for mobile, tablet, and desktop
-- Dark and light mode themes with a toggle button
-- Sticky header that hides on scroll down and reappears on scroll up
-- Landing area covering the entire viewport
-- Projects section with information, illustrations, and links to GitHub repositories and live sites.
-- Skills section with infinity carousel displaying my tech stack.
-- About me section with a detailed introduction and image.
-- Work experience and education section with downloadable CVs in both Norwegian and English.
-- Contact section with social media links and contact details.
+## Getting started
 
-</br>
-
-## Built With
-
-- [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)
-- [SASS/SCSS](https://sass-lang.com/)
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-- [GitHub Actions](https://github.com/features/actions)
-
-</br>
-
-## Getting Started
-
-### Installing
+### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone  https://github.com/torehirth/portfolio.git
+git clone https://github.com/Torehirth/portfolio.git
 ```
 
-2. Install the dependencies:
+2. Navigate to the project:
 
+```bash
+cd portfolio
 ```
+
+3. Install the dependencies:
+
+```bash
 npm install
 ```
 
-### Running
-
-To run the app locally, run the following commands:
+4. Start the development server:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-</br>
+## Available scripts
 
-## Contact
+- `npm run dev` – Start the Vite development server
+- `npm run build` – Type-check and build the project for production
+- `npm run preview` – Preview the production build locally
+- `npm run lint` – Run ESLint
+- `npm run format` – Format files with Prettier
+- `npm run format:check` – Check formatting with Prettier
 
-[My LinkedIn profile](https://www.linkedin.com/in/torehirth) | [My GitHub profile](https://github.com/Torehirth)
+## Portfolio 2
 
-</br>
+For Portfolio 2, I redesigned and rebuilt my previous portfolio as a multi-page React application. The assignment also included revisiting and improving selected projects before presenting them through the portfolio.
 
-## Acknowledgments
+The main goal was to create a cleaner and more professional presentation of my work while applying what I have learned about front-end development, responsive design, accessibility and maintainable code.
 
-- Figma for design prototyping
-- Fonts from [Google Fonts](https://fonts.google.com/)
-- Icons and images from [Google Material Symbols](https://fonts.google.com/icons) and [SVG Repo](https://www.svgrepo.com/)
+## Author
 
-</br>
+**Tore M. Hirth**
 
-<p align="left" ><img src="https://github-readme-tech-stack.vercel.app/api/cards?lineCount=1&width=900&bg=%230D1117&badge=%23161B22&border=%2321262D&titleColor=%2358A6FF&line1=git%2CGit%2C40F8FF%3Bgithub%2CGitHub%2C40F8FF%3Bvisualstudiocode%2CVS+Code%2C40F8FF%3Bfigma%2CFigma%2C40F8FF%3Bhtml5%2CHTML%2C40F8FF%3Bcss3%2CCSS%2C40F8FF%3Bjavascript%2CJavaScript%2C40F8FF%3B%2C40F8FF%3Bsass%2CSASS%2C40F8FF%3B" alt="My Tech Stack" /> </p>
+[Portfolio](https://torehirth.no) · [GitHub](https://github.com/Torehirth) · [LinkedIn](https://www.linkedin.com/in/torehirth/)

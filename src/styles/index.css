@@ -1,0 +1,57 @@
+@import "./tokens.css";
+@import "tailwindcss";
+
+@layer base {
+  *,
+  *::before,
+  *::after {
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-text);
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+  }
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer {
+    margin-top: auto;
+  }
+
+  a,
+  button {
+    color: var(--color-text);
+  }
+
+  a:hover,
+  button:hover {
+    opacity: 0.7;
+  }
+
+  a:active,
+  button:active {
+    color: var(--color-accent);
+  }
+}
