@@ -47,7 +47,7 @@ export const ProjectsPage = () => {
                     <img
                       src={project.image}
                       alt={project.imageAlt}
-                      className="h-full min-h-64 w-full object-cover"
+                      className="h-full max-h-81 min-h-64 w-full object-cover object-top"
                     />
                     <div className="flex flex-col justify-between p-6 md:p-10">
                       <div>
