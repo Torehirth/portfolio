@@ -1,4 +1,4 @@
-import { useParams } from "react-router";
+import { Link, useParams } from "react-router";
 import { projects } from "../../../shared/data/projects";
 import { ExternalLink, Share2, X } from "lucide-react";
 import { ExternalButtonLinks } from "../../../shared/components/ui/buttons/ExternalButtonLinks";
@@ -53,14 +53,13 @@ export const ProjectDetailPage = () => {
       <meta name="twitter:title" content={project.seo.title} />
       <meta name="twitter:description" content={project.seo.description} />
       <meta name="twitter:image" content={project.image} />
-
       {/* === Content === */}
       <article>
         <header className="px-4 pt-16 pb-10 md:px-8 md:pt-24 md:pb-14">
           <div className="max-w-layout mx-auto md:px-8">
-            <a href="/projects" className="font-mono text-xs">
+            <Link to="/projects" className="font-mono text-xs">
               ← All projects
-            </a>
+            </Link>
             <p className="mt-8 font-mono text-xs tracking-[2px] uppercase md:mt-12">
               {project.type} · {project.year}
             </p>

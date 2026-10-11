@@ -20,7 +20,6 @@ export const HomePage = () => {
       <meta property="og:image" content="https://torehirth.no/og-image.jpg" />
       <meta property="og:url" content="https://torehirth.no/" />
       <meta property="og:type" content="website" />
-
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content="Front-End Developer | Tore Hirth" />
       <meta
@@ -140,9 +139,9 @@ export const HomePage = () => {
               mainly with React and TypeScript, but my projects also cover UI design in Figma,
               accessibility, API's and the full process from idea to deployed product.
             </p>
-            <a href="/about" className="text-accent mt-6 inline-block font-medium">
+            <Link to="/about" className="text-accent mt-6 inline-block font-medium">
               More about how I work →
-            </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-3">
             <section className="border-border bg-background rounded-xl border p-5">
