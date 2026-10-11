@@ -1,4 +1,3 @@
-
 # Portfolio | Tore Hirth
 
 <p align="center"><img width="900" height="458" alt="portfolio" src="https://github.com/user-attachments/assets/8be5d19c-ef70-4736-a535-00a9f87d193d" /></p>

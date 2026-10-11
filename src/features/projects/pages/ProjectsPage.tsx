@@ -27,7 +27,6 @@ export const ProjectsPage = () => {
         content="Explore front-end projects by Tore Hirth, including web applications built with React, TypeScript, JavaScript and modern development tools."
       />
       <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
-
       {/* === Content === */}
       <section className="py-16 md:py-24">
         <div className="max-w-layout mx-auto px-4 md:px-8">

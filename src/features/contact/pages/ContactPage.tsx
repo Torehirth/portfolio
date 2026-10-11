@@ -70,7 +70,6 @@ export const ContactPage = () => {
         content="Get in touch with Tore Hirth, a front-end developer interested in new opportunities, collaborations and building modern, accessible web experiences."
       />
       <meta name="twitter:image" content="https://torehirth.no/og-image.jpg" />
-
       {/* === Content === */}
       {error && (
         <div className="mx-auto mt-24 max-w-xl" role="alert">
