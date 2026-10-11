@@ -67,7 +67,7 @@ export const Header = () => {
                 </li>
                 <li>
                   <ButtonLink aria-label="Navigate to contact page" to="/contact" variant="primary">
-                    Contact
+                    Get in touch
                   </ButtonLink>
                 </li>
               </ul>
