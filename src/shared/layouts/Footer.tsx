@@ -77,7 +77,7 @@ export const Footer = () => {
             <ul className="space-y-3">
               <li>
                 <a
-                  href="#"
+                  href="https://github.com/Torehirth"
                   className="inline-flex items-center gap-1"
                   rel="noreferrer noopener"
                   target="_blank">
@@ -87,7 +87,7 @@ export const Footer = () => {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/in/torehirth/"
                   className="inline-flex items-center gap-1"
                   rel="noreferrer noopener"
                   target="_blank">
@@ -96,7 +96,10 @@ export const Footer = () => {
                 </a>
               </li>
               <li>
-                <button onClick={copyDiscordUsername} className="inline-flex items-center gap-1">
+                <button
+                  onClick={copyDiscordUsername}
+                  type="button"
+                  className="inline-flex cursor-pointer items-center gap-1">
                   <FontAwesomeIcon aria-hidden="true" icon={faDiscord} />
                   Discord
                 </button>
