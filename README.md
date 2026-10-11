@@ -1,8 +1,13 @@
+
 # Portfolio | Tore Hirth
 
-A personal portfolio built as part of the **Portfolio 2** course assignment at Noroff.
+## Description
 
-The site presents selected front-end projects and gives a more detailed look at the work behind them, including the technologies used, project links and individual project pages. It was rebuilt as a responsive React application with a stronger focus on structure, accessibility and presentation.
+A personal portfolio website designed and developed to showcase my work as a front-end developer, including selected projects, technical skills, and experience.
+
+The website is built with React, TypeScript, and Tailwind CSS, featuring a responsive, multi-page layout with dedicated project pages, an about section, and a contact page. Each project has its own page with information about the application, the technologies used, and links to the live website and GitHub repository.
+
+The design focuses on simplicity, accessibility, and usability, with a consistent visual style, reusable components, and support for both light and dark modes. The application is structured around separate features and shared components to keep the code organised and maintainable.
 
 ## Live site
 
@@ -70,9 +75,9 @@ npm run dev
 
 ## Portfolio 2
 
-For Portfolio 2, I redesigned and rebuilt my previous portfolio as a multi-page React application. The assignment also included revisiting and improving selected projects before presenting them through the portfolio.
+This portfolio is a complete redesign of my previous website, built to improve both the user experience and the underlying code structure.
 
-The main goal was to create a cleaner and more professional presentation of my work while applying what I have learned about front-end development, responsive design, accessibility and maintainable code.
+The project gave me an opportunity to work with component-based architecture, client-side routing, responsive layouts, and theme management. I also focused on creating a consistent design across pages while keeping the code readable, reusable, and easier to maintain.
 
 ## Author
 
