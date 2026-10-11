@@ -1,63 +1,81 @@
 # Portfolio | Tore Hirth
 
-## Description
+A personal portfolio built as part of the **Portfolio 2** course assignment at Noroff.
 
-A personal portfolio showcasing my projects.
-This site highlights my live projects, skills and tools to demonstrate my experience in designing and building responsive, accessible, and engaging websites.
+The site presents selected front-end projects and gives a more detailed look at the work behind them, including the technologies used, project links and individual project pages. It was rebuilt as a responsive React application with a stronger focus on structure, accessibility and presentation.
 
-## Key features
+## Live site
 
-- Responsive design for various devices
-- Dark and light mode support
-- Clean and modern UI design
-- Showcases live projects with links to both the website and GitHub repositories
-- Highlights skills and tools used in projects
+[https://torehirth.no](https://torehirth.no)
 
-## Getting Started
+## Features
+
+- Responsive layout for desktop, tablet and mobile
+- Dark and light mode
+- Dedicated pages for projects, about and contact
+- Individual project detail pages
+- Links to live projects and GitHub repositories
+- Accessible and reusable UI components
+- Custom error and 404 pages
+
+## Built with
+
+- React
+- TypeScript
+- React Router
+- Tailwind CSS
+- Vite
+- React Hook Form
+- Lucide and Font Awesome icons
+- ESLint
+- Prettier
+- Husky and lint-staged
+
+## Getting started
 
 ### Installation
 
 1. Clone the repository:
 
 ```bash
-git clone  https://github.com/torehirth/portfolio.git
+git clone https://github.com/Torehirth/portfolio.git
 ```
 
-2. Install the dependencies:
+2. Navigate to the project:
 
+```bash
+cd portfolio
 ```
+
+3. Install the dependencies:
+
+```bash
 npm install
 ```
 
-### Running
-
-To run the app locally, run the following commands:
+4. Start the development server:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-## Available Scripts
+## Available scripts
 
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Run Vite preview server
-- `npm run lint` - Run ESLint
-- `npm run format` - Run Prettier
-- `npm run format:check` - Run Prettier check
-- `npm run prepare` - Run Husky and lint-staged for pre-commit hooks
+- `npm run dev` – Start the Vite development server
+- `npm run build` – Type-check and build the project for production
+- `npm run preview` – Preview the production build locally
+- `npm run lint` – Run ESLint
+- `npm run format` – Format files with Prettier
+- `npm run format:check` – Check formatting with Prettier
 
-## Built with
+## Portfolio 2
 
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- ESLint
-- Prettier
-- Husky and lint-staged for pre-commit hooks
-- Lucide icons
+For Portfolio 2, I redesigned and rebuilt my previous portfolio as a multi-page React application. The assignment also included revisiting and improving selected projects before presenting them through the portfolio.
+
+The main goal was to create a cleaner and more professional presentation of my work while applying what I have learned about front-end development, responsive design, accessibility and maintainable code.
 
 ## Author
 
-[Portfolio](https://torehirth.no) · [LinkedIn](https://www.linkedin.com/in/torehirth/)
+**Tore M. Hirth**
+
+[Portfolio](https://torehirth.no) · [GitHub](https://github.com/Torehirth) · [LinkedIn](https://www.linkedin.com/in/torehirth/)
